@@ -138,9 +138,9 @@
                   <td>Measure whether our ads lead to installs, trials, and subscriptions — see Section 5</td>
                 </tr>
                 <tr>
-                  <td><strong>Optional Product Analytics</strong></td>
-                  <td>If you turn on analytics: a random installation ID, named screens and controls you use, step and purchase-outcome events, app version, and event time. After sign-in, these events may be associated with your account ID. We do not include questionnaire answers, app selections, sleep records, email, or HealthKit data in these events.</td>
-                  <td>Understand where people leave setup, what they tap, and whether they reach paid access; improve the app. Analytics is off by default and can be changed in Settings.</td>
+                  <td><strong>iOS Product Analytics</strong></td>
+                  <td>In the current iOS app: a random installation ID, named screens and controls you use, setup-step and purchase-outcome events, app version, and event time. After sign-in, these events may be associated with your account ID. We do not include questionnaire answers, app selections, sleep records, email, or HealthKit data in these events.</td>
+                  <td>Understand where people leave setup, what they tap, and whether they reach paid access; improve the app. These named events are recorded automatically in the current iOS app, without an analytics switch in Settings. Earlier versions that offered an analytics switch collected these events only when enabled.</td>
                 </tr>
                 <tr>
                   <td><strong>Diagnostic Data</strong></td>
@@ -170,7 +170,7 @@
               <li>Merge and de-duplicate nights logged in-app with nights imported from Apple Health, so a night is never double-counted;</li>
               <li>Enable optional sleep-enforcement features that shield the apps you select;</li>
               <li>Process and manage your subscription and free trial;</li>
-              <li>Measure setup and purchase journeys when you choose to enable product analytics;</li>
+              <li>Measure setup and purchase journeys through named product events in the current iOS app;</li>
               <li>Respond to your support requests;</li>
               <li>Maintain the security, integrity, and reliability of the App; and</li>
               <li>Comply with legal obligations.</li>
@@ -183,7 +183,7 @@
             <ul>
               <li><strong>On your device:</strong> Your profile, sleep sessions, sleep schedule, blocked-apps selection, and preferences are stored locally. Unfinished setup answers are saved on the device so you can resume. Authentication tokens are stored in the iOS Keychain.</li>
               <li><strong>Cloud backup:</strong> After sign-in, your completed profile and nights logged in SleepBlock are synced to Supabase under your account so they can be restored on another device. Imported Apple Health sessions and Screen Time selection tokens are not sent as part of this backup.</li>
-              <li><strong>Optional analytics:</strong> If you enable product analytics, named interaction events are queued on your device while offline and sent to Supabase when a connection is available. Turning analytics off clears unsent events. Events already received are retained under the associated installation or account identifier until deleted under our retention practices or an applicable account deletion request.</li>
+              <li><strong>iOS product analytics:</strong> In the current iOS app, named interaction events are queued on your device while offline and sent to Supabase when a connection is available. There is no in-app switch for these events. Events already received are retained under the associated installation or account identifier until deleted under our retention practices or an applicable data-deletion request.</li>
             </ul>
 
             <hr>
@@ -207,8 +207,8 @@
                 </tr>
                 <tr>
                   <td><strong>Supabase</strong></td>
-                  <td>Authentication, cloud backup, product analytics when enabled, and a server-side subscription event ledger</td>
-                  <td>Email address, hashed credentials, account identifiers, completed profile and in-app sleep sessions; optional named interaction events and purchase event records</td>
+                  <td>Authentication, cloud backup, iOS product analytics, and a server-side subscription event ledger</td>
+                  <td>Email address, hashed credentials, account identifiers, completed profile and in-app sleep sessions; named iOS interaction events and purchase event records</td>
                 </tr>
                 <tr>
                   <td><strong>Google</strong></td>
@@ -278,7 +278,7 @@
             <hr>
 
             <h2>8. Data Retention</h2>
-            <p>Data stored locally remains until you remove it in the App or uninstall the App; signing out clears account-scoped local information. Your completed profile, in-app sleep sessions, and account information in Supabase remain while your account exists. Optional analytics events and subscription event records may also be stored on our servers. When you delete your account (see Section 10), associated account-linked records are deleted or anonymized, except where limited records must be retained for legal obligations. You can ask us about a specific record or retention period at the address below.</p>
+            <p>Data stored locally remains until you remove it in the App or uninstall the App; signing out clears account-scoped local information. Your completed profile, in-app sleep sessions, and account information in Supabase remain while your account exists. iOS product-analytics events and subscription event records may also be stored on our servers. When you delete your account (see Section 10), associated account-linked records are deleted or anonymized, except where limited records must be retained for legal obligations. Analytics events recorded before sign-in may retain a random installation ID rather than an account ID; contact us if you want us to review a request concerning those records. You can ask us about a specific record or retention period at the address below.</p>
 
             <hr>
 
@@ -292,7 +292,7 @@
             <ul>
               <li>Edit your name and account email in Profile;</li>
               <li>Enable or disable Apple Health sync at any time;</li>
-              <li>Turn optional product analytics on or off in Settings; turning it off clears unsent events;</li>
+              <li>Request access to or deletion of product-analytics records associated with you by contacting us;</li>
               <li>Change or clear your blocked-apps selection and sleep schedule;</li>
               <li>Sign out, which removes your session from the device; and</li>
               <li>Delete data stored on your device by uninstalling the App.</li>
