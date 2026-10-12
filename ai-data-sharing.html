@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>How AI uses your data | Speaking Coach</title>
-    <meta name="description" content="Learn what Speaking Coach shares with ElevenLabs, Google Gemini, OpenAI and Anthropic, why, and how to control your permission.">
+    <meta name="description" content="Learn what Speaking Coach shares with ElevenLabs and OpenAI, why, and how to control your permission.">
     <link rel="canonical" href="https://www.orecci.com/ai-data-sharing.html">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -28,13 +28,13 @@
           <article class="legal-document">
 <section id="ai-data-sharing" data-custom-class="body_text" style="line-height:1.6; margin-bottom:32px;">
   <h1>How AI uses your data</h1>
-  <p><strong>Updated October 5, 2026.</strong> This guide explains how AI features work in Speaking Coach. For the full notice, read our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+  <p><strong>Updated October 12, 2026.</strong> This guide explains how AI features work in Speaking Coach. For the full notice, read our <a href="privacy-policy.html">Privacy Policy</a>.</p>
   <h3>What we collect, how we collect it, and why</h3>
   <p>When you choose AI features, we collect the microphone audio you speak during live practice, recorded presentation and answer audio, their transcripts, custom situation descriptions, practice context and language, presentation slide text, title, audience, purpose, instructions, slide timings, questions and answers. If you attach a CV, job post or interview notes, the app reads the text on your device and includes that text in the live interview context. Personal details you speak, type or include in these materials are part of the data shared. We use this data to run conversations, transcribe recordings, check custom situations, generate audience questions and provide feedback.</p>
   <h3>Who receives the data</h3>
   <ul>
     <li><strong>ElevenLabs:</strong> live microphone audio and practice context, including attached CV, job post and interview-note text, to run your AI voice partner; recorded practice and answer audio to create transcripts. ElevenLabs operates the voice service using its service providers and subprocessors.</li>
-    <li><strong>Google Gemini, OpenAI and Anthropic, through ElevenLabs:</strong> ElevenLabs sends conversation text and practice context, including CV, job post and interview-note text you provide, to Google Gemini to generate your voice partner's replies. Its fixed backup list can send the same text to OpenAI or Anthropic if the primary model is unavailable. These are distinct from the OpenAI feedback requests described below.</li>
+    <li><strong>OpenAI, through ElevenLabs:</strong> ElevenLabs sends conversation text and practice context, including CV, job post and interview-note text you provide, to OpenAI to generate your voice partner's replies, using a second OpenAI model if the first is unavailable. These are distinct from the OpenAI feedback requests described below.</li>
     <li><strong>OpenAI:</strong> transcripts, custom situation descriptions and practice context for evaluation and feedback; presentation slide text, title, audience, purpose, instructions, slide timings, questions, spoken-answer transcripts and presentation transcripts to generate questions and answer feedback. Speaking Coach sends this text through our backend. The current iOS app does not send raw microphone recordings directly to OpenAI.</li>
     <li><strong>Vercel and Supabase:</strong> our backend runs on Vercel and uses Supabase for authentication and stored account, practice transcript, report and activity data. Requests sent through our backend are processed by these infrastructure providers as needed to deliver the feature. PowerPoint files you import are uploaded to our backend for conversion to PDF; PDF slide text is extracted on your device and shared with OpenAI when you request AI presentation features.</li>
   </ul>
