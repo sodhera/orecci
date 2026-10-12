@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>How AI uses your data | Speaking Coach</title>
-    <meta name="description" content="Learn what Speaking Coach shares with ElevenLabs and OpenAI, why, and how to control your permission.">
+    <meta name="description" content="Learn what Speaking Coach shares with ElevenLabs, Google Gemini and OpenAI, why, and how to control your permission.">
     <link rel="canonical" href="https://www.orecci.com/ai-data-sharing.html">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -34,7 +34,7 @@
   <h3>Who receives the data</h3>
   <ul>
     <li><strong>ElevenLabs:</strong> live microphone audio and practice context, including attached CV, job post and interview-note text, to run your AI voice partner; recorded practice and answer audio to create transcripts. ElevenLabs operates the voice service using its service providers and subprocessors.</li>
-    <li><strong>OpenAI, through ElevenLabs:</strong> ElevenLabs sends conversation text and practice context, including CV, job post and interview-note text you provide, to OpenAI to generate your voice partner's replies, using a second OpenAI model if the first is unavailable. These are distinct from the OpenAI feedback requests described below.</li>
+    <li><strong>Google Gemini, through ElevenLabs:</strong> ElevenLabs sends conversation text and practice context, including CV, job post and interview-note text you provide, to Google Gemini to generate your voice partner's replies, using a second Gemini model if the first is unavailable. These are distinct from the OpenAI feedback requests described below.</li>
     <li><strong>OpenAI:</strong> transcripts, custom situation descriptions and practice context for evaluation and feedback; presentation slide text, title, audience, purpose, instructions, slide timings, questions, spoken-answer transcripts and presentation transcripts to generate questions and answer feedback. Speaking Coach sends this text through our backend. The current iOS app does not send raw microphone recordings directly to OpenAI.</li>
     <li><strong>Vercel and Supabase:</strong> our backend runs on Vercel and uses Supabase for authentication and stored account, practice transcript, report and activity data. Requests sent through our backend are processed by these infrastructure providers as needed to deliver the feature. PowerPoint files you import are uploaded to our backend for conversion to PDF; PDF slide text is extracted on your device and shared with OpenAI when you request AI presentation features.</li>
   </ul>
