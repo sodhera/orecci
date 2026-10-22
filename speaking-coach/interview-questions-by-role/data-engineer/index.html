@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data engineer interview questions and how to answer them | Speaking Coach</title>
+    <meta name="description" content="Data engineer interview questions on designing a pipeline aloud, data quality failures, batch vs streaming and working with analysts, with example answers.">
+    <link rel="canonical" href="https://www.orecci.com/speaking-coach/interview-questions-by-role/data-engineer/">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Data engineer interview questions and how to answer them | Speaking Coach">
+    <meta property="og:description" content="Data engineer interview questions on designing a pipeline aloud, data quality failures, batch vs streaming and working with analysts, with example answers.">
+    <meta property="og:url" content="https://www.orecci.com/speaking-coach/interview-questions-by-role/data-engineer/">
+    <meta property="og:image" content="https://www.orecci.com/app_logo_rounded.png">
+    <meta name="apple-itunes-app" content="app-id=6767124039">
+    <link rel="icon" href="/app_logo_rounded.png">
+    <link rel="alternate" type="text/markdown" href="/speaking-coach/interview-questions-by-role/data-engineer/index.md">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/speaking-coach/assets/sc.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.orecci.com/#sodhera","name":"Sodhera Intelligence","legalName":"Sodhera Intelligence Private Limited","url":"https://www.sodhera.com"},{"@type":"MobileApplication","@id":"https://www.orecci.com/speaking-coach/#app","name":"Speaking Coach","operatingSystem":"iOS, Android","applicationCategory":"EducationalApplication","publisher":{"@id":"https://www.orecci.com/#sodhera"},"installUrl":"https://apps.apple.com/app/id6767124039","sameAs":["https://apps.apple.com/app/id6767124039","https://play.google.com/store/apps/details?id=com.sodhera.speakingcoach"],"image":"https://www.orecci.com/app_logo_rounded.png"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Speaking Coach","item":"https://www.orecci.com/speaking-coach/"},{"@type":"ListItem","position":2,"name":"Questions by role","item":"https://www.orecci.com/speaking-coach/interview-questions-by-role/"},{"@type":"ListItem","position":3,"name":"Data engineer","item":"https://www.orecci.com/speaking-coach/interview-questions-by-role/data-engineer/"}]},{"@type":"Article","headline":"Data engineer interview questions and how to answer them","description":"Data engineer interview questions on designing a pipeline aloud, data quality failures, batch vs streaming and working with analysts, with example answers.","inLanguage":"en","dateModified":"2026-10-22","datePublished":"2026-10-22","author":{"@id":"https://www.orecci.com/#sodhera"},"publisher":{"@id":"https://www.orecci.com/#sodhera"},"mainEntityOfPage":"https://www.orecci.com/speaking-coach/interview-questions-by-role/data-engineer/","about":{"@id":"https://www.orecci.com/speaking-coach/#app"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much SQL will a data engineer interview include?","acceptedAnswer":{"@type":"Answer","text":"Usually a lot: joins, aggregations, window functions and debugging a query. Practice explaining your query out loud as you write it."}},{"@type":"Question","name":"Should I name specific tools in a design round?","acceptedAnswer":{"@type":"Answer","text":"Name them when it helps, with a reason. The interviewer cares more about the shape and trade-offs than the brand of each box."}},{"@type":"Question","name":"What's the best way to describe a pipeline I built?","acceptedAnswer":{"@type":"Answer","text":"Start with the business purpose, then the data volume and freshness, then the design and one problem you solved. Two minutes is enough before they ask questions."}},{"@type":"Question","name":"How do I explain a data issue to non-technical people?","acceptedAnswer":{"@type":"Answer","text":"Lead with what's wrong, what it affects and when it'll be fixed. Explain the cause in one sentence, without tool names."}}]}]}</script>
+  </head>
+  <body class="sc">
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="nav sc-nav" aria-label="Main navigation">
+          <a class="brand" href="/speaking-coach/">
+            <img class="brand-logo" src="/app_logo_rounded.png" alt="" width="36" height="36">
+            <span>Speaking Coach</span>
+          </a>
+          <div class="nav-links"><a href="/speaking-coach/interview-questions/">Interview questions</a><a href="/speaking-coach/speeches/">Speeches</a><a href="/speaking-coach/small-talk/">Small talk</a><a href="/speaking-coach/tools/">Free tools</a></div>
+          <label class="lang-pick"><span class="visually-hidden">Language</span>
+            <select onchange="location.href=this.value" aria-label="Language"><option value="/speaking-coach/interview-questions-by-role/data-engineer/" selected>English</option><option value="/speaking-coach/es/">Español</option><option value="/speaking-coach/fr/">Français</option><option value="/speaking-coach/de/">Deutsch</option><option value="/speaking-coach/it/">Italiano</option><option value="/speaking-coach/pt/">Português (Brasil)</option><option value="/speaking-coach/nl/">Nederlands</option><option value="/speaking-coach/pl/">Polski</option><option value="/speaking-coach/sv/">Svenska</option><option value="/speaking-coach/tr/">Türkçe</option><option value="/speaking-coach/ru/">Русский</option><option value="/speaking-coach/uk/">Українська</option><option value="/speaking-coach/hi/">हिन्दी</option><option value="/speaking-coach/ar/">العربية</option><option value="/speaking-coach/ja/">日本語</option><option value="/speaking-coach/ko/">한국어</option><option value="/speaking-coach/zh/">简体中文</option><option value="/speaking-coach/id/">Bahasa Indonesia</option><option value="/speaking-coach/fil/">Filipino</option><option value="/speaking-coach/vi/">Tiếng Việt</option></select>
+          </label>
+        </nav>
+      </header>
+      <main class="sc-main">
+        <article class="page">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="/speaking-coach/">Speaking Coach</a><span class="sep">›</span><a href="/speaking-coach/interview-questions-by-role/">Questions by role</a><span class="sep">›</span><span aria-current="page">Data engineer</span></nav>
+          <header class="page-head">
+            
+            <h1>Data engineer interview questions and how to answer them</h1>
+            <p class="byline">By the Speaking Coach team at Sodhera Intelligence · <time datetime="2026-10-22">Updated October 22, 2026</time></p>
+          </header>
+          <div class="answer"><p>Data engineer interviews ask you to design a pipeline out loud, describe a time bad data reached a dashboard, choose between batch and streaming for a real case, and explain how you work with analysts who depend on your tables. Start every answer from who uses the data and how fresh it must be, then name your choices and their trade-offs.</p></div>
+          
+          <aside class="cta" aria-label="Say it out loud before it counts">
+          <div>
+            <p class="cta-kicker">Practice it out loud</p>
+            <h2>Practice designing a pipeline out loud</h2>
+            <p>Speaking Coach gives you an AI partner who plays the other side, follows up on what you said, and shows you one thing to change. iPhone and Android, 20 languages.</p>
+            <p class="cta-prompt"><span>In the app or in ChatGPT, try:</span> “Interview me for a data engineer role. Ask me to design a pipeline that loads app events into a warehouse for daily reporting, then push me on failures, late data and cost.”</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button" href="https://apps.apple.com/app/id6767124039" rel="noopener">Get it on the App Store</a>
+            <a class="button secondary" href="https://play.google.com/store/apps/details?id=com.sodhera.speakingcoach" rel="noopener">Get it on Google Play</a>
+            <a class="button secondary" href="https://chatgpt.com/" rel="noopener">Free voice review in ChatGPT</a>
+            
+          </div>
+        </aside>
+          <div class="prose">
+<h2 id="what-data-engineering-interviews-look-for">What data engineering interviews look for</h2>
+<p>Most data engineering loops include SQL or coding, a pipeline or system design round, and behavioral questions. The design round is where people lose ground, because they start drawing tools before asking what the data is for. Interviewers want to hear you reason from the use case: who reads the data, how fresh it must be, what happens when it's wrong, and what it costs.</p>
+<h2 id="designing-a-pipeline-out-loud">Designing a pipeline out loud</h2>
+<p>&quot;Design a pipeline that gets app events into the warehouse.&quot; Use a steady order and say each step:</p>
+<ol><li><strong>Requirements:</strong> who uses it, for what, how fresh (daily, hourly, seconds), how much data, how long to keep it.</li><li><strong>Ingestion:</strong> how events arrive, and what happens if the source sends duplicates or arrives late.</li><li><strong>Storage layers:</strong> raw data kept as received, then cleaned, then modeled tables for analysts.</li><li><strong>Transformations:</strong> where they run, how they're tested, how they're scheduled.</li><li><strong>Reliability:</strong> reruns that don't double-count, alerts on failures and on suspicious volumes.</li><li><strong>Consumers:</strong> the tables analysts use, documentation, and who owns them.</li></ol>
+<div class="example"><p>Example line while designing: &quot;Since the requirement is a daily dashboard, I'd start with batch. I'd land raw events partitioned by date and never modify them, so we can always rebuild. The cleaned layer dedupes on event ID. Every job overwrites its date partition rather than appending, so if it fails halfway and reruns, we don't get double counts.&quot;</p></div>
+<p>That last point, safe reruns (idempotency), is one of the most common follow-ups. Say it before they ask.</p>
+<h2 id="data-quality-failures">Data quality failures</h2>
+<p>&quot;Tell me about a time bad data reached a dashboard.&quot; Interviewers want ownership, fast communication and a lasting fix.</p>
+<div class="example"><p>Example answer: &quot;Our weekly revenue dashboard showed a 20 percent jump one Monday. The sales team was about to celebrate. I traced it to an upstream change: the payments team started sending refunds as separate events, and our pipeline counted them as new orders. I posted in the analytics channel that the number was wrong before anyone presented it, fixed the logic and backfilled the week. Then I added a check that alerts if daily revenue moves more than a set amount from the last four weeks' average, and we agreed with the payments team to announce schema changes in advance.&quot;</p></div>
+<p>Name the checks you use: row counts, null and uniqueness checks on keys, freshness, and comparisons to known totals.</p>
+<h2 id="batch-vs-streaming">Batch vs streaming</h2>
+<p>&quot;When would you choose streaming?&quot; There's no single right answer. Show you choose by need and cost.</p>
+<div class="table-wrap"><table><thead><tr><th>Choose batch when</th><th>Choose streaming when</th></tr></thead><tbody><tr><td>Reports are read daily or hourly</td><td>Decisions happen in seconds, like fraud checks or live inventory</td></tr><tr><td>Correctness matters more than speed</td><td>A delay costs real money or harms users</td></tr><tr><td>The team is small and needs simplicity</td><td>You have people to run and monitor it all the time</td></tr><tr><td>Data arrives in files or exports</td><td>Data arrives as a constant flow of events</td></tr></tbody></table></div>
+<div class="example"><p>Example answer: &quot;I default to batch, because it's simpler to test, rerun and explain. On my last team, marketing asked for a real-time dashboard. When I asked what they'd do differently minute by minute, the answer was nothing; they checked it every morning. We moved the job to hourly, which was cheaper, and everyone was happy. For fraud scoring, I'd go to streaming, because a delayed decision is a lost payment.&quot;</p></div>
+<h2 id="working-with-analysts">Working with analysts</h2>
+<p>Analysts are your customers. &quot;An analyst says your numbers don't match finance's&quot; is a common scenario.</p>
+<div class="example"><p>Example answer: &quot;I'd sit with the analyst and compare one small slice, one day and one product, between the two numbers. Most mismatches come from definitions, like gross versus net, time zone, or when a refund counts. Once we find it, I'd write the agreed definition in the table documentation and tell everyone who uses it, so we don't have the same argument next month.&quot;</p></div>
+<p>Mention habits that build trust: documented tables, a clear owner for each, announcing changes, and asking analysts what questions they're trying to answer before building. The <a href="/speaking-coach/interview-questions-by-role/data-analyst/">data analyst questions</a> page shows the same relationship from their side.</p>
+<h2 id="how-to-practice">How to practice</h2>
+<p>Talk through one pipeline design out loud in about ten minutes, then have someone throw failures at it: &quot;The source sends the same file twice. Now what?&quot; Speaking Coach's interviewer follows up on what you actually said, which is good practice for those follow-ups. The <a href="/speaking-coach/interviews/technical-interview/">technical interview guide</a> covers thinking aloud in general.</p>
+          </div>
+          <section class="faq"><h2>Questions people ask</h2><details><summary>How much SQL will a data engineer interview include?</summary><p>Usually a lot: joins, aggregations, window functions and debugging a query. Practice explaining your query out loud as you write it.</p></details><details><summary>Should I name specific tools in a design round?</summary><p>Name them when it helps, with a reason. The interviewer cares more about the shape and trade-offs than the brand of each box.</p></details><details><summary>What's the best way to describe a pipeline I built?</summary><p>Start with the business purpose, then the data volume and freshness, then the design and one problem you solved. Two minutes is enough before they ask questions.</p></details><details><summary>How do I explain a data issue to non-technical people?</summary><p>Lead with what's wrong, what it affects and when it'll be fixed. Explain the cause in one sentence, without tool names.</p></details></section>
+          
+          <section class="related"><h2>Keep going</h2><ul class="card-list"><li><a href="/speaking-coach/interview-questions-by-role/data-analyst/"><strong>Data analyst interview questions and how to answer them</strong><span>Data analyst interview questions on walking through an analysis, explaining findings to non-technical managers, dirty data and SQL or Excel, answered out loud.</span></a></li><li><a href="/speaking-coach/interview-questions-by-role/data-scientist/"><strong>Data scientist interview questions and how to answer them</strong><span>What data scientist interviews ask out loud: explaining a model to non-experts, a failed project, choosing metrics and designing an experiment, with examples.</span></a></li><li><a href="/speaking-coach/interview-questions-by-role/machine-learning-engineer/"><strong>Machine learning engineer interview questions and example answers</strong><span>ML engineer interview questions on taking a model to production, monitoring drift, a project that failed and ML system design, with example answers.</span></a></li><li><a href="/speaking-coach/interviews/technical-interview/"><strong>How to prepare for a technical interview: thinking out loud</strong><span>In a technical interview your reasoning is scored as much as your answer. How to narrate your thinking, ask clarifying questions, handle silence and admit gaps.</span></a></li></ul></section>
+          
+        </article>
+      </main>
+      <footer class="site-footer sc-footer">
+        <div class="footer-inner">
+          <div class="footer-links"><a href="/speaking-coach/about/">About</a><a href="/speaking-coach/how-we-review/">How we review</a><a href="/speaking-coach/chatgpt/">Speaking Coach in ChatGPT</a><a href="/speakingcoach/">Privacy and terms</a><a href="/">orecci.com</a></div>
+          <p>Speaking Coach is made by Sodhera Intelligence. © 2026 Sodhera Intelligence Private Limited.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

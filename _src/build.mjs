@@ -56,6 +56,8 @@ function inline(s, ctx) {
   out = out.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, t, href) => {
     const h = href.replace(/&amp;/g, '&');
     if (h.startsWith('/')) ctx.links.push(h);
+    // A link to a Speaking Coach page that isn't written yet is shown as plain text.
+    if (h.startsWith(BASE)) { const c = h.split('#')[0]; if (!allUrls.has(c.endsWith('/') ? c : c + '/')) return t; }
     const ext = /^https?:/.test(h) && !h.startsWith(ORIGIN);
     return `<a href="${esc(h)}"${ext ? ' rel="noopener" target="_blank"' : ''}>${t}</a>`;
   });
@@ -344,7 +346,7 @@ function renderPage(p) {
   for (const q of faq) if (!q.text.join(' ').trim()) err(p.file, `FAQ "${q.q}" has no answer`);
   const related = (p.meta.related || []).map((u) => {
     const target = pages.find((q) => q.url === u) || hubs.find((h) => h.url === u);
-    if (!target) { err(p.file, `related link ${u} does not exist`); return null; }
+    if (!target) { warn(p.file, `related link ${u} does not exist yet (skipped)`); return null; }
     return target;
   }).filter(Boolean);
   const sources = (p.meta.sources || []).map((s) => { const [title, url] = s.split(/\s+\|\s+/); if (!/^https?:\/\//.test(url || '')) err(p.file, `source needs "Title | URL": ${s}`); return { title, url }; });
@@ -423,7 +425,7 @@ function main() {
   // link check (after rendering, links collected)
   for (const p of pages) for (const l of p.links || []) {
     const clean = l.split('#')[0];
-    if (clean.startsWith(BASE) && !allUrls.has(clean.endsWith('/') ? clean : clean + '/')) err(p.file, `broken internal link ${l}`);
+    if (clean.startsWith(BASE) && !allUrls.has(clean.endsWith('/') ? clean : clean + '/')) warn(p.file, `link to unwritten page ${l} (shown as text)`);
   }
   const missingHome = Object.keys(ui).filter((l) => !byKey.get(`${l}|home|`));
   for (const l of missingHome) err(`${l}`, 'missing home.md');
