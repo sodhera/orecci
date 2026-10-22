@@ -583,13 +583,13 @@ Speaking Coach is an iPhone and Android app by Sodhera Intelligence (https://app
 
 - [Español](https://www.orecci.com/speaking-coach/es/): 59 pages
 - [Français](https://www.orecci.com/speaking-coach/fr/): 59 pages
-- [Deutsch](https://www.orecci.com/speaking-coach/de/): 43 pages
+- [Deutsch](https://www.orecci.com/speaking-coach/de/): 59 pages
 - [Italiano](https://www.orecci.com/speaking-coach/it/): 59 pages
 - [Português (Brasil)](https://www.orecci.com/speaking-coach/pt/): 59 pages
-- [Nederlands](https://www.orecci.com/speaking-coach/nl/): 55 pages
-- [Polski](https://www.orecci.com/speaking-coach/pl/): 17 pages
-- [Svenska](https://www.orecci.com/speaking-coach/sv/): 9 pages
-- [Türkçe](https://www.orecci.com/speaking-coach/tr/): 9 pages
+- [Nederlands](https://www.orecci.com/speaking-coach/nl/): 59 pages
+- [Polski](https://www.orecci.com/speaking-coach/pl/): 54 pages
+- [Svenska](https://www.orecci.com/speaking-coach/sv/): 47 pages
+- [Türkçe](https://www.orecci.com/speaking-coach/tr/): 30 pages
 - [Русский](https://www.orecci.com/speaking-coach/ru/): 9 pages
 - [Українська](https://www.orecci.com/speaking-coach/uk/): 9 pages
 - [हिन्दी](https://www.orecci.com/speaking-coach/hi/): 9 pages
