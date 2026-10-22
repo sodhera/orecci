@@ -463,6 +463,14 @@ function main() {
   ];
   const sm = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.map((e) => `  <url><loc>${ORIGIN}${e.loc}</loc>${e.lastmod ? `<lastmod>${e.lastmod}</lastmod>` : ''}${(e.alts || []).length > 1 ? e.alts.map(([l, u]) => `<xhtml:link rel="alternate" hreflang="${HREFLANG[l] || l}" href="${ORIGIN}${u}"/>`).join('') : ''}</url>`).join('\n')}\n</urlset>\n`;
   write('sitemap.xml', sm);
+  // Redirects for removed or merged pages: _src/redirects.json = [{ "from": "/speaking-coach/...", "to": "/speaking-coach/..." }].
+  const redirectsFile = path.join(SRC, 'redirects.json');
+  const redirects = fs.existsSync(redirectsFile) ? JSON.parse(fs.readFileSync(redirectsFile, 'utf8')) : [];
+  for (const r of redirects) {
+    if (allUrls.has(r.from)) console.error(`ERROR redirect from ${r.from} but that page still exists`);
+    if (!allUrls.has(r.to)) console.error(`ERROR redirect to ${r.to} which does not exist`);
+  }
+  if (redirects.length) write('vercel.json', JSON.stringify({ redirects: redirects.map((r) => ({ source: r.from.replace(/\/$/, ''), destination: r.to, permanent: true })).concat(redirects.map((r) => ({ source: r.from, destination: r.to, permanent: true }))) }, null, 2) + '\n');
   write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
 
   const en = pages.filter((p) => p.lang === 'en');
