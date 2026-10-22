@@ -1,0 +1,143 @@
+{
+  "language_name": "한국어",
+  "one_line": "Speaking Coach: 면접, 발표와 연설, 스몰토크를 AI 파트너와 소리 내어 연습하세요. 20개 언어 지원.",
+  "main_nav": "주요 메뉴",
+  "language": "언어",
+  "home_crumb": "Speaking Coach",
+  "byline": "Sodhera Intelligence의 Speaking Coach 팀 작성",
+  "updated": "업데이트",
+  "faq_heading": "자주 묻는 질문",
+  "related": "함께 읽어 보세요",
+  "sources": "출처",
+  "see_all": "전체 보기",
+  "privacy_terms": "개인정보 처리방침 및 약관",
+  "footer_line": "Speaking Coach는 Sodhera Intelligence가 만듭니다.",
+  "fillers": [
+    "음",
+    "어",
+    "아",
+    "에",
+    "저기",
+    "그러니까",
+    "그니까",
+    "뭐",
+    "뭐랄까",
+    "막",
+    "약간",
+    "이제",
+    "좀",
+    "그냥",
+    "일단"
+  ],
+  "cta": {
+    "kicker": "소리 내어 연습하기",
+    "heading": "실전 전에 먼저 소리 내어 말해 보세요",
+    "body": "Speaking Coach에서는 AI 파트너가 상대 역할을 맡아, 방금 한 말에 꼬리 질문을 던지고 바꿀 점 하나를 짚어 줍니다. iPhone과 Android, 한국어를 포함한 20개 언어.",
+    "try_saying": "앱에서 이렇게 말해 보세요:",
+    "default_prompt": "이걸 소리 내어 연습하게 도와줘.",
+    "app_store": "App Store에서 받기",
+    "google_play": "Google Play에서 받기",
+    "chatgpt": "ChatGPT에서 무료 음성 리뷰",
+    "chatgpt_english_only": "ChatGPT 버전은 영어로만 이용할 수 있어요."
+  },
+  "sections": {
+    "tools": {
+      "nav": "무료 도구",
+      "title": "무료 말하기 도구",
+      "intro": "말하기 속도를 재고, 군말을 세고, 발표 시간을 계산하고, 면접 답변을 소리 내어 연습해 보세요. 브라우저에서 바로 쓰고 가입은 필요 없어요."
+    },
+    "interview-questions": {
+      "nav": "면접 질문",
+      "title": "자주 나오는 면접 질문과 답변 방법",
+      "intro": "면접관이 그 질문으로 무엇을 확인하려는지, 경력별 예시 답변, 피해야 할 실수, 그리고 답변을 소리 내어 연습하는 방법을 정리했어요."
+    },
+    "interview-questions-by-role": {
+      "nav": "직무별 질문",
+      "title": "직무별 면접 질문",
+      "intro": "직무별로 자주 나오는 질문, 좋은 답변의 조건, 면접 전에 소리 내어 연습하는 방법을 모았어요."
+    },
+    "interviews": {
+      "nav": "면접 유형",
+      "title": "면접 유형별 준비 방법",
+      "intro": "전화 면접, 화상 면접, 다대다 면접, 케이스 면접 등 유형마다 어떻게 진행되고 어떻게 준비하면 되는지 알려 드려요."
+    },
+    "speeches": {
+      "nav": "연설·축사",
+      "title": "연설과 축사",
+      "intro": "결혼식 축사, 송별사, 추도사, 졸업 연설처럼 부담스러운 자리의 말하기를 구성, 길이, 예시 문장, 피할 점까지 정리했어요."
+    },
+    "presentations": {
+      "nav": "발표",
+      "title": "발표와 피칭",
+      "intro": "발표를 어떻게 구성할지, 부분마다 몇 분을 쓸지, 청중이 어떤 질문을 할지 미리 준비해 보세요."
+    },
+    "small-talk": {
+      "nav": "스몰토크",
+      "title": "스몰토크와 일상 대화",
+      "intro": "네트워킹 행사, 새 직장, 아는 사람 없는 모임처럼 어색한 자리에서 쓸 첫마디, 꼬리 질문, 자연스럽게 마무리하는 말을 모았어요."
+    },
+    "guides": {
+      "nav": "말하기 가이드",
+      "title": "말하기 실력 가이드",
+      "intro": "군말, 말하기 속도, 쉬어 가기, 긴장, 이야기 구성, 답변 구조를 쉽게 설명하고 바로 연습할 거리를 드려요."
+    },
+    "compare": {
+      "nav": "비교",
+      "title": "Speaking Coach 비교",
+      "intro": "Speaking Coach를 다른 말하기·면접 연습 도구와 비교하고, 어떤 필요에 어떤 도구가 맞는지 정리했어요."
+    },
+    "best": {
+      "nav": "추천",
+      "title": "말하기·면접 연습 앱 추천",
+      "intro": "필요별로 정직하게 골랐어요. Speaking Coach는 저희가 만든 앱이라서, 어디에 맞고 어디서는 다른 도구가 더 나은지 함께 적었어요."
+    },
+    "glossary": {
+      "nav": "용어 사전",
+      "title": "말하기·면접 용어 사전",
+      "intro": "말하기와 면접을 준비하면서 마주치는 용어를 예시와 함께 짧고 쉽게 풀이했어요."
+    },
+    "pages": {
+      "nav": "소개",
+      "title": "Speaking Coach 소개",
+      "intro": "Speaking Coach를 누가 만들고, 어떤 방식으로 피드백을 주는지 소개해요."
+    }
+  },
+  "tool": {
+    "noscript": "이 도구를 쓰려면 JavaScript가 필요해요.",
+    "start": "말하기 시작",
+    "stop": "멈추기",
+    "again": "다시 하기",
+    "listening": "듣고 있어요… 지금 말해 보세요.",
+    "unsupported": "이 브라우저는 음성을 텍스트로 바꿀 수 없어요. 아래에 말한 내용을 붙여 넣거나 Chrome, Edge, Safari를 써 보세요.",
+    "privacy": "음성을 텍스트로 바꾸는 일은 브라우저가 해요. Chrome과 Edge는 Google이나 Microsoft의 음성 서비스를, Safari는 Apple의 서비스를 써요. Speaking Coach로는 아무것도 전송되지 않아요.",
+    "paste_label": "또는 말한 내용 붙여 넣기",
+    "paste_button": "이 텍스트 확인하기",
+    "minutes_label": "걸린 시간(분)",
+    "words_label": "단어 수(띄어쓰기 기준)",
+    "wpm": "단어/분",
+    "pace": "속도",
+    "fillers": "군말",
+    "pauses": "긴 멈춤",
+    "duration": "시간",
+    "words": "단어",
+    "transcript": "인식된 내용",
+    "no_fillers": "군말이 발견되지 않았어요.",
+    "slow": "느림",
+    "average": "보통",
+    "fast": "빠름",
+    "pace_slow": "느린 편으로 나왔어요. 한국어는 띄어쓰기 단위로 세기 때문에 영어 기준보다 숫자가 낮게 나오기 쉬워요. 편하게 대화할 때 잰 숫자와 비교해 보세요.",
+    "pace_good": "대부분의 청중이 편하게 따라올 수 있는 속도예요.",
+    "pace_fast": "빠른 편이에요. 핵심을 하나 말할 때마다 짧게 한 번 쉬어 보세요.",
+    "length_words": "원고의 단어 수(띄어쓰기 기준)",
+    "length_minutes": "주어진 시간(분)",
+    "length_result_minutes": "예상 시간",
+    "length_result_words": "들어갈 단어 수",
+    "role_label": "직무",
+    "role_placeholder": "직무를 입력하세요. 예: 간호사",
+    "role_none": "찾는 직무가 없어요. 더 넓은 말로 찾아보거나 전체 직무 목록을 둘러보세요.",
+    "role_open": "전체 가이드 보기",
+    "prompt_label": "질문",
+    "next_prompt": "다른 질문",
+    "next_step": "내가 한 말을 인용한 피드백과, 말을 받아 주는 대화 상대가 필요하다면 Speaking Coach를 써 보세요."
+  }
+}
