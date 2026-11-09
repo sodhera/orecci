@@ -36,15 +36,16 @@
           <article class="legal-document">
 
             <h1>User Data Deletion</h1>
-            <p class="meta-info"><strong>GymBlock</strong><br><strong>Effective Date:</strong> October 8, 2026<br><strong>Last Updated:</strong> October 8, 2026</p>
+            <p class="meta-info"><strong>GymBlock</strong><br><strong>Effective Date:</strong> October 8, 2026<br><strong>Last Updated:</strong> November 9, 2026</p>
             <p>This page explains how to delete your GymBlock account and the data linked to it, what is deleted, and how long it takes. GymBlock is operated by Sodhera Intelligence Private Limited ("<strong>Sodhera</strong>," "<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>").</p>
             <hr>
             <h2>1. Delete Your Account in the App</h2>
-            <ol><li>Open GymBlock and go to <strong>Settings</strong>.</li><li>Tap <strong>Delete account</strong>.</li><li>Confirm the deletion.</li></ol>
+            <ol><li>Open GymBlock and go to <strong>Settings</strong>.</li><li>Tap <strong>Delete account</strong>.</li><li>Type <strong>DELETE</strong> to confirm.</li></ol>
             <p>Deletion takes effect <strong>immediately</strong>. The App deletes your account and all of its data from our database, signs you out, and wipes the local copy of your data from that iPhone. You do not need to wait for a subscription to expire, and you do not need to contact us.</p>
             <hr>
             <h2>2. Request Deletion by Email</h2>
             <p>If you can no longer open the App, or you prefer to make the request in writing, email <strong>admin@sodhera.com</strong> from the email address linked to your account (for Sign in with Apple with Hide My Email, this is your private relay address, which still forwards to you). Tell us that you want your GymBlock account deleted. We may ask you to confirm the request from that address. We process email deletion requests within 30 days, and usually much sooner.</p>
+            <p>An account you never saved with Apple or Google has no email address we could check, so delete it in the App. If you can no longer open it, it is deleted automatically after 30 days unused if it has no finished workout; otherwise email us, and we will help where we can verify that the account is yours.</p>
             <hr>
             <h2>3. What Is Deleted</h2>
             <p>Deleting your account removes everything linked to it from our systems:</p>
@@ -56,8 +57,11 @@
             <tr><td>Onboarding answers and pledge</td><td>Yes</td></tr>
             <tr><td>Splits</td><td>Yes</td></tr>
             <tr><td>Workouts and every logged set</td><td>Yes</td></tr>
-            <tr><td>Device records and install IDs linked to the account</td><td>Yes</td></tr>
-            <tr><td>Product analytics events linked to the account</td><td>Yes</td></tr>
+            <tr><td>GymBuddy code, connections, nudges, and push messages</td><td>Yes; your friends stop seeing you</td></tr>
+            <tr><td>Push tokens</td><td>Yes</td></tr>
+            <tr><td>Device records (device model, versions, install ID)</td><td>Kept without your account ID</td></tr>
+            <tr><td>Product analytics events in our database</td><td>Kept without your account ID (they keep the random install ID)</td></tr>
+            <tr><td>Product analytics events in PostHog</td><td>Deleted within 30 days when you email us</td></tr>
             <tr><td>Subscription status snapshot</td><td>Yes</td></tr>
             <tr><td>Local copy on the iPhone where you deleted the account</td><td>Yes, wiped by the App</td></tr>
             <tr><td>Encrypted database backups</td><td>Roll off within 30 days</td></tr>
@@ -67,7 +71,7 @@
             <p>If the App was installed on another iPhone without having synced the deletion, uninstall it there to remove the local copy.</p>
             <hr>
             <h2>4. Log Out Is Not Deletion</h2>
-            <p><strong>Log out</strong> only ends your session on that iPhone. Your account and all of its data remain, and the local copy stays on the device, so you can sign in again. Uninstalling the App does not delete your account either. To erase your data, use <strong>Delete account</strong> or email us.</p>
+            <p><strong>Log out</strong> ends your session on that iPhone and clears the copy on it. Your account and all of its data remain, and come back when you sign in again. An account you never saved with Apple or Google cannot be signed in to again, so the App asks you to save it before you log out. Uninstalling the App does not delete your account either. To erase your data, use <strong>Delete account</strong> or email us.</p>
             <hr>
             <h2>5. Cancel Your Subscription Separately</h2>
             <p>Deleting your account or uninstalling the App does <strong>not</strong> cancel a GymBlock Pro subscription. Subscriptions are billed and managed by Apple:</p>
@@ -84,7 +88,7 @@
 
       <footer class="site-footer">
         <div class="site-footer-inner">
-          Last updated October 08, 2026
+          Last updated November 9, 2026
         </div>
       </footer>
     </div>
