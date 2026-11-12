@@ -2,7 +2,7 @@
 
 **GymBlock**
 **Effective Date:** October 8, 2026
-**Last Updated:** November 9, 2026
+**Last Updated:** November 12, 2026
 
 This page explains how to delete your GymBlock account and the data linked to it, what is deleted, and how long it takes. GymBlock is operated by Sodhera Intelligence Private Limited ("**Sodhera**," "**we**," "**us**," or "**our**").
 
@@ -39,6 +39,7 @@ Deleting your account removes everything linked to it from our systems:
 | Workouts and every logged set | Yes |
 | GymBuddy code, connections, nudges, and push messages | Yes; your friends stop seeing you |
 | Push tokens | Yes |
+| Feature requests and comments you posted, your votes, reports, and hides | Yes; they leave the board |
 | Device records (device model, versions, install ID) | Kept without your account ID |
 | Product analytics events in our database | Kept without your account ID (they keep the random install ID) |
 | Product analytics events in PostHog | Deleted within 30 days when you email us |

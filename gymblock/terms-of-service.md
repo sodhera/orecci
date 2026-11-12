@@ -2,7 +2,7 @@
 
 **GymBlock**
 **Effective Date:** October 8, 2026
-**Last Updated:** November 9, 2026
+**Last Updated:** November 12, 2026
 
 Please read these Terms of Service ("**Terms**") carefully before using the GymBlock application for iPhone (the "**App**") operated by Sodhera Intelligence Private Limited ("**Sodhera**," "**we**," "**us**," or "**our**"), Satdobato, Lalitpur, Bagmati Province 44700, Nepal.
 
@@ -156,6 +156,12 @@ The App keeps a copy of your data on your iPhone and syncs it to your account. S
 ### 7.5 GymBuddy
 
 GymBuddy is optional and starts only when you or a friend enters the other's code. Your friends see your first name, the days you finished workouts in the last ten weeks, your last workout's name and time, and your streak, and may get push notifications when you finish a workout or nudge them, as described in Section 1.6 of the [Privacy Policy](privacy-policy.md). Connect only with people you are happy to share that with. You can remove a friend at any time. You agree not to use nudges or GymBuddy to harass anyone, and not to create accounts or share codes in bulk to collect the gift in Section 6.7.
+
+### 7.6 Feature Requests
+
+The feature board (Settings → Help → Request a feature) is public to every GymBlock user: what you post there is shown with your first name, as described in Section 1.7 of the [Privacy Policy](privacy-policy.md). We have **no tolerance for objectionable content or abusive users**. You agree not to post anything that is unlawful, hateful, harassing, threatening, sexually explicit, violent, defamatory, or misleading; that shares anyone's personal information; that infringes anyone's rights; or that is spam or advertising. Use Report on anything that breaks these rules and Hide this person to stop seeing someone's posts. We review reports and may remove any post and stop any account from posting or commenting, with or without notice. You can delete your own posts at any time.
+
+Suggestions are welcome but voluntary: by posting one, you agree that we may use it, or build something like it, without any obligation or payment to you, and a request with many votes is not a promise that we will build it.
 
 ---
 
