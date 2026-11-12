@@ -204,7 +204,7 @@ We may disclose personal data if required by law, court order, or a lawful reque
 
 ## 7. Subscriptions and Payment Data
 
-Using GymBlock requires GymBlock Pro, an auto-renewing subscription offered weekly, monthly, or yearly; new subscribers may get a free trial on the yearly plan. Prices are set in your local currency through Apple and shown in the App before you buy. All payments are processed by **Apple** through the App Store under your Apple Account. We never receive or store your payment card details. Apple and RevenueCat provide us with transaction identifiers, the product purchased, and the subscription's status and expiry, which we keep as your subscription status snapshot. Cancellation and refunds are handled by Apple: open iOS Settings → Apple Account → Subscriptions, or see our [Terms of Service](terms-of-service.md).
+GymBlock is free to use. Since November 12, 2026, the App no longer offers GymBlock Pro, the auto-renewing subscription (weekly, monthly, or yearly, with a free trial on the yearly plan) that it used to require; subscriptions bought before then continue until you cancel them, and Settings still shows your plan. All payments are processed by **Apple** through the App Store under your Apple Account. We never receive or store your payment card details. Apple and RevenueCat provide us with transaction identifiers, the product purchased, and the subscription's status and expiry, which we keep as your subscription status snapshot. Cancellation and refunds are handled by Apple: open iOS Settings → Apple Account → Subscriptions, or see our [Terms of Service](terms-of-service.md).
 
 ---
 

@@ -33,7 +33,10 @@ GymBlock is a strength-training companion that provides:
 - **Lock Screen Live Activity** showing the current rest or set during a workout.
 - **GymBuddy:** connecting with friends by code to see each other's workout weeks and streaks, nudge each other, and get push notifications about each other's workouts. See Section 7.5.
 - **Streak card** that you can save to Photos or share to apps you choose.
-- **Account sync** between your iPhone and your account, and the **GymBlock Pro** subscription that using the App requires (Section 6).
+- **Account sync** between your iPhone and your account.
+- **Feature board:** suggesting features and voting and commenting on what others suggest. See Section 7.6.
+
+Since November 12, 2026, GymBlock is free to use. Existing **GymBlock Pro** subscriptions continue under Section 6 until you cancel them.
 
 We may change features over time as described in Section 11.
 
@@ -105,9 +108,9 @@ We may suspend or terminate your account, with or without notice, if you breach 
 
 ### 6.1 GymBlock Pro
 
-Using GymBlock requires **GymBlock Pro**, an auto-renewing subscription offered **weekly, monthly, or yearly**. Prices are set in your local currency through Apple, and the plans and prices that apply to you are those shown on the subscription screen in the App at the time of purchase.
+GymBlock is free to use; since November 12, 2026, the App does not offer **GymBlock Pro** to new subscribers and nothing in it requires Pro. If you subscribed before then, your auto-renewing subscription (weekly, monthly, or yearly) continues and renews until you cancel it (Section 6.4), and the rest of this Section 6 applies to it. We may offer Pro or other paid features again; if we do, the plans and prices that apply are those shown in the App at the time of purchase.
 
-**Free trial.** New subscribers may be offered a free trial on the yearly plan, as shown on the subscription screen. Each Apple Account can use the trial once. Unless you cancel at least 24 hours before the trial ends, the yearly subscription starts automatically at the end of the trial and your Apple Account is charged.
+**Free trial.** Subscribers before November 12, 2026 may have been offered a free trial on the yearly plan. Each Apple Account can use the trial once. Unless you cancel at least 24 hours before the trial ends, the yearly subscription starts automatically at the end of the trial and your Apple Account is charged.
 
 ### 6.2 Billing Through Apple
 
