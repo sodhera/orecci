@@ -1,43 +1,77 @@
 ---
-title: "What is an icebreaker? Definition and examples for meetings"
-description: "What an icebreaker is, example questions for team meetings, workshops, events and video calls, and what makes an icebreaker work or fall flat."
-answer: "An icebreaker is a short question or activity at the start of a meeting, workshop or event that gets people talking and makes the room feel less stiff. A good one takes 15 to 60 seconds per person, is easy for everyone to answer and doesn't push anyone to share something personal."
+title: "Icebreaker: Meaning, Definition and Example Questions"
+description: "An icebreaker is a short question or activity that gets people talking. See example questions and activities for meetings, classes, parties and first dates."
+answer: "An icebreaker (also written ice breaker) is a short question, activity or remark that gets people who don't know each other well talking, so the first minutes feel less stiff. It is used at the start of meetings, classes, parties and dates. A good one takes under a minute per person, is easy for anyone to answer and doesn't push anyone to share something personal."
 breadcrumb: "Icebreaker"
-updated: 2026-10-22
+updated: 2026-11-16
+published: 2026-10-22
 practice_heading: "Practice opening a meeting out loud"
 practice_prompt: "I'm opening a workshop for twelve new coworkers. Let me practise my welcome and icebreaker question."
 related:
-  - /speaking-coach/presentations/training-session/
-  - /speaking-coach/presentations/project-kickoff/
-  - /speaking-coach/small-talk/video-call-small-talk/
   - /speaking-coach/speeches/icebreaker-speech/
+  - /speaking-coach/small-talk/how-to-start-a-conversation/
+  - /speaking-coach/presentations/training-session/
+  - /speaking-coach/small-talk/first-date-conversation/
+  - /speaking-coach/small-talk/video-call-small-talk/
+sources:
+  - icebreaker (Wiktionary) | https://en.wiktionary.org/wiki/icebreaker
 ---
+## What icebreaker means
+
+The word comes from the phrase "to break the ice": to get past the awkward quiet when people first meet. An icebreaker is whatever does that job. It can be a question to the whole room, a short group activity, or one opening line to one person.
+
 ## Example icebreaker questions
+
+These are example questions. Pick one that fits the room and answer it first yourself.
 
 ### For team meetings (a quick round, 15–30 seconds each)
 
 - "What's one thing that went well for you this week?"
 - "What are you most looking forward to this month, at work or not?"
 - "One word for how this week is going?"
+- "What's the best thing you ate this week?"
 
-### For workshops and training
+### For classes and workshops
 
 - "What's one thing you'd like to be able to do by the end of today?"
 - "What's the most useful tip anyone ever gave you about this topic?"
 - "Where are you on this, from 'never done it' to 'could teach it'?"
+- "What could you talk about for five minutes with no notes?"
 
-### For events and networking
+### For parties and events
 
+- "How do you know the host?"
 - "What brought you here today?"
-- "Which session are you most curious about?"
-- "What's something you're working on that you'd like advice on?"
+- "What's keeping you busy outside work at the moment?"
+- "What's the best thing you've watched or read lately?"
+
+More first lines for a [party where you know no one](/speaking-coach/small-talk/party-where-you-know-no-one/).
+
+### For first dates
+
+- "What's been the best part of your week?"
+- "What do you do with a completely free day?"
+- "Where's a place you'd happily go back to?"
+- "What food could you eat every week and never get bored of?"
+
+See [what to talk about on a first date](/speaking-coach/small-talk/first-date-conversation/) for where to take it next.
 
 ### For video calls
 
 - "Where are you dialling in from today?"
 - "What's one thing within arm's reach that has a story?"
 
-## What works and what falls flat
+## Example icebreaker activities
+
+| Activity | How it works | Best for | Time |
+| --- | --- | --- | --- |
+| One-word check-in | Everyone gives one word for how their week is going | Regular team meetings, video calls | 10 seconds each |
+| Two truths and a lie | Each person says three things about themselves; the group guesses the false one | Groups of four to eight who will work together | 1 minute each |
+| Pair introductions | Pairs talk for two minutes each way, then each person introduces their partner | Classes and workshops | 5–10 minutes |
+| Three things in common | Groups of three find three things they all share, beyond the obvious | Large rooms and events | 5 minutes |
+| Line up | People line up by birthday month or by distance travelled that day | Groups that have been sitting a long time | 3 minutes |
+
+## What makes an icebreaker work
 
 | Works | Falls flat |
 | --- | --- |
@@ -47,11 +81,21 @@ related:
 | The host answers first, to set the length | Asking the quietest person to go first |
 | An easy option to pass | Making everyone stand up and perform |
 
-## Icebreaker or icebreaker speech?
+With one person, the same rules hold: ask something easy and [open-ended](/speaking-coach/glossary/open-ended-question/), then follow up on the answer instead of moving to your next question.
+
+## Icebreaker or Ice Breaker speech?
 
 In Toastmasters, the first prepared speech a new member gives is called the Ice Breaker: a short talk introducing yourself. That's a different thing; see [how to give your Ice Breaker speech](/speaking-coach/speeches/icebreaker-speech/).
 
 ## Questions people ask
+
+### What does icebreaker mean?
+
+A question, activity or remark that helps people who have just met start talking. It "breaks the ice": the stiffness at the start.
+
+### What is an example of an icebreaker?
+
+"What brought you here today?" at an event, or a round of "one word for how your week is going" at a team meeting.
 
 ### What is a good icebreaker question for work?
 
@@ -61,10 +105,10 @@ One that's quick, positive and not too personal, such as "What's one thing that 
 
 For a regular meeting, five minutes or less in total. For a full-day workshop, 10 to 15 minutes is reasonable.
 
-### Do people actually like icebreakers?
-
-Many don't like long or personal ones. Short, relevant questions with a way to pass tend to land better.
-
 ### What is a quick icebreaker for a large group?
 
 Ask a show-of-hands question, or have people answer in pairs for two minutes instead of going round the whole room.
+
+### Is it icebreaker or ice breaker?
+
+You'll see icebreaker, ice breaker and ice-breaker. They mean the same thing.

@@ -1,9 +1,10 @@
 ---
-title: "Practice interview answers out loud: free answer check"
-description: "Answer 12 classic interview questions out loud and see your pace, filler words, long pauses and transcript. Free, in your browser, no sign-up."
+title: "Free mock interview practice: answer questions out loud"
+description: "A free mock interview you run yourself: answer 12 classic questions out loud and see your pace, filler words, long pauses and transcript. No sign-up."
 answer: "Pick a question, press start, answer it out loud as if the interviewer were in front of you, then press stop. You see how long you spoke, your words per minute, your filler words, your long pauses and a transcript to reread. It is free and runs in your browser; it measures delivery and does not grade the content of your answer."
 breadcrumb: "Interview answer check"
-updated: 2026-10-22
+updated: 2026-11-16
+published: 2026-10-22
 order: 5
 tool: speech-checker
 tool_prompts:

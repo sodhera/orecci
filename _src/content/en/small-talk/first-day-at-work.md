@@ -1,9 +1,10 @@
 ---
-title: "What to Say on Your First Day at a New Job: Introductions"
-description: "What to say on your first day at a new job: a 10-second introduction, lines for your team, your manager and lunch, questions to ask, and how to remember names."
+title: "First Day at Work: How to Introduce Yourself and What to Ask"
+description: "What to say on your first day at a new job: a 10-second introduction, lines for your team and manager, questions to ask coworkers, and how to remember names."
 answer: "On your first day, use one short introduction everywhere: your name, your role, and one personal detail, followed by a question about them. For example: 'Hi, I'm Sara, the new account manager. I've just moved from Bristol. How long have you been on the team?' Then listen more than you talk, and write names down."
 breadcrumb: "First day at work"
-updated: 2026-10-22
+updated: 2026-11-16
+published: 2026-10-22
 order: 11
 practice_heading: "Practice your first-day introduction"
 practice_prompt: "Play a coworker who sits next to me on my first day as a junior designer. Let me introduce myself and ask a few questions."

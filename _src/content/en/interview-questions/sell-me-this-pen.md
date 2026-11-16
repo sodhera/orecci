@@ -1,9 +1,10 @@
 ---
-title: "Sell me this pen: how to answer the sales interview question"
-description: "How to answer 'Sell me this pen' in a sales interview: ask questions first, pitch to the need you uncover, handle one objection and ask for the sale."
+title: "Sell me this pen: best answer, with an example script"
+description: "How to answer 'Sell me this pen' in an interview: ask first, pitch to the need, handle one objection, ask for the sale. With a full example dialogue."
 answer: "Don't start by describing the pen. Ask the interviewer two or three questions about how and when they use a pen, find a need, then pitch the pen as the answer to that need, handle any objection, and ask for the sale. The exercise tests whether you sell by listening and closing, not whether you can list features."
 breadcrumb: "Sell me this pen"
-updated: 2026-10-22
+updated: 2026-11-16
+published: 2026-10-22
 practice_heading: "Run the pen exercise with a buyer who pushes back"
 practice_prompt: "Play an interviewer for a sales job. Hand me a pen, say 'Sell me this pen', and act like a buyer with one real objection."
 related:

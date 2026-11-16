@@ -1,9 +1,10 @@
 ---
-title: "What is signposting in a presentation? Definition and examples"
-description: "Signposting means using short phrases that tell listeners where you are in a talk. See a list of example signposts for previewing, moving on, contrasting and closing."
-answer: "Signposting means using short phrases that tell listeners where you are in a talk: what's coming, when you move on and when you're wrapping up. Examples include \"I'll cover three things\", \"That brings me to the second point\" and \"To sum up\". It matters more in speech than in writing because listeners can't scroll back."
+title: "Signposting in a Presentation: Meaning, Phrases and Examples"
+description: "Signposting means telling listeners where you are in a talk. See 36 example phrases grouped by job, from opening to handling questions, plus a worked example."
+answer: "Signposting is using short phrases that tell listeners where you are in a speech or presentation: what is coming, when you move on and when you are wrapping up. Examples include \"I'll cover three things\", \"That brings me to the second point\" and \"To sum up\". It matters more in speech than in writing because listeners can't look back up the page."
 breadcrumb: "Signposting"
-updated: 2026-10-22
+updated: 2026-11-16
+published: 2026-10-22
 practice_heading: "Practise moving between points out loud"
 practice_prompt: "Listen to my three-minute presentation and then ask me what my second point was, as if you got lost."
 related:
@@ -11,33 +12,43 @@ related:
   - /speaking-coach/guides/how-to-end-a-presentation/
   - /speaking-coach/glossary/rule-of-three/
   - /speaking-coach/glossary/speaker-notes/
+  - /speaking-coach/guides/how-to-handle-q-and-a/
 ---
-## Definition
+## What signposting means
 
-A reader sees headings, paragraphs and page numbers. A listener has none of that. Signposts are the spoken version: short phrases that announce structure, so the audience always knows which part of the talk they're in and how much is left.
+A reader sees headings, paragraphs and page numbers. A listener has none of that. Signposts are the spoken version: short phrases that announce the structure, so the audience always knows which part of the talk they are in and how much is left.
 
-## Example signposts
+## Signposting phrases, grouped by job
 
 | Job | Example phrases |
 | --- | --- |
-| Preview the talk | "I'll cover three things: the problem, two options and my recommendation." |
-| Start a section | "Let's start with the problem." |
-| Move on | "That brings me to the second point." / "Now let's look at cost." |
-| Add | "There's one more reason." / "On top of that…" |
-| Contrast | "On the other hand…" / "That's the theory. Here's what actually happened." |
-| Give an example | "Here's an example." / "To make that concrete…" |
-| Go back | "Remember the number from the start? Here's why it matters." |
-| Summarise | "So, to sum up the first half…" |
-| Close | "To finish…" / "One last thing before questions." |
-| Open questions | "I'll take questions now. Who'd like to start?" |
+| Opening | "I'll cover three things: the problem, two options and my recommendation." / "By the end, you'll know what we're changing and why." / "This will take ten minutes." / "Let's start with the problem." |
+| Moving on | "That brings me to the second point." / "Now let's look at cost." / "So that's the background. Next: what we found." / "Let's turn to timing." |
+| Listing | "There are three reasons for this." / "First…" / "Second…" / "And finally…" |
+| Giving an example | "Here's an example." / "To make that concrete…" / "Let me show you what that looks like." / "Take last month's launch." |
+| Contrasting | "On the other hand…" / "That's the theory. Here's what actually happened." / "That's the good news. Now the risk." / "Compare that with last year." |
+| Emphasising | "If you remember one thing, remember this." / "This is the key number." / "I want to stress this point." / "Let me say that again." |
+| Going back | "As I said at the start…" / "Remember the number from the opening? Here's why it matters." / "Coming back to the question I opened with…" / "Earlier I mentioned cost. Here's the detail." |
+| Summarising | "So, to sum up…" / "In short…" / "Let me bring this together." / "To finish, here's what I need from you." |
+| Handling questions | "Please keep questions for the end." / "I'll come to that in a minute." / "Before I finish, what questions do you have?" / "Thanks. Back to where we were: timing." |
 
-## Example passage
+## Example: signposts in a short update
 
 Example: the middle of a project update, made up.
 
 > "So that's where we are on budget. That brings me to the second point: timing. We're two weeks behind, and here's why… That's timing. The last thing I want to cover is what I need from you."
 
 Each signpost is short. Together they let anyone who drifted for ten seconds rejoin.
+
+## How to practise signposting
+
+1. Write your talk's sections on one line each. Three is easiest to follow; see the [rule of three](/speaking-coach/glossary/rule-of-three/).
+2. Write one signpost for every join: one to open, one between each pair of sections and one to close.
+3. Put each phrase at the top of that section in your [speaker notes](/speaking-coach/glossary/speaker-notes/), so you don't fall back on "Um, so, next."
+4. Rehearse only the joins: the last sentence of one section, the signpost, then the first sentence of the next.
+5. Record a full run. Could someone who missed thirty seconds tell which part you are in?
+
+To choose the sections in the first place, see [how to structure a presentation](/speaking-coach/guides/how-to-structure-a-presentation/).
 
 ## Mistakes to avoid
 
@@ -47,23 +58,32 @@ Each signpost is short. Together they let anyone who drifted for ten seconds rej
 | Previewing four points, then covering three | Match your preview to your talk |
 | Signposting every sentence | Use them at section changes only |
 | "In conclusion" ten minutes from the end | Use it only when you're truly closing |
+| "Any questions?" as your last words | Take questions, then finish with your own closing line |
 
-A talk built on the [rule of three](/speaking-coach/glossary/rule-of-three/) is easy to signpost. See [how to structure a presentation](/speaking-coach/guides/how-to-structure-a-presentation/).
+There is more on that last row in [how to end a presentation](/speaking-coach/guides/how-to-end-a-presentation/).
 
 ## Questions people ask
 
-### Why is signposting important in a presentation?
+### What is signposting in a presentation?
 
-Listeners can't reread. Signposts help them follow the structure and remember the points.
+It is using short phrases such as "First", "That brings me to" and "To sum up" to tell the audience where you are in the talk and what comes next.
 
-### Isn't signposting repetitive?
+### What are examples of signposting phrases?
 
-A little, on purpose. Spoken talks need more structure markers than written text.
+"I'll cover three things", "Let's turn to cost", "Here's an example", "If you remember one thing, remember this" and "To sum up". The table above has 36, grouped by job.
 
-### Should I put signposts in my notes?
+### Why is signposting important in a speech?
 
-Yes. Write the transition phrase at the top of each section's notes so you don't fall back on "Um, so, next."
+Listeners can't reread. Signposts help them follow the structure, rejoin if they drift and remember the points.
 
 ### What's the difference between signposting and transitions?
 
-Transitions link two ideas. Signposts also tell listeners where they are in the overall talk.
+A transition links two ideas. A signpost also tells listeners where they are in the whole talk, such as "the second of three points".
+
+### Is signposting used in writing too?
+
+Yes. In essays and reports it means words like "firstly", "in contrast" and "this section explains" that guide the reader. Spoken talks need more of it, because there are no headings to see.
+
+### Can you use too much signposting?
+
+Yes. A signpost at every section change helps; one in every sentence sounds mechanical.

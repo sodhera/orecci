@@ -3,7 +3,8 @@ title: "How to Write a Maid of Honor Speech: Structure and Examples"
 description: "How to open, which one story to tell, how to speak to both partners and how to raise the glass: a maid of honor speech structure with example lines."
 answer: "A maid of honor speech works best at 2 to 4 minutes, about 260 to 520 words: introduce yourself, tell one story that shows who the bride is, turn to the couple and speak to her partner directly, then raise the glass. One well-told story beats a list of memories, and the speech should be about the bride and her marriage, not about your friendship."
 breadcrumb: "Maid of honor speech"
-updated: 2026-10-22
+updated: 2026-11-16
+published: 2026-10-22
 order: 2
 practice_heading: "Say your speech out loud before the reception"
 practice_prompt: "Listen to my maid of honor speech and tell me if the story is clear and whether I'm speaking too fast."
@@ -22,7 +23,7 @@ related:
 | The couple | What you saw change when they met; a line to the partner | 45–60 seconds |
 | The glass | A wish and the toast | 15–20 seconds |
 
-That lands around three minutes, which is the right length for most receptions. The best man often has the longer slot; you don't need to match him.
+That lands around three minutes, which is the right length for most receptions. The best man often has the longer slot; you don't need to match him. If the couple has also asked you to lead the ceremony, that needs its own script: see our [wedding officiant script](/speaking-coach/speeches/wedding-officiant-speech/).
 
 ## How to open
 

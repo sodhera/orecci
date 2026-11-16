@@ -1,9 +1,10 @@
 ---
-title: "How to Write a Student Council Speech That Wins Votes"
-description: "How to write a student council or class president speech: who you are, two or three promises you can keep, and a close people remember. Examples by grade."
+title: "Student Council Speech: Examples and How to Write One"
+description: "How to write a student council or class president speech, with example speeches: who you are, two or three promises you can keep, and a close people remember."
 answer: "A winning student council speech is short, usually 1 to 2 minutes: say who you are in a way classmates will remember, make two or three concrete promises you can actually deliver, show you've listened to what students want, and finish with a memorable line that asks for their vote. Specific, believable promises beat big ones every time."
 breadcrumb: "Student council speech"
-updated: 2026-10-22
+updated: 2026-11-16
+published: 2026-10-22
 order: 13
 practice_heading: "Practise your campaign speech before assembly"
 practice_prompt: "I'm running for class president. Listen to my one-minute speech and tell me if my promises sound believable."

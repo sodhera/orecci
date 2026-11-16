@@ -3,7 +3,8 @@ title: "How to Write a Best Man Speech (With Examples and Timing)"
 description: "A best man speech structure that fits 3 to 5 minutes: who you are, one or two stories about the groom, the turn to the couple, and the toast. Example lines."
 answer: "A good best man speech runs 3 to 5 minutes, about 400 to 650 words, and has five parts: who you are, one or two stories that show the groom at his best, what changed when he met his partner, a sincere word to the couple, and the toast. Keep the jokes affectionate, leave out exes and anything you wouldn't say in front of his grandmother, and rehearse it out loud at least five times."
 breadcrumb: "Best man speech"
-updated: 2026-10-22
+updated: 2026-11-16
+published: 2026-10-22
 order: 1
 practice_heading: "Rehearse your best man speech out loud before the big day"
 practice_prompt: "Listen to my best man speech and tell me where I rush, where I say 'um', and which part drags."
@@ -81,7 +82,7 @@ You have two advantages: childhood stories and the family's trust. Use one story
 - **Look at the room for the jokes and at the couple for the sincere part.**
 - **Hold the microphone close and still,** a fist's width from your mouth.
 
-Rehearse standing up, with a glass in your hand, at least five times. If you want a listener who isn't the groom, you can say the speech to Speaking Coach in the app and see your pace, filler words and long pauses afterwards. Our [guide to practising a speech](/speaking-coach/guides/how-to-practice-a-speech/) has a full rehearsal plan.
+Rehearse standing up, with a glass in your hand, at least five times. If you want a listener who isn't the groom, you can say the speech to Speaking Coach in the app and see your pace, filler words and long pauses afterwards. Our [guide to practising a speech](/speaking-coach/guides/how-to-practice-a-speech/) has a full rehearsal plan. If the couple has also asked you to lead the ceremony, our [wedding officiant script](/speaking-coach/speeches/wedding-officiant-speech/) has the wording for that part of the day.
 
 ## Questions people ask
 
