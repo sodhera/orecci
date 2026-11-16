@@ -23,6 +23,24 @@ const NAV = ['interview-questions', 'speeches', 'small-talk', 'tools'];
 const APP_STORE = 'https://apps.apple.com/app/id6767124039';
 const PLAY = 'https://play.google.com/store/apps/details?id=com.sodhera.speakingcoach';
 const CHATGPT = 'https://chatgpt.com/';
+// App Store Connect's provider token (App Analytics → Campaigns). When set, App Store links carry a
+// campaign per page type, so installs from these pages show up by campaign. Empty: plain links;
+// App Store Connect still counts orecci.com under Web Referrers.
+const APPLE_PROVIDER_TOKEN = '';
+// PostHog's public project key (Sodhera, project 616125), the same one the apps use.
+const POSTHOG_KEY = 'phc_ALgrnBzj9vrzd5ETJZPS3WSAPMGkBboz9dWHWwvaQmy2';
+
+// Store links that say where the visitor came from: Google Play keeps the UTM referrer for Play
+// Console's acquisition reports; the App Store takes a campaign once the provider token is set.
+// `place` is where on the page the button sits (top or end).
+function storeLinks(p, lang, place) {
+  const section = p.section || 'hub';
+  const slug = p.slug || (p.hub ? 'hub' : 'home');
+  const campaign = `${section}-${place}`.slice(0, 40);
+  const referrer = `utm_source=orecci&utm_medium=website&utm_campaign=${campaign}&utm_content=${lang}-${slug}`.slice(0, 200);
+  const appStore = APPLE_PROVIDER_TOKEN ? `${APP_STORE}?pt=${APPLE_PROVIDER_TOKEN}&ct=${encodeURIComponent(`orecci-${campaign}`)}&mt=8` : APP_STORE;
+  return { appStore, play: `${PLAY}&referrer=${encodeURIComponent(referrer)}`, chatgpt: CHATGPT };
+}
 const TOOLS = new Set(['speech-checker', 'filler-counter', 'pace-checker', 'speech-length', 'role-questions']);
 
 const errors = [];
@@ -246,6 +264,7 @@ function layout(p, { title, description, main, jsonld, lang }) {
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="${BASE}/assets/sc.css">
     <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>
+    <script src="${BASE}/assets/track.js" data-key="${POSTHOG_KEY}" data-section="${esc(p.section || 'hub')}" data-slug="${esc(p.slug || (p.hub ? 'hub' : 'home'))}" data-lang="${lang}" defer></script>
   </head>
   <body class="sc">
     <div class="site-shell">
@@ -289,20 +308,25 @@ function crumbHtml(list) {
   return `<nav class="crumbs" aria-label="Breadcrumb">${list.map(([n, u], i) => (i === list.length - 1 ? `<span aria-current="page">${esc(n)}</span>` : `<a href="${u}">${esc(n)}</a>`)).join('<span class="sep">›</span>')}</nav>`;
 }
 
-function ctaCard(p, lang) {
+// The download box. `place` is 'top' (under the answer, or under the tool) or 'end' (after the
+// article and its questions, for readers who got to the bottom). The end box uses the general
+// heading, so the page doesn't show the same heading twice.
+function ctaCard(p, lang, place = 'top') {
   const prompt = p.meta.practice_prompt || t(lang, 'cta.default_prompt');
   const chatgptNote = lang === 'en' ? '' : `<p class="cta-note">${esc(t(lang, 'cta.chatgpt_english_only'))}</p>`;
-  return `<aside class="cta" aria-label="${esc(t(lang, 'cta.heading'))}">
+  const heading = place === 'end' ? t(lang, 'cta.heading') : (p.meta.practice_heading || t(lang, 'cta.heading'));
+  const links = storeLinks(p, lang, place);
+  return `<aside class="cta${place === 'end' ? ' cta-end' : ''}" aria-label="${esc(t(lang, 'cta.heading'))}" data-cta="${place}">
           <div>
             <p class="cta-kicker">${esc(t(lang, 'cta.kicker'))}</p>
-            <h2>${esc(p.meta.practice_heading || t(lang, 'cta.heading'))}</h2>
+            <h2>${esc(heading)}</h2>
             <p>${esc(t(lang, 'cta.body'))}</p>
             ${prompt ? `<p class="cta-prompt"><span>${esc(t(lang, 'cta.try_saying'))}</span> “${esc(prompt)}”</p>` : ''}
           </div>
           <div class="cta-actions">
-            <a class="button" href="${APP_STORE}" rel="noopener">${esc(t(lang, 'cta.app_store'))}</a>
-            <a class="button secondary" href="${PLAY}" rel="noopener">${esc(t(lang, 'cta.google_play'))}</a>
-            <a class="button secondary" href="${CHATGPT}" rel="noopener">${esc(t(lang, 'cta.chatgpt'))}</a>
+            <a class="button" href="${esc(links.appStore)}" rel="noopener" data-store="app_store">${esc(t(lang, 'cta.app_store'))}</a>
+            <a class="button secondary" href="${esc(links.play)}" rel="noopener" data-store="google_play">${esc(t(lang, 'cta.google_play'))}</a>
+            <a class="button secondary" href="${esc(links.chatgpt)}" rel="noopener" data-store="chatgpt">${esc(t(lang, 'cta.chatgpt'))}</a>
             ${chatgptNote}
           </div>
         </aside>`;
@@ -368,6 +392,7 @@ function renderPage(p) {
 ${bodyHtml}
           </div>
           ${faq.length ? `<section class="faq"><h2>${esc(t(lang, 'faq_heading'))}</h2>${faq.map((q) => `<details><summary>${esc(q.q)}</summary>${q.html.join('')}</details>`).join('')}</section>` : ''}
+          ${isContent && p.section !== 'pages' ? ctaCard(p, lang, 'end') : ''}
           ${homeExtra}
           ${related.length ? `<section class="related"><h2>${esc(t(lang, 'related'))}</h2><ul class="card-list">${related.map((r) => `<li><a href="${r.url}"><strong>${esc(r.hub ? t(lang, `sections.${r.section}.title`) : r.meta.title)}</strong><span>${esc(r.hub ? t(lang, `sections.${r.section}.intro`) : r.meta.description)}</span></a></li>`).join('')}</ul></section>` : ''}
           ${sources.length ? `<section class="sources"><h2>${esc(t(lang, 'sources'))}</h2><ol>${sources.map((s) => `<li><a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.title)}</a></li>`).join('')}</ol></section>` : ''}
@@ -454,7 +479,7 @@ function main() {
 
   // sitemap: every Speaking Coach page plus the site's existing pages.
   const legacy = [];
-  const walk = (d) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { if (e.name.startsWith('.') || e.name.startsWith('_') || e.name === 'speaking-coach' || e.name === 'node_modules') continue; const p = path.join(d, e.name); if (e.isDirectory()) walk(p); else if (e.name.endsWith('.html')) legacy.push('/' + path.relative(ROOT, p).replace(/\\/g, '/').replace(/index\.html$/, '')); } };
+  const walk = (d) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { if (e.name.startsWith('.') || e.name.startsWith('_') || e.name === 'speaking-coach' || e.name === 'node_modules') continue; const p = path.join(d, e.name); if (e.isDirectory()) walk(p); else if (e.name.endsWith('.html') && !/^google[0-9a-f]+\.html$/.test(e.name)) legacy.push('/' + path.relative(ROOT, p).replace(/\\/g, '/').replace(/index\.html$/, '')); } };
   walk(ROOT);
   const entries = [
     ...pages.map((p) => ({ loc: p.url, lastmod: p.meta.updated, alts: alternates(p) })),

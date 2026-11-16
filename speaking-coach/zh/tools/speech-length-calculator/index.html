@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/speaking-coach/assets/sc.css">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.orecci.com/#sodhera","name":"Sodhera Intelligence","legalName":"Sodhera Intelligence Private Limited","url":"https://www.sodhera.com"},{"@type":"MobileApplication","@id":"https://www.orecci.com/speaking-coach/#app","name":"Speaking Coach","operatingSystem":"iOS, Android","applicationCategory":"EducationalApplication","publisher":{"@id":"https://www.orecci.com/#sodhera"},"installUrl":"https://apps.apple.com/app/id6767124039","sameAs":["https://apps.apple.com/app/id6767124039","https://play.google.com/store/apps/details?id=com.sodhera.speakingcoach"],"image":"https://www.orecci.com/app_logo_rounded.png"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Speaking Coach","item":"https://www.orecci.com/speaking-coach/zh/"},{"@type":"ListItem","position":2,"name":"免费工具","item":"https://www.orecci.com/speaking-coach/zh/tools/"},{"@type":"ListItem","position":3,"name":"演讲时长计算器","item":"https://www.orecci.com/speaking-coach/zh/tools/speech-length-calculator/"}]},{"@type":"Article","headline":"演讲时长计算器：讲稿字数换算成分钟（也能反算）","description":"你的讲稿能讲几分钟？按慢速、中速、快速把字数换算成时长，或把时长换算成字数。附 1 到 20 分钟演讲字数对照表。","inLanguage":"zh-Hans","dateModified":"2026-10-22","datePublished":"2026-10-22","author":{"@id":"https://www.orecci.com/#sodhera"},"publisher":{"@id":"https://www.orecci.com/#sodhera"},"mainEntityOfPage":"https://www.orecci.com/speaking-coach/zh/tools/speech-length-calculator/","about":{"@id":"https://www.orecci.com/speaking-coach/#app"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"为什么要把字数除以 1.6？","acceptedAnswer":{"@type":"Answer","text":"这个计算器多种语言通用，统一按“词”来计算。中文不用空格分词，工具就用“汉字数 ÷ 1.6”粗略估算词数。这是工具采用的换算比例，不是精确统计，所以结果也是估计值。"}},{"@type":"Question","name":"5 分钟的演讲大概多少字？","acceptedAnswer":{"@type":"Answer","text":"按中速约 1100 字，慢一点约 900 字，快一点约 1350 字。正式场合建议按 900 到 1000 字准备。"}},{"@type":"Question","name":"讲稿里有很多数字和英文怎么办？","acceptedAnswer":{"@type":"Answer","text":"按念出来的长度估。“2026 年”写下来很短，念出来是“二零二六年”五个字；“KPI”“OKR”念出来也要时间。数字和英文缩写多的讲稿，实际会比算出来的长一点。"}},{"@type":"Question","name":"照着稿子念和脱稿讲，时间一样吗？","acceptedAnswer":{"@type":"Answer","text":"一般不一样。脱稿时会加入停顿、口头禅和临时补充的话，通常比念稿慢。用脱稿的方式计时，结果更接近真实情况。"}}]}]}</script>
+    <script src="/speaking-coach/assets/track.js" data-key="phc_ALgrnBzj9vrzd5ETJZPS3WSAPMGkBboz9dWHWwvaQmy2" data-section="tools" data-slug="speech-length-calculator" data-lang="zh" defer></script>
   </head>
   <body class="sc">
     <div class="site-shell">
@@ -67,7 +68,7 @@
           <noscript><p>这个工具需要开启 JavaScript。</p></noscript>
         </section>
         <script src="/speaking-coach/assets/tools.js" defer></script>
-          <aside class="cta" aria-label="正式开口之前，先大声说一遍">
+          <aside class="cta" aria-label="正式开口之前，先大声说一遍" data-cta="top">
           <div>
             <p class="cta-kicker">开口练一练</p>
             <h2>看看你的讲稿是不是超时了</h2>
@@ -75,9 +76,9 @@
             <p class="cta-prompt"><span>在 App 或 ChatGPT 里可以这样说：</span> “我的伴郎致辞只有三分钟，听我讲一遍，告诉我哪里可以删。”</p>
           </div>
           <div class="cta-actions">
-            <a class="button" href="https://apps.apple.com/app/id6767124039" rel="noopener">在 App Store 下载</a>
-            <a class="button secondary" href="https://play.google.com/store/apps/details?id=com.sodhera.speakingcoach" rel="noopener">在 Google Play 下载</a>
-            <a class="button secondary" href="https://chatgpt.com/" rel="noopener">在 ChatGPT 里免费点评语音</a>
+            <a class="button" href="https://apps.apple.com/app/id6767124039" rel="noopener" data-store="app_store">在 App Store 下载</a>
+            <a class="button secondary" href="https://play.google.com/store/apps/details?id=com.sodhera.speakingcoach&amp;referrer=utm_source%3Dorecci%26utm_medium%3Dwebsite%26utm_campaign%3Dtools-top%26utm_content%3Dzh-speech-length-calculator" rel="noopener" data-store="google_play">在 Google Play 下载</a>
+            <a class="button secondary" href="https://chatgpt.com/" rel="noopener" data-store="chatgpt">在 ChatGPT 里免费点评语音</a>
             <p class="cta-note">ChatGPT 版本目前只支持英文。</p>
           </div>
         </aside>
@@ -97,6 +98,20 @@
 <p>想知道自己的实际语速，用<a href="/speaking-coach/zh/tools/pace-checker/">语速测试</a>讲一分钟测一下，再回到这里按你自己的速度算。</p>
           </div>
           <section class="faq"><h2>常见问题</h2><details><summary>为什么要把字数除以 1.6？</summary><p>这个计算器多种语言通用，统一按“词”来计算。中文不用空格分词，工具就用“汉字数 ÷ 1.6”粗略估算词数。这是工具采用的换算比例，不是精确统计，所以结果也是估计值。</p></details><details><summary>5 分钟的演讲大概多少字？</summary><p>按中速约 1100 字，慢一点约 900 字，快一点约 1350 字。正式场合建议按 900 到 1000 字准备。</p></details><details><summary>讲稿里有很多数字和英文怎么办？</summary><p>按念出来的长度估。“2026 年”写下来很短，念出来是“二零二六年”五个字；“KPI”“OKR”念出来也要时间。数字和英文缩写多的讲稿，实际会比算出来的长一点。</p></details><details><summary>照着稿子念和脱稿讲，时间一样吗？</summary><p>一般不一样。脱稿时会加入停顿、口头禅和临时补充的话，通常比念稿慢。用脱稿的方式计时，结果更接近真实情况。</p></details></section>
+          <aside class="cta cta-end" aria-label="正式开口之前，先大声说一遍" data-cta="end">
+          <div>
+            <p class="cta-kicker">开口练一练</p>
+            <h2>正式开口之前，先大声说一遍</h2>
+            <p>Speaking Coach 给你一个 AI 对练伙伴：它扮演对面的人，顺着你刚才说的话追问，结束后告诉你下次最该改的一件事。支持 iPhone 和 Android，共 20 种语言。</p>
+            <p class="cta-prompt"><span>在 App 或 ChatGPT 里可以这样说：</span> “我的伴郎致辞只有三分钟，听我讲一遍，告诉我哪里可以删。”</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button" href="https://apps.apple.com/app/id6767124039" rel="noopener" data-store="app_store">在 App Store 下载</a>
+            <a class="button secondary" href="https://play.google.com/store/apps/details?id=com.sodhera.speakingcoach&amp;referrer=utm_source%3Dorecci%26utm_medium%3Dwebsite%26utm_campaign%3Dtools-end%26utm_content%3Dzh-speech-length-calculator" rel="noopener" data-store="google_play">在 Google Play 下载</a>
+            <a class="button secondary" href="https://chatgpt.com/" rel="noopener" data-store="chatgpt">在 ChatGPT 里免费点评语音</a>
+            <p class="cta-note">ChatGPT 版本目前只支持英文。</p>
+          </div>
+        </aside>
           
           <section class="related"><h2>继续看</h2><ul class="card-list"><li><a href="/speaking-coach/zh/tools/pace-checker/"><strong>语速测试：测一测你每分钟说多少字（免费）</strong><span>对着麦克风说一分钟，或输入字数和用时，算出你的语速，并看看怎么放慢或加快。免费，在浏览器里运行，不用注册。</span></a></li></ul></section>
           

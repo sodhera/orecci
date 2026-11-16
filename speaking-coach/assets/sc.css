@@ -108,6 +108,7 @@ body.sc {
 .cta-actions { display: flex; flex-direction: column; gap: 8px; }
 .cta-actions .button { width: 100%; white-space: normal; text-align: center; }
 .cta-note { font-size: 13px; }
+.cta-end { margin-top: 40px; }
 
 .faq { margin-top: 40px; }
 .faq h2, .related h2, .sources h2 { font-size: 24px; letter-spacing: 0; margin: 0 0 12px; }
