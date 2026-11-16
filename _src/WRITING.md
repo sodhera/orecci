@@ -17,7 +17,8 @@ title: "Question-shaped title, 50–65 characters, repeating the words people se
 description: "One sentence for search results, 120–160 characters."
 answer: "The direct answer in two or three sentences. A model must be able to lift it as the whole answer."
 breadcrumb: "Short name for breadcrumbs and lists"
-updated: 2026-10-22
+updated: 2026-10-22           # the day the page last changed in substance
+published: 2026-10-22         # optional: add it when you edit an existing page, with the page's first date, so that date stays
 order: 1                      # optional: position in its section list (lower = first)
 practice_heading: "Optional heading for the practice box"
 practice_prompt: "A sentence the reader could say to Speaking Coach to practice this exact thing"
@@ -30,7 +31,7 @@ Body in Markdown.
 ```
 
 Extra frontmatter for some sections:
-- Tool pages: `tool:` one of `speech-checker`, `filler-counter`, `pace-checker`, `speech-length`, `role-questions`; and for the speech checker optionally `tool_prompts:` (a list of questions or openers the reader answers out loud).
+- Tool pages: `tool:` one of `speech-checker`, `filler-counter`, `pace-checker`, `speech-length`, `role-questions`; and for the speech checker optionally `tool_prompts:` (a list of questions or openers the reader answers out loud). Any page may carry a tool: a guide about 5-minute speeches has `tool: speech-length` and `tool_minutes: 5`, so the calculator opens on its number (`tool_words:` does the same for a word count).
 - `interview-questions-by-role` pages: `questions:` a list of 8–12 interview questions for that role (plain text, no numbering). The role finder tool shows them.
 
 ## Body rules
@@ -39,7 +40,12 @@ Extra frontmatter for some sections:
 - Last section: `## Questions people ask` (in other languages, the translated `faq_heading` from that language's `_ui.json`), with 4–6 `### Question?` headings, each followed by a 1–3 sentence answer. Real questions people ask about this topic.
 - Don't repeat the `answer` as the first paragraph; the page shows it above the body.
 - Internal links in the body: absolute paths like `/speaking-coach/tools/pace-checker/`, only to URLs in the list you were given. Link naturally where it helps (2–5 per page).
-- Length: content pages 700–1,300 words; glossary 200–400; tools 350–700; role pages 600–1,000. Longer is not better: cut anything generic.
+- Length: content pages 700–1,300 words; glossary 200–400; tools 350–700; role pages 600–1,000. Longer is not better: cut anything generic. The exception is a page whose search data asks for more (people searching "[term] meaning" and "[term] examples", or for a full script): a glossary page can then run 450–800 words and a content page to about 1,600, as long as every added part is something those searchers want.
+- Titles lead with the words people type. Search Console shows the real queries for a page; when they differ from the title ("officiant script" for a page titled "What to say as a wedding officiant"), the title, the `answer` and the first section change to match.
+
+## Links the build adds for you
+
+You don't need to list sibling pages. The build adds, under every page, eight links to pages of the same section and, for some sections, links to a partner section (interview questions and roles, best-of lists and comparisons, guides and glossary). It also links the first use of a glossary term in your text to its definition, at most three per page. Role pages are grouped by job family in `_src/role-families.json`; add a new role there. `related:` is for the three to five pages you most want the reader to open next.
 
 ## What makes a page good enough
 
