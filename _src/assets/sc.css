@@ -118,6 +118,12 @@ body.sc {
 .faq details p { margin: 0 0 10px; }
 
 .related, .sources { margin-top: 40px; }
+.more-links { margin-top: 32px; }
+.more-links h2 { font-size: 20px; letter-spacing: 0; margin: 0 0 10px; }
+.more-links ul { list-style: none; padding: 0; margin: 0 0 10px; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px 24px; font-size: 15px; }
+.more-links li a { color: var(--link); text-decoration: none; }
+.more-links li a:hover { text-decoration: underline; }
+.more-links .more { color: var(--link); font-weight: 700; font-size: 14px; text-decoration: none; }
 .sources ol { padding-inline-start: 22px; color: var(--muted); font-size: 15px; }
 
 .card-list { list-style: none; padding: 0; margin: 20px 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }

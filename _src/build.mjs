@@ -132,7 +132,7 @@ function renderMarkdown(body, ctx) {
         i++;
       }
       const tag = ordered ? 'ol' : 'ul';
-      push(`<${tag}>${items.map((it) => `<li>${inline(it, ctx)}</li>`).join('')}</${tag}>`);
+      push(`<${tag}>${items.map((it) => `<li>${inline(inFaq ? it : autoLink(it, ctx), ctx)}</li>`).join('')}</${tag}>`);
       if (curQ) curQ.text.push(items.join(' '));
       continue;
     }
@@ -147,7 +147,7 @@ function renderMarkdown(body, ctx) {
     const para = [];
     while (i < lines.length && lines[i].trim() && !/^(#{2,3}\s|\s*\||\s*[-*]\s+|\s*\d+[.)]\s+|>)/.test(lines[i])) { para.push(lines[i].trim()); i++; }
     const text = para.join(' ');
-    push(`<p>${inline(text, ctx)}</p>`);
+    push(`<p>${inline(inFaq ? text : autoLink(text, ctx), ctx)}</p>`);
     if (curQ) curQ.text.push(text);
   }
   flushQ();
@@ -217,6 +217,87 @@ for (const lang of Object.keys(ui)) {
 const allUrls = new Set([...pages.map((p) => p.url), ...hubs.map((h) => h.url)]);
 const byKey = new Map(pages.map((p) => [`${p.lang}|${p.section}|${p.slug}`, p]));
 
+// ---------- automatic internal links ----------
+// Every page links to a few pages of its own section, and some sections link across (questions to
+// roles, best-of lists to comparisons). No page then depends on its hub alone to be found: half of
+// each list is picked by rotation, so every page of a section is linked from the same number of
+// pages, and the other half by shared words in slug and breadcrumb, so the links are relevant.
+const CROSS = {
+  'interview-questions': [['interview-questions-by-role', 6]],
+  'interview-questions-by-role': [['interview-questions', 6]],
+  interviews: [['interview-questions', 6]],
+  best: [['compare', 30]],
+  compare: [['best', 8]],
+  glossary: [['guides', 4]],
+  guides: [['glossary', 4]],
+  presentations: [['guides', 4]],
+  speeches: [['guides', 4]],
+};
+const bySection = new Map();
+for (const p of pages) { const k = `${p.lang}|${p.section}`; if (!bySection.has(k)) bySection.set(k, []); bySection.get(k).push(p); }
+for (const list of bySection.values()) list.sort((a, b) => a.slug.localeCompare(b.slug));
+// Job families for the role pages (_src/role-families.json): a nurse page links to other healthcare
+// roles first. Slugs alone ("web-developer", "software-engineer") don't show that they belong together.
+const familyOf = new Map();
+for (const [family, slugs] of Object.entries(JSON.parse(fs.readFileSync(path.join(SRC, 'role-families.json'), 'utf8')))) for (const slug of slugs) { if (familyOf.has(slug)) err('_src/role-families.json', `${slug} is in two families`); familyOf.set(slug, family); }
+const docFreq = new Map();
+const langSize = new Map();
+for (const p of pages) {
+  if (p.section === 'interview-questions-by-role') { p.family = familyOf.get(p.slug); if (!p.family) warn(p.file, 'role is in no family in _src/role-families.json'); }
+  p.tokens = new Set(`${p.slug} ${p.meta.breadcrumb || ''}`.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter((w) => w.length > 2));
+  for (const w of p.tokens) docFreq.set(`${p.lang}|${w}`, (docFreq.get(`${p.lang}|${w}`) || 0) + 1);
+  langSize.set(p.lang, (langSize.get(p.lang) || 0) + 1);
+}
+function pickLinks(p, section, count, taken) {
+  const pool = (bySection.get(`${p.lang}|${section}`) || []).filter((q) => q !== p && !taken.has(q.url));
+  if (!pool.length) return [];
+  count = Math.min(count, pool.length);
+  const idx = Math.max(0, (bySection.get(`${p.lang}|${p.section}`) || []).indexOf(p));
+  const turn = Math.ceil(count / 2);
+  const start = section === p.section ? idx : idx * turn;
+  const rotated = [];
+  for (let i = 0; rotated.length < turn; i++) rotated.push(pool[(start + i) % pool.length]);
+  const n = langSize.get(p.lang);
+  // Ties go to the pages that follow this one, so the similar links also spread over the section.
+  const after = (q) => (pool.indexOf(q) - start % pool.length + pool.length) % pool.length;
+  const similar = pool.filter((q) => !rotated.includes(q)).map((q) => { let score = p.family && p.family === q.family ? 3 : 0; for (const w of q.tokens) if (p.tokens.has(w)) score += Math.log(n / docFreq.get(`${p.lang}|${w}`)); return [score, q]; })
+    .filter(([score]) => score > 1.5).sort((a, b) => b[0] - a[0] || after(a[1]) - after(b[1])).slice(0, count - turn).map(([, q]) => q);
+  const picks = [...similar, ...rotated];
+  for (let i = turn; picks.length < count; i++) { const q = pool[(start + i) % pool.length]; if (!picks.includes(q)) picks.push(q); }
+  return picks;
+}
+
+// Glossary terms are linked where a page first uses them (at most three per page), so each
+// definition is one click from the pages that use the word.
+const SKIP_TERMS = new Set(['pause', 'cadence']); // everyday words that mostly mean something else
+const glossaryTerms = new Map();
+for (const p of pages.filter((q) => q.section === 'glossary')) {
+  const term = (p.meta.breadcrumb || '').toLowerCase().trim();
+  if (!term || term.includes(',') || SKIP_TERMS.has(term)) continue;
+  const pattern = term.split(/[\s-]+/).map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('[\\s-]');
+  if (!glossaryTerms.has(p.lang)) glossaryTerms.set(p.lang, []);
+  glossaryTerms.get(p.lang).push({ url: p.url, length: term.length, re: new RegExp(`(?<![\\p{L}\\p{N}-])${pattern}(?:s|es)?(?![\\p{L}\\p{N}-])`, 'iu') });
+}
+for (const list of glossaryTerms.values()) list.sort((a, b) => b.length - a.length);
+const MD_LINK = /(\[[^\]]+\]\([^)\s]+\))/;
+function autoLink(text, ctx) {
+  if (!ctx.terms) return text;
+  for (const term of ctx.terms) {
+    if (ctx.autoLinks >= 3) break;
+    if (ctx.linked.has(term.url)) continue;
+    const parts = text.split(MD_LINK);
+    for (let i = 0; i < parts.length; i += 2) {
+      const m = term.re.exec(parts[i]);
+      if (!m) continue;
+      parts[i] = `${parts[i].slice(0, m.index)}[${m[0]}](${term.url})${parts[i].slice(m.index + m[0].length)}`;
+      ctx.linked.add(term.url); ctx.autoLinks++;
+      break;
+    }
+    text = parts.join('');
+  }
+  return text;
+}
+
 // ---------- validation of each page ----------
 const REQUIRED = ['title', 'description', 'answer', 'updated'];
 const titleSeen = new Map();
@@ -251,6 +332,7 @@ function layout(p, { title, description, main, jsonld, lang }) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(description)}">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="${ORIGIN}${p.url}">
     ${altLinks}
     <meta property="og:type" content="${p.hub || p.section === 'home' ? 'website' : 'article'}">
@@ -258,6 +340,8 @@ function layout(p, { title, description, main, jsonld, lang }) {
     <meta property="og:description" content="${esc(description)}">
     <meta property="og:url" content="${ORIGIN}${p.url}">
     <meta property="og:image" content="${ORIGIN}/app_logo_rounded.png">
+    <meta property="og:site_name" content="Speaking Coach">
+    <meta name="twitter:card" content="summary">
     <meta name="apple-itunes-app" content="app-id=6767124039">
     <link rel="icon" href="/app_logo_rounded.png">
     ${p.mdUrl ? `<link rel="alternate" type="text/markdown" href="${p.mdUrl}">` : ''}
@@ -338,6 +422,8 @@ function toolHtml(p, lang) {
     tool, mode: p.meta.tool_mode || '', lang, speechLang: SPEECH_LANG[lang],
     fillers: (p.meta.fillers || t(lang, 'fillers') || []),
     prompts: p.meta.tool_prompts || [],
+    // The speech length calculator can open on a page's own number (tool_minutes: 5).
+    minutes: Number(p.meta.tool_minutes) || undefined, words: Number(p.meta.tool_words) || undefined,
     strings: ui[lang].tool || uiEn.tool,
   };
   if (tool === 'role-questions') cfg.rolesUrl = `${BASE}/assets/roles-${lang}.json`;
@@ -358,6 +444,12 @@ function fmtDate(d, lang) {
 function renderPage(p) {
   const lang = p.lang;
   const ctx = { links: [], headings: [], faqHeadings: [t(lang, 'faq_heading'), 'FAQ', 'Frequently asked questions'] };
+  if (p.section !== 'home' && p.section !== 'pages') {
+    ctx.terms = glossaryTerms.get(lang);
+    ctx.autoLinks = 0;
+    // Never link a term to the page itself, or to a page this one already links to.
+    ctx.linked = new Set([p.url, ...(p.meta.related || []), ...[...p.body.matchAll(/\]\((\/speaking-coach\/[^)#\s]*)/g)].map((m) => m[1])]);
+  }
   const { html: bodyHtml, faq } = renderMarkdown(p.body, ctx);
   p.faq = faq;
   p.links = ctx.links;
@@ -373,6 +465,16 @@ function renderPage(p) {
     if (!target) { warn(p.file, `related link ${u} does not exist yet (skipped)`); return null; }
     return target;
   }).filter(Boolean);
+  const taken = new Set([p.url, ...related.map((r) => r.url)]);
+  const more = [];
+  if (isContent && p.section !== 'pages') {
+    for (const [s, n] of [[p.section, 8], ...(CROSS[p.section] || [])]) {
+      const picks = pickLinks(p, s, n, taken);
+      if (!picks.length) continue;
+      for (const q of picks) taken.add(q.url);
+      more.push(`<section class="more-links"><h2>${esc(t(lang, `sections.${s}.nav`))}</h2><ul>${picks.map((q) => `<li><a href="${q.url}">${esc(q.meta.title)}</a></li>`).join('')}</ul><a class="more" href="${urlOf(lang, s, '')}">${esc(t(lang, 'see_all'))} (${bySection.get(`${lang}|${s}`).length}) →</a></section>`);
+    }
+  }
   const sources = (p.meta.sources || []).map((s) => { const [title, url] = s.split(/\s+\|\s+/); if (!/^https?:\/\//.test(url || '')) err(p.file, `source needs "Title | URL": ${s}`); return { title, url }; });
   const list = crumbs(p, lang);
   const byline = `${esc(t(lang, 'byline'))} · <time datetime="${esc(p.meta.updated)}">${esc(t(lang, 'updated'))} ${esc(fmtDate(p.meta.updated, lang))}</time>`;
@@ -395,13 +497,16 @@ ${bodyHtml}
           ${isContent && p.section !== 'pages' ? ctaCard(p, lang, 'end') : ''}
           ${homeExtra}
           ${related.length ? `<section class="related"><h2>${esc(t(lang, 'related'))}</h2><ul class="card-list">${related.map((r) => `<li><a href="${r.url}"><strong>${esc(r.hub ? t(lang, `sections.${r.section}.title`) : r.meta.title)}</strong><span>${esc(r.hub ? t(lang, `sections.${r.section}.intro`) : r.meta.description)}</span></a></li>`).join('')}</ul></section>` : ''}
+          ${more.join('\n          ')}
           ${sources.length ? `<section class="sources"><h2>${esc(t(lang, 'sources'))}</h2><ol>${sources.map((s) => `<li><a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.title)}</a></li>`).join('')}</ol></section>` : ''}
         </article>`;
   const graph = [ORG, APP,
     { '@type': 'BreadcrumbList', itemListElement: list.map(([n, u], i) => ({ '@type': 'ListItem', position: i + 1, name: n, item: ORIGIN + u })) },
   ];
-  if (isContent) graph.push({ '@type': 'Article', headline: p.meta.title, description: p.meta.description, inLanguage: HREFLANG[lang] || lang, dateModified: p.meta.updated, datePublished: p.meta.published || p.meta.updated, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: ORIGIN + p.url, about: { '@id': APP['@id'] } });
+  if (isContent) graph.push({ '@type': 'Article', headline: p.meta.title, description: p.meta.description, image: `${ORIGIN}/app_logo_rounded.png`, inLanguage: HREFLANG[lang] || lang, dateModified: p.meta.updated, datePublished: p.meta.published || p.meta.updated, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: ORIGIN + p.url, about: { '@id': APP['@id'] } });
   if (faq.length) graph.push({ '@type': 'FAQPage', mainEntity: faq.map((q) => ({ '@type': 'Question', name: q.q, acceptedAnswer: { '@type': 'Answer', text: plain(q.text.join(' ')) } })) });
+  if (p.section === 'glossary') graph.push({ '@type': 'DefinedTerm', '@id': `${ORIGIN}${p.url}#term`, name: p.meta.breadcrumb || p.meta.title, description: plain(p.meta.answer || ''), url: ORIGIN + p.url, inDefinedTermSet: ORIGIN + urlOf(lang, 'glossary', '') });
+  if (p.meta.tool) graph.push({ '@type': 'WebApplication', name: p.meta.breadcrumb || p.meta.title, url: ORIGIN + p.url, description: p.meta.description, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', browserRequirements: 'Requires JavaScript', isAccessibleForFree: true, inLanguage: HREFLANG[lang] || lang, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, publisher: { '@id': ORG['@id'] } });
   const title = p.section === 'home' ? p.meta.title : `${p.meta.title} | Speaking Coach`;
   return layout(p, { title, description: p.meta.description, main, jsonld: { '@context': 'https://schema.org', '@graph': graph }, lang });
 }
@@ -495,7 +600,9 @@ function main() {
     if (allUrls.has(r.from)) console.error(`ERROR redirect from ${r.from} but that page still exists`);
     if (!allUrls.has(r.to)) console.error(`ERROR redirect to ${r.to} which does not exist`);
   }
-  if (redirects.length) write('vercel.json', JSON.stringify({ redirects: redirects.map((r) => ({ source: r.from.replace(/\/$/, ''), destination: r.to, permanent: true })).concat(redirects.map((r) => ({ source: r.from, destination: r.to, permanent: true }))) }, null, 2) + '\n');
+  // trailingSlash: /speaking-coach/x answers with a permanent redirect to /speaking-coach/x/, so each
+  // page has one address (files with an extension are untouched).
+  write('vercel.json', JSON.stringify({ trailingSlash: true, redirects: redirects.map((r) => ({ source: r.from, destination: r.to, permanent: true })) }, null, 2) + '\n');
   write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
 
   const en = pages.filter((p) => p.lang === 'en');
