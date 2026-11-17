@@ -18,6 +18,8 @@ related:
 
 Most students don't vote on policy. They vote on two questions: *Do I like this person?* and *Would they actually do something?* Your speech has about 90 seconds to answer both. That's why the best speeches are short, a bit funny, and concrete.
 
+If you're running to represent just your own class rather than the whole school, see our [class representative speech examples](/speaking-coach/speeches/class-representative-speech/) instead.
+
 ## The structure
 
 | Part | What to say | Time |

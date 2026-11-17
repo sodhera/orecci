@@ -27,6 +27,8 @@ That takes about ten seconds to say. The personal detail (just moved, just finis
 
 Keep it the same each time. Repetition is what makes it sound relaxed by lunchtime.
 
+For longer versions, such as an all-hands, a welcome email or a Slack message, see [how to introduce yourself at a new job](/speaking-coach/small-talk/introduce-yourself-at-a-new-job/).
+
 ## What to say to different people
 
 These are example lines. Swap in your own details.
