@@ -1,9 +1,10 @@
 ---
-title: "What is a pause in public speaking? Definition and example"
-description: "A deliberate pause is a silence you use on purpose to land a point, separate ideas or replace a filler word. See pause types, typical lengths and a marked example."
-answer: "A pause in public speaking is a deliberate silence you use on purpose: to let a point land, separate ideas, give the audience time to think, or replace a filler word. Most useful pauses last from half a second to about three seconds, even though they can feel much longer to you than to the audience."
+title: "Pause in Public Speaking: Meaning, Types and Examples"
+description: "What a pause in speech means, five pause types with timings, marked examples for a talk, an interview and a toast, and how a pause differs from a freeze."
+answer: "A pause in speaking is a short, deliberate silence between words or sentences, used to let a point land, separate ideas, take a breath or replace a filler word like \"um\". Most useful pauses last from half a second to about three seconds. They make you easier to follow and sound more in control, and they always feel longer to you than to your listeners."
 breadcrumb: "Pause"
-updated: 2026-10-22
+updated: 2026-11-17
+published: 2026-10-22
 practice_heading: "Find out where you freeze and where you pause"
 practice_prompt: "Ask me to explain a decision I made at work, then tell me where my pauses helped and where I stalled."
 related:
@@ -11,7 +12,15 @@ related:
   - /speaking-coach/guides/stop-saying-um/
   - /speaking-coach/glossary/filler-words/
   - /speaking-coach/glossary/cadence/
+  - /speaking-coach/guides/how-to-slow-down-when-speaking/
 ---
+## What a pause means in speech
+
+On a page, commas and full stops show where one idea ends. A listener has none of that. The pause is the spoken version: a silence that says "that thought is finished" or "this next part matters". It is chosen, which is what separates it from a hesitation or a freeze. Two phrases you'll hear:
+
+- **Dramatic pause:** a longer silence just before a reveal, a punchline or a key number.
+- **Pregnant pause:** a silence full of expectation, when everyone is waiting for what comes next.
+
 ## Types of pause
 
 | Pause | Typical length | Use it to | Example moment |
@@ -22,33 +31,72 @@ related:
 | Opening pause | 2–3 seconds | Get attention before you start | After you reach the front, before your first line |
 | Transition pause | 1–2 seconds | Signal a new section | Between main points |
 
-## Example
+## Examples of pauses
 
-Example: the middle of a short talk, made up. A slash (/) marks a short pause; a double slash (//) marks a longer one.
+All examples are made up. A slash (/) marks a short pause; a double slash (//) marks a longer one.
+
+### In a presentation
 
 > "Last year we lost twelve customers. / We asked each one why. // Eleven gave the same answer. // They never heard back from us after the sale."
 
-Read it without the pauses and it's a list of facts. With them, the audience leans in before the reason and has a moment to feel it.
+Without the pauses it's a list of facts. With them, the audience leans in before the reason.
 
-## Pause vs freeze
+### In a job interview
 
-| | Deliberate pause | Freeze |
-| --- | --- | --- |
-| Why it happens | Your choice | You lost your place |
-| Looks like | Calm, eye contact, then you continue | Searching, looking away, "um" |
-| Feels to the audience | Confident, controlled | Uneasy |
+> Interviewer: "What's your biggest weakness?"
+>
+> You: "Let me think about that for a second. // The honest answer is that I used to say yes to every request. / Last year I started …"
 
-A filler word is often a pause you didn't let yourself take. Replacing "um" with a half-second silence is one of the quickest ways to [stop saying um](/speaking-coach/guides/stop-saying-um/). Speaking Coach's feedback after each session points out long pauses or freezes, alongside your pace and [filler words](/speaking-coach/glossary/filler-words/).
+A two-second pause before answering a hard question looks thoughtful. Starting with "um, so, uh" looks caught out.
+
+### In a toast
+
+> "Ten years ago, / Sam told me he'd never get married. // So, / please raise your glasses. / To Sam and Priya."
+
+### Before and after
+
+| Without pauses | With pauses |
+| --- | --- |
+| "We hit our target and I want to thank everyone and especially Lena who stayed late every night in March." | "We hit our target. // I want to thank everyone, / and especially Lena, / who stayed late every night in March." |
+
+## Pause vs. hesitation vs. freeze
+
+| | Deliberate pause | Hesitation | Freeze |
+| --- | --- | --- | --- |
+| Why it happens | Your choice | You're finding the next word | You lost your place |
+| Sounds like | Silence, then a clear line | "Um", "uh", restarts | Long silence, then "sorry, where was I?" |
+| Feels to the audience | Confident, controlled | Unsure | Uneasy |
+
+An "um" is often called a filled pause: a pause you didn't let yourself take. Replacing it with a half-second of silence is one of the quickest ways to [stop saying um](/speaking-coach/guides/stop-saying-um/). Speaking Coach's feedback after each session points out long pauses or freezes, alongside your pace and [filler words](/speaking-coach/glossary/filler-words/).
+
+## Common pause mistakes
+
+- **Pausing mid-phrase:** "We need to / reduce costs" breaks the meaning. Pause at commas, full stops and before key words.
+- **The same pause after every sentence:** it sounds mechanical. Mix short and long.
+- **No pause after a question to the audience:** if you answer it at once, nobody gets to think. Wait three to five seconds.
+
+## How to practise pausing
+
+1. Take a paragraph you'll actually say and mark it with / and //.
+2. Read it aloud, counting "one" for each / and "one, two" for each //.
+3. Record it and listen. The pauses that felt too long usually sound fine.
+4. Check your pace with the [pace checker](/speaking-coach/tools/pace-checker/): more pauses should bring your words per minute down.
+
+For where to pause in a full talk, see [how to use pauses](/speaking-coach/guides/how-to-use-pauses/).
 
 ## Questions people ask
 
+### What does pause mean in speaking?
+
+A short, deliberate silence between words or sentences. Speakers use it to separate ideas, stress a point, breathe or let listeners think.
+
 ### How long should a pause be in a speech?
 
-Usually half a second to three seconds. Longer pauses work only for big moments, such as after a story's ending.
+Usually half a second to three seconds. Longer pauses work only for big moments, such as after a question to the audience or a story's ending.
 
-### Why do pauses feel so long?
+### What is a dramatic pause?
 
-Under pressure, your sense of time speeds up. A two-second pause can feel like ten to you and sound natural to the audience.
+A longer pause, often two or three seconds, just before something important: a reveal, a key number or the last line of a story.
 
 ### Will pausing make me sound unsure?
 
@@ -56,4 +104,4 @@ Not if you hold eye contact and continue with a steady voice. A pause sounds uns
 
 ### Where should I pause in a speech?
 
-Before and after key points, between sections, after questions to the audience, and before your first and last lines. See [how to use pauses](/speaking-coach/guides/how-to-use-pauses/).
+Before and after key points, between sections, after questions to the audience, and before your first and last lines.
