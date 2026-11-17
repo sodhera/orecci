@@ -161,8 +161,8 @@
   function lengthTool(root, cfg) {
     const S = cfg.strings;
     const PACES = [[S.slow, 110], [S.average, 140], [S.fast, 170]];
-    const words = el('input', { type: 'number', min: '1', inputmode: 'numeric', value: '500' });
-    const minutes = el('input', { type: 'number', min: '0.5', step: '0.5', inputmode: 'decimal', value: '5' });
+    const words = el('input', { type: 'number', min: '1', inputmode: 'numeric', value: String(cfg.words || (cfg.minutes ? cfg.minutes * 140 : 500)) });
+    const minutes = el('input', { type: 'number', min: '0.5', step: '0.5', inputmode: 'decimal', value: String(cfg.minutes || 5) });
     const a = el('div', { class: 'stats', 'aria-live': 'polite' });
     const b = el('div', { class: 'stats', 'aria-live': 'polite' });
     const fmt = (min) => { const s = Math.round(min * 60); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };

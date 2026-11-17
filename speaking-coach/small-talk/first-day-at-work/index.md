@@ -1,8 +1,8 @@
-# What to Say on Your First Day at a New Job: Introductions
+# First Day at Work: How to Introduce Yourself and What to Ask
 
 On your first day, use one short introduction everywhere: your name, your role, and one personal detail, followed by a question about them. For example: 'Hi, I'm Sara, the new account manager. I've just moved from Bristol. How long have you been on the team?' Then listen more than you talk, and write names down.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/small-talk/first-day-at-work/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-16. Source: https://www.orecci.com/speaking-coach/small-talk/first-day-at-work/
 
 ## Your 10-second introduction
 
@@ -15,6 +15,8 @@ You'll introduce yourself ten or twenty times on day one. Have one version ready
 That takes about ten seconds to say. The personal detail (just moved, just finished a degree, coming from a hospital, new to the industry) gives people something to ask you. The question hands the conversation to them, which is what you want on day one: you learn more, and they feel welcomed rather than lectured.
 
 Keep it the same each time. Repetition is what makes it sound relaxed by lunchtime.
+
+For longer versions, such as an all-hands, a welcome email or a Slack message, see [how to introduce yourself at a new job](/speaking-coach/small-talk/introduce-yourself-at-a-new-job/).
 
 ## What to say to different people
 

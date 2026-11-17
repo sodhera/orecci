@@ -1,12 +1,14 @@
-# How to Write a Student Council Speech That Wins Votes
+# Student Council Speech: Examples and How to Write One
 
 A winning student council speech is short, usually 1 to 2 minutes: say who you are in a way classmates will remember, make two or three concrete promises you can actually deliver, show you've listened to what students want, and finish with a memorable line that asks for their vote. Specific, believable promises beat big ones every time.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/speeches/student-council-speech/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-16. Source: https://www.orecci.com/speaking-coach/speeches/student-council-speech/
 
 ## What voters are actually deciding
 
 Most students don't vote on policy. They vote on two questions: *Do I like this person?* and *Would they actually do something?* Your speech has about 90 seconds to answer both. That's why the best speeches are short, a bit funny, and concrete.
+
+If you're running to represent just your own class rather than the whole school, see our [class representative speech examples](/speaking-coach/speeches/class-representative-speech/) instead.
 
 ## The structure
 

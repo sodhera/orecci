@@ -1,8 +1,8 @@
-# How to Present a Quarterly Business Review (QBR) to Clients
+# Quarterly Business Review (QBR): Meaning, Agenda and Tips
 
-A good QBR answers three questions in order: did we hit the goals we agreed last quarter, what did we learn or what changed, and what will we do next quarter. Agree the agenda with the client beforehand, keep the results to a few slides tied to their business goals, spend at least half the meeting asking and listening, and end with a short list of agreed next steps and owners.
+A quarterly business review (QBR) is a meeting held every three months where you and a client, or a team and its leaders, look at results against the goals you agreed and plan the next quarter. A good QBR answers three questions in order: did we hit the goals we agreed last quarter, what did we learn or what changed, and what will we do next quarter. Agree the agenda with the client beforehand, keep the results to a few slides tied to their business goals, spend at least half the meeting asking and listening, and end with a short list of agreed next steps and owners.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/presentations/quarterly-business-review/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-16. Source: https://www.orecci.com/speaking-coach/presentations/quarterly-business-review/
 
 ## What a QBR is for
 

@@ -2,7 +2,7 @@
 
 A rehearsal dinner speech is smaller and more personal than a reception speech: thank the people who travelled, tell one story the wider wedding crowd wouldn't hear, and end with a toast to the couple. Hosts speak first and welcome everyone; guests keep it to two or three minutes.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/speeches/rehearsal-dinner-speech/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-16. Source: https://www.orecci.com/speaking-coach/speeches/rehearsal-dinner-speech/
 
 ## How the rehearsal dinner is different from the reception
 
@@ -64,6 +64,8 @@ These are made-up examples to show the shape. Use your own names, places and sto
 - **Save for the reception:** the big, polished story; anything that needs setup for people who don't know the couple.
 - **Fine tonight:** family nicknames, a childhood story with a few relatives as the punchline, a gentle roast the couple has already laughed at.
 - **Skip entirely:** exes, anything about wedding planning stress or money, stories that embarrass the partner's family, and anything you'd hesitate to say in front of a grandparent.
+
+If you're officiating tomorrow, save the couple's story for the ceremony too; our [wedding officiant script](/speaking-coach/speeches/wedding-officiant-speech/) shows where it goes.
 
 ## Mistakes to avoid
 

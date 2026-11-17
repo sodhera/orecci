@@ -1,8 +1,8 @@
-# Sell me this pen: how to answer the sales interview question
+# Sell me this pen: best answer, with an example script
 
 Don't start by describing the pen. Ask the interviewer two or three questions about how and when they use a pen, find a need, then pitch the pen as the answer to that need, handle any objection, and ask for the sale. The exercise tests whether you sell by listening and closing, not whether you can list features.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/interview-questions/sell-me-this-pen/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-16. Source: https://www.orecci.com/speaking-coach/interview-questions/sell-me-this-pen/
 
 ## What the exercise is really testing
 

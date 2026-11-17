@@ -2,7 +2,7 @@
 
 Eine Vorstellung in der Klasse dauert 30 bis 60 Sekunden und hat vier Teile: Name, was dich hierher bringt, ein persönliches Detail, über das man dich später ansprechen kann, und ein Satz, mit dem du die Runde weitergibst. Bei einer längeren Vorstellung von 2 bis 3 Minuten erzählst du statt einer Liste von Hobbys eine kurze Geschichte zu einem davon.
 
-Vom Speaking-Coach-Team bei Sodhera Intelligence. Aktualisiert am 2026-10-22. Source: https://www.orecci.com/speaking-coach/de/speeches/self-introduction-speech/
+Vom Speaking-Coach-Team bei Sodhera Intelligence. Aktualisiert am 2026-11-17. Source: https://www.orecci.com/speaking-coach/de/speeches/self-introduction-speech/
 
 ## Wofür die Vorstellung wirklich da ist
 

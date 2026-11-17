@@ -2,7 +2,7 @@
 
 Fang mit etwas an, das ihr beide gerade erlebt, und häng eine leichte Frage dran: „Ganz schön voll heute. Bist du öfter hier?“ Der erste Satz muss nicht originell sein, nur freundlich und offen. Wichtiger ist der zweite Schritt: Greif die Antwort auf, stell eine Anschlussfrage und sag spätestens nach einer Minute deinen Namen.
 
-Vom Speaking-Coach-Team bei Sodhera Intelligence. Aktualisiert am 2026-10-22. Source: https://www.orecci.com/speaking-coach/de/small-talk/how-to-start-a-conversation/
+Vom Speaking-Coach-Team bei Sodhera Intelligence. Aktualisiert am 2026-11-17. Source: https://www.orecci.com/speaking-coach/de/small-talk/how-to-start-a-conversation/
 
 ## Die Formel: Beobachtung plus Frage
 

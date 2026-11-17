@@ -2,7 +2,7 @@
 
 Rede beim ersten Date über Dinge, zu denen es Geschichten gibt: was die andere Person gerade begeistert, wo sie gern ist, was sie zuletzt zum ersten Mal gemacht hat. Stell offene Fragen, greif Details aus den Antworten auf und erzähl auch selbst etwas, damit es kein Interview wird. Ex-Beziehungen, Gehalt und Familienplanung warten bis später.
 
-Vom Speaking-Coach-Team bei Sodhera Intelligence. Aktualisiert am 2026-10-22. Source: https://www.orecci.com/speaking-coach/de/small-talk/first-date-conversation/
+Vom Speaking-Coach-Team bei Sodhera Intelligence. Aktualisiert am 2026-11-17. Source: https://www.orecci.com/speaking-coach/de/small-talk/first-date-conversation/
 
 ## Die ersten zwei Minuten
 

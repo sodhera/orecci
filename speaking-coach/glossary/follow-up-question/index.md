@@ -1,14 +1,16 @@
-# What is a follow-up question? Definition and examples
+# Follow-Up Question: Meaning, Types and 42 Examples
 
-A follow-up question builds on what the other person just said, asking for more detail, a reason, an example or a feeling. In conversation, it shows you were listening and keeps the talk going. In interviews, interviewers use follow-ups to test how deep your answer goes, and you can use them too.
+A follow-up question is a question that builds on the answer the other person has just given, instead of starting a new topic. It asks for more detail, a reason, an example, a feeling or what happened next: "What was the best part?" or "What happened next?" In an interview, the interviewer's follow-up questions test how deep your answer goes, and yours show you were listening.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/glossary/follow-up-question/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-16. Source: https://www.orecci.com/speaking-coach/glossary/follow-up-question/
 
-## Definition
+## Meaning
 
-A first question opens a topic. A follow-up goes further into what the person actually said, instead of jumping to a new topic. That's what makes a conversation feel like a conversation rather than a checklist.
+A first question opens a topic. A follow-up question comes after the answer, uses something from it (a word, a fact or a feeling) and asks for more on the same topic. That's what makes a talk feel like a conversation rather than a checklist.
 
-## Types of follow-up, with examples
+It is also written "follow up question" or called a follow-on question.
+
+## Types of follow-up question, with examples
 
 Example: someone says, "I just got back from a week of hiking in Scotland."
 
@@ -21,36 +23,99 @@ Example: someone says, "I just got back from a week of hiking in Scotland."
 | Clarification | What they meant | "When you say hiking, are we talking mountains?" |
 | Next | What happens now | "Are you planning another one?" |
 
-Most good follow-ups are [open-ended questions](/speaking-coach/glossary/open-ended-question/) that pick up one word from their answer.
+Most good follow-ups are [open-ended questions](/speaking-coach/glossary/open-ended-question/) that pick up one word from the answer. To make your own, choose one thing they said and ask about it in one short sentence.
 
-## In interviews
+## 36 more examples of follow-up questions, by situation
 
-Interviewers follow up to see whether your story holds up and what your own part was. Common examples:
+Examples to adapt: swap in the detail the other person gave you.
+
+### In conversation
+
+- "How did you get into that?"
+- "What was the best part?"
+- "What surprised you most?"
+- "How long have you been doing it?"
+- "How do you feel about it now?"
+- "Would you do it again?"
+
+After two or three questions in a row, share something of your own.
+
+### In a job interview, from the interviewer
+
+Interviewers follow up to see whether your story holds up and what your own part was.
 
 - "What exactly did *you* do, as opposed to the team?"
 - "How did you measure that result?"
-- "What would you do differently?"
+- "Why did you choose that approach?"
+- "What was the hardest part?"
+- "What would you do differently next time?"
 - "What happened next?"
 
-You can follow up too. At the end of an interview, a question that builds on something they said earlier ("You mentioned the team is growing. What will the new hires focus on?") stands out more than a generic one. See [what to ask at the end of an interview](/speaking-coach/interview-questions/do-you-have-any-questions-for-us/).
+To practise answering these, the Speaking Coach AI partner follows up on what you actually said.
 
-Practising with a partner who follows up on what you actually said, as the Speaking Coach AI partner does, is closer to a real interview than rehearsing a fixed list of questions.
+### In a job interview, from the candidate
+
+Build on something the interviewer said earlier. It stands out more than a generic [end-of-interview question](/speaking-coach/interview-questions/do-you-have-any-questions-for-us/).
+
+- "You mentioned the team is growing. What will the new hires focus on?"
+- "You said the first project is a migration. What would my part be?"
+- "You called the team scrappy. What does that look like day to day?"
+- "You mentioned a spring launch. How does this role support it?"
+- "When you say fast-paced, what does a typical week involve?"
+- "You said the last person in this role was promoted. What did they do well?"
+
+### In a meeting
+
+- "What's driving that date?"
+- "How did you get to that number?"
+- "What do you need from us to make that happen?"
+- "Who else does this affect?"
+- "What's the risk if we wait a month?"
+- "What does done look like here?"
+
+### With a customer or client
+
+- "When did you first notice the problem?"
+- "What have you already tried?"
+- "What were you doing just before it happened?"
+- "What does the delay cost you?"
+- "You said reliability matters most. What does reliable mean for your team?"
+- "If we fixed only one thing this month, what should it be?"
+
+### In a survey or research interview
+
+- "You gave us 6 out of 10. What is the main reason for that score?"
+- "What would have made it a 9?"
+- "Can you tell me about the last time that happened?"
+- "Why is that important to you?"
+- "What did you do instead?"
+- "Is there anything else you'd add?"
+
+## Follow-up vs. probing vs. leading question
+
+- A **follow-up question** is any question that builds on the last answer.
+- A **probing question** is a follow-up that digs into one point for a reason, a detail or evidence: "How did you measure that result?" Every probing question is a follow-up, but a follow-up can also just move the story on.
+- A **leading question** pushes toward the answer you want: "That went badly, didn't it?" Avoid it as a follow-up. It invites agreement, not the person's real view.
 
 ## Questions people ask
+
+### What is a follow-up question?
+
+A question that builds on the answer someone has just given, to get more detail, a reason or an example. It stays on their topic instead of opening a new one.
+
+### What is a follow-up question in an interview?
+
+A second question about the answer you just gave, such as "How did you measure that result?" Interviewers use it to check the details behind your story. Candidates can ask them too.
+
+### What are follow-on questions?
+
+"Follow-on question" is another name for a follow-up question. Both mean a question that continues from the previous answer.
 
 ### Why are follow-up questions important?
 
 They show you listened and help you get past surface answers, in both conversation and interviews.
 
-### How many follow-ups is too many?
-
-If it starts to feel like an interrogation, share something about yourself before asking another.
-
-### What is a good follow-up question in an interview?
-
-One that refers to something specific they said, such as a project, a challenge or a plan.
-
-### How do I handle an interviewer's follow-up?
+### How do I answer an interviewer's follow-up question?
 
 Answer it directly and briefly. If you don't know, say so and explain how you'd find out.
 

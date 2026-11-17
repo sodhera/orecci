@@ -1,49 +1,66 @@
-# What is cadence in speaking? Definition and examples
+# Cadence in Speech: Meaning, Examples and How to Improve It
 
-Cadence is the rhythm and flow of your speech: how your pace, pauses, stress and pitch rise and fall across sentences. Smooth cadence moves in phrases and lands at the end of ideas. Choppy cadence stops and starts mid-thought, and a sing-song cadence repeats the same pattern in every sentence.
+Cadence in speech is the rhythm and flow of your voice: the pattern made by your pace, pauses, stressed words and the rise and fall of your pitch. A varied cadence moves in phrases, slows for key points and lets the voice fall at the end of an idea. A flat cadence gives every word the same speed and weight, so nothing stands out.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/glossary/cadence/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-16. Source: https://www.orecci.com/speaking-coach/glossary/cadence/
 
-## Definition
+## What cadence means in speaking
 
 Cadence is not one thing you can measure with a single number. It's the overall pattern your listener hears: where you speed up, where you slow down, which words get stress, and where the pauses fall. Good cadence follows meaning. Poor cadence follows breath, nerves or habit.
 
-## What shapes cadence
+The word goes back to a Latin verb meaning "to fall". It has a narrower sense too: the drop in a speaker's pitch at the end of a sentence. It also names the chants soldiers sing while marching. This page is about the everyday sense, your speaking cadence in talks, meetings and conversation.
 
-| Element | What it is | Effect on cadence |
+## Cadence vs. pace vs. rhythm vs. intonation
+
+| Term | What it is | How a listener describes it |
 | --- | --- | --- |
-| Pace | Speed in [words per minute](/speaking-coach/glossary/words-per-minute/) | Sets the overall tempo |
-| Pauses | Silences between phrases | Mark where ideas begin and end |
-| Stress | Which words get emphasis | Creates the beat |
-| Sentence length | Short vs long | Short lines speed up; long ones flow |
-| Pitch | Rise and fall | Signals continuing vs finished |
+| Pace | Speed, in [words per minute](/speaking-coach/glossary/words-per-minute/) | "She talks fast." |
+| Rhythm | The beat made by stressed words and pauses | "He speaks in short bursts." |
+| [Intonation](/speaking-coach/glossary/intonation/) | The rise and fall of pitch | "Her voice goes up at the end." |
+| Cadence | All three together, across whole sentences | "He has a calm, measured way of speaking." |
 
-## Examples
+Pace can be measured. Cadence has to be heard.
 
-Examples of the same line with three cadences. A slash (/) marks a pause.
+## One sentence, four cadences
+
+A made-up example. A slash (/) marks a pause and capitals mark a stressed word.
+
+**Flat:** no pauses and no stress, close to a monotone. The listener has to find the point alone.
+
+> "We decided to move the launch to next month because the testing isn't finished the new date is the fourteenth."
 
 **Choppy:** pauses in the wrong places, often to search for words.
 
 > "We decided / to move / the launch to / next month because / the testing / isn't / finished."
 
-**Sing-song:** the same up-down pattern every sentence, so nothing stands out. This is close to a [monotone](/speaking-coach/glossary/monotone/), but with a repeating swing.
+**Sing-song:** the same up-down pattern in every sentence, so nothing stands out.
 
 > "We DE-cided to MOVE the launch. / It's to NEXT month. / The TEST-ing isn't DONE."
 
-**Smooth:** phrases follow the meaning, with a pause before the key point.
+**Varied:** phrases follow the meaning, with stress on the words that matter and a pause before the key point.
 
-> "We've decided to move the launch to next month / because testing isn't finished. / The new date / is the 14th."
+> "We've decided to MOVE the launch to next month / because testing isn't FINISHED. / The new date / is the FOURTEENTH."
 
-## How to improve your cadence
+## How to improve your speaking cadence
 
-1. Read a paragraph aloud and mark a slash at every natural break in meaning.
-2. Read it again, pausing only at the slashes.
-3. Mix short and long sentences in your notes.
-4. Record a story and listen for stalls or a repeating pattern.
+1. **Mark the breaks.** Read a paragraph aloud and put a slash at every natural break in meaning.
+2. **Pause only at the slashes.** Read it again. If you run out of air, add a slash; don't stop mid-phrase.
+3. **Choose one word to stress in each phrase,** usually the new information. Underline it.
+4. **Mix sentence lengths.** A short sentence after a long one sounds like a point landing.
+5. **Slow down for the key line** and let your voice fall at the end of it.
+6. **Record a two-minute story** and listen for stalls, rushing or a repeating pattern.
 
-See [how to use pauses](/speaking-coach/guides/how-to-use-pauses/) for the pause side in detail.
+See [how to use pauses](/speaking-coach/guides/how-to-use-pauses/) for the pause side in detail. The [pace checker](/speaking-coach/tools/pace-checker/) measures the speed side in words per minute.
 
 ## Questions people ask
+
+### What does cadence mean in speech?
+
+The rhythm and flow of how you talk: your pace, pauses, stress and pitch taken together.
+
+### What is an example of cadence in speaking?
+
+Think of reading a bedtime story aloud. You slow down, pause before the surprise and drop your voice on the last line. That pattern is cadence.
 
 ### Is cadence the same as pace?
 

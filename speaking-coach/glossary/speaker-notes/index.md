@@ -1,18 +1,29 @@
-# What are speaker notes? Definition and example for presentations
+# What Are Speaker Notes? Meaning and 5 Examples
 
-Speaker notes are the private notes attached to each slide in presentation software such as PowerPoint or Google Slides. The audience sees only the slide; you see the notes on your own screen in presenter view. Good speaker notes are short cues, a few bullets of key words and numbers, not a script.
+Speaker notes are the private notes attached to each slide in presentation software such as PowerPoint, Keynote or Google Slides. The audience sees only the slide; you see the notes on your own screen in Presenter View. Good speaker notes are short cues, three to five lines of key words and numbers, not a script. They are also called speaking notes, presenter notes or presentation notes.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/glossary/speaker-notes/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-16. Source: https://www.orecci.com/speaking-coach/glossary/speaker-notes/
 
-## Definition
+## Meaning
 
-Every slide has a notes area beneath it while you edit. When you present with presenter view on a second screen, you see the current slide, the next one and your notes; the audience sees only the slide. Notes are also useful when printing handouts for yourself.
+Every slide has a notes area beneath it while you edit. What you type there stays off the slide. When you present, your screen shows the notes and the audience's screen shows only the slide.
+
+People also call them **speaking notes**, **presentation notes** or **presenter notes** (Keynote's name).
 
 Their job is to remind you, not to be read. If you read a script from your notes, you lose eye contact and your voice flattens.
 
-## Example: script vs good notes
+## 5 example speaker notes, by slide type
 
-Example notes for a slide titled "Q3 support results". Made-up details.
+Made-up details, from one 10-minute talk about a support team's quarter. Each example is everything written under that slide.
+
+### 1. Title slide
+
+- **Open:** "Who answered a support ticket this week?"
+- Priya, support lead
+- Promise: 10 minutes, one decision at the end
+- **Next:** "First, the numbers."
+
+### 2. Data chart slide
 
 **Too much (a script):**
 
@@ -23,36 +34,75 @@ Example notes for a slide titled "Q3 support results". Made-up details.
 - **Transition:** "So what changed in Q3?"
 - First response: **6 h → 1 h 50 m**
 - Why: Ana's triage rota (July)
-- Story: the Monday backlog that vanished
-- **Next:** what it means for Q4 hiring
+- Point to the July drop
+- **Next:** the Monday that proved it
 
-Five lines. The numbers are exact because those are what you'd misremember. The rest is a trigger for things you already know.
+The numbers are exact because those are what you'd misremember. The rest is a trigger for things you already know.
 
-## Rules for good speaker notes
+### 3. Story slide
 
-| Rule | Why |
+- First Monday in August: 212 tickets at 9:00
+- Before the rota: cleared by Wednesday
+- This time: cleared by 14:00
+- Pause, then: "Same team. Different rota."
+- **Next:** "Here's how it works."
+
+### 4. Demo slide
+
+- Switch to browser, tab 2 (rota board)
+- Show: new ticket → owner → timer starts
+- Say each click out loud
+- **If it fails:** screenshot is the next slide
+
+### 5. Closing slide
+
+- Recap: 6 h → 1 h 50 m, one rota
+- **Ask:** approve 2 hires for Q4, by Friday
+- Last line: "Faster answers, same team."
+- Then: "What questions do you have?"
+
+## What to put in and what to leave out
+
+| Put in | Leave out |
 | --- | --- |
-| 3–5 bullets per slide | You can take them in at a glance |
-| Write numbers, names and dates in full | These are the things people forget under pressure |
-| Put the transition line first | Moving between slides is where speakers stall; see [signposting](/speaking-coach/glossary/signposting/) |
-| Large font in presenter view | You'll be standing back from the screen |
-| Rehearse with them, then without | Notes should be a safety net, not a crutch |
+| Your first line for the slide, and the line into the next one | Full paragraphs to read aloud |
+| Numbers, names and dates, written exactly | Text that is already on the slide |
+| The one story or example for this slide | Background you know by heart |
+| Stage directions: pause, point, switch to the demo | Reminders for other slides |
 
-Speaking from cues like this is [extemporaneous delivery](/speaking-coach/glossary/extemporaneous-speech/). For rehearsal, Speaking Coach lets you add your slides as a PDF and swipe through them while you speak, then answer audience questions.
+Transition lines matter most, because moving between slides is where speakers stall. See [signposting](/speaking-coach/glossary/signposting/).
+
+## How many words per slide?
+
+As cues: three to five lines, about 15 to 40 words, so you can take them in at a glance. If you must script a slide word for word, such as for a recorded webinar, allow about 130 to 150 words for each minute you spend on it, a typical presenting pace. The [speech length calculator](/speaking-coach/tools/speech-length-calculator/) converts words to minutes.
+
+## How to see your notes while presenting
+
+Menu names are from each company's help pages, as of November 2026.
+
+- **PowerPoint:** on the Slide Show tab, choose From Beginning. With two monitors connected, PowerPoint sets up Presenter View on your screen, with the notes in a pane on the right. With one monitor, select the three-dot button in the control bar during the show, then Show Presenter View. On a Mac, choose Slide Show, then Presenter View.
+- **Google Slides:** click the down arrow next to Slideshow, then Presenter view, then Speaker notes. During a presentation you can also press S.
+- **Keynote:** click View in the toolbar and choose Show Presenter Notes to type them below the slide. They show in the presenter display when you play the slideshow on a separate display or rehearse it.
+
+Make the notes text large, and rehearse with the notes, then once without. Speaking from cues is [extemporaneous delivery](/speaking-coach/glossary/extemporaneous-speech/). In Speaking Coach you can add your slides as a PDF, swipe through them while you speak, then answer the questions your audience would ask.
 
 ## Questions people ask
 
+### What are speaker notes in a presentation?
+
+Private notes attached to each slide. You see them on your own screen while presenting, and the audience sees only the slide.
+
+### What are speaking notes?
+
+Another name for speaker notes: short written cues you speak from. Away from slide software, they can also be cue cards or a one-page outline in your hand.
+
 ### Can the audience see my speaker notes?
 
-Not in presenter view, as long as you share or project only the slide window. Check your screen-share settings before an online talk.
-
-### Should I write my whole speech in the notes?
-
-No. Write cues. A full script tempts you to read.
+Not in Presenter View, as long as you share or project only the slide window. Check your screen-share settings before an online talk.
 
 ### How long should speaker notes be?
 
-Short enough to read in two seconds: three to five bullets.
+Three to five lines per slide, about 15 to 40 words: short enough to read in a two-second glance.
 
 ### What if I don't have a second screen?
 

@@ -1,8 +1,8 @@
-# Practice interview answers out loud: free answer check
+# Free mock interview practice: answer questions out loud
 
 Pick a question, press start, answer it out loud as if the interviewer were in front of you, then press stop. You see how long you spoke, your words per minute, your filler words, your long pauses and a transcript to reread. It is free and runs in your browser; it measures delivery and does not grade the content of your answer.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/tools/interview-answer-review/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-16. Source: https://www.orecci.com/speaking-coach/tools/interview-answer-review/
 
 ## How to use it
 

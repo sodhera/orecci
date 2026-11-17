@@ -2,7 +2,7 @@
 
 A guest wedding toast should be 1 to 2 minutes, about 130 to 260 words: say who you are and how you know the couple, share one specific thing you've seen in them, offer a wish, and raise your glass. Check with the couple before you stand up, keep it shorter than the official speeches, and leave out anything only you would understand.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/speeches/wedding-toast/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-16. Source: https://www.orecci.com/speaking-coach/speeches/wedding-toast/
 
 ## When guests give toasts
 
@@ -13,7 +13,7 @@ Most weddings have set speeches from the wedding party. Guests usually toast in 
 - **The rehearsal dinner or a smaller party** around the wedding, where toasts are more relaxed. See our [rehearsal dinner speech guide](/speaking-coach/speeches/rehearsal-dinner-speech/).
 - **A small wedding** with no formal speeches, where the host asks a few people to say something.
 
-If none of these apply, don't stand up unasked. Even a lovely toast can throw off a planned schedule. If you'd like to say something, ask the couple or the planner a few days ahead.
+If none of these apply, don't stand up unasked. Even a lovely toast can throw off a planned schedule. If you'd like to say something, ask the couple or the planner a few days ahead. And if they've asked you to lead the ceremony itself, start from our [wedding officiant script](/speaking-coach/speeches/wedding-officiant-speech/) instead.
 
 ## The four-line formula
 
