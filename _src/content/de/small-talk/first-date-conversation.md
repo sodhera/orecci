@@ -1,9 +1,10 @@
 ---
 title: "Erstes Date: Worüber reden? Fragen und Tipps für das Gespräch"
-description: "Worüber du beim ersten Date redest: Fragen, die Geschichten auslösen statt Verhör, Themen für später, die Frage nach der Rechnung und wie du ein zweites Treffen ansprichst."
+description: "Worüber du beim ersten Date redest: Fragen, die Geschichten auslösen statt Verhör, Themen für später und wie du ein zweites Treffen ansprichst."
 answer: "Rede beim ersten Date über Dinge, zu denen es Geschichten gibt: was die andere Person gerade begeistert, wo sie gern ist, was sie zuletzt zum ersten Mal gemacht hat. Stell offene Fragen, greif Details aus den Antworten auf und erzähl auch selbst etwas, damit es kein Interview wird. Ex-Beziehungen, Gehalt und Familienplanung warten bis später."
 breadcrumb: "Erstes Date"
-updated: 2026-10-22
+updated: 2026-11-17
+published: 2026-10-22
 order: 1
 practice_heading: "Üb ein erstes Date, bevor es echt wird"
 practice_prompt: "Spiel mein erstes Date in einem Café in Leipzig. Wir haben uns über eine Dating-App kennengelernt. Sei freundlich, aber ein bisschen zurückhaltend."

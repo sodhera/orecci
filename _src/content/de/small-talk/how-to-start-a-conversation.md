@@ -1,9 +1,10 @@
 ---
 title: "Ein Gespräch anfangen: Einstiegssätze für jede Situation"
-description: "Wie du ein Gespräch mit jemandem anfängst, den du kaum kennst: die Formel Beobachtung plus Frage, Einstiegssätze für Büro, Party, Verein und Messe, und was nach dem ersten Satz kommt."
+description: "Ein Gespräch mit Fremden anfangen: die Formel Beobachtung plus Frage, Einstiegssätze für Büro, Party und Messe, und was nach dem ersten Satz kommt."
 answer: "Fang mit etwas an, das ihr beide gerade erlebt, und häng eine leichte Frage dran: „Ganz schön voll heute. Bist du öfter hier?“ Der erste Satz muss nicht originell sein, nur freundlich und offen. Wichtiger ist der zweite Schritt: Greif die Antwort auf, stell eine Anschlussfrage und sag spätestens nach einer Minute deinen Namen."
 breadcrumb: "Gespräch anfangen"
-updated: 2026-10-22
+updated: 2026-11-17
+published: 2026-10-22
 order: 3
 practice_heading: "Üb Einstiege laut, bis sie leicht kommen"
 practice_prompt: "Spiel jemanden, der auf einem Firmenfest allein am Stehtisch steht. Ich spreche dich an und will das Gespräch in Gang bringen."

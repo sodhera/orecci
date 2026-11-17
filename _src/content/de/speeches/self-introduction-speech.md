@@ -1,9 +1,10 @@
 ---
 title: "Sich in der Klasse vorstellen: Beispiele für Schule, Uni und Kurs"
-description: "Sich in der Klasse, im Seminar oder im Sprachkurs vorstellen: Aufbau für 30 bis 60 Sekunden, Beispiele für neue Schüler, Erstis, Azubis und einen längeren Steckbrief-Vortrag."
+description: "Sich in der Klasse, im Seminar oder im Sprachkurs vorstellen: Aufbau für 30 bis 60 Sekunden, mit Beispielen für neue Schüler, Erstis und Azubis."
 answer: "Eine Vorstellung in der Klasse dauert 30 bis 60 Sekunden und hat vier Teile: Name, was dich hierher bringt, ein persönliches Detail, über das man dich später ansprechen kann, und ein Satz, mit dem du die Runde weitergibst. Bei einer längeren Vorstellung von 2 bis 3 Minuten erzählst du statt einer Liste von Hobbys eine kurze Geschichte zu einem davon."
 breadcrumb: "Sich in der Klasse vorstellen"
-updated: 2026-10-22
+updated: 2026-11-17
+published: 2026-10-22
 order: 10
 practice_heading: "Übe deine Vorstellung, bis sie locker klingt"
 practice_prompt: "Ich bin neu in der Klasse und soll mich in einer Minute vorstellen. Hör zu und frag danach etwas nach, wie es eine Mitschülerin tun würde."
