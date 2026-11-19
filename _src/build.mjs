@@ -332,7 +332,7 @@ function siteHeader(lang, alts = []) {
   return `      <header class="site-header">
         <nav class="nav sc-nav" aria-label="${esc(t(lang, 'main_nav'))}">
           <a class="brand" href="${lang === 'en' ? '/' : urlOf(lang, 'home', '')}">
-            <img class="brand-logo" src="/app_logo_rounded.png" alt="" width="36" height="36">
+            <img class="brand-logo" src="/speaking-coach-logo.svg" alt="" width="36" height="36">
             <span>Speaking Coach</span>
           </a>
           <div class="nav-links">${nav}</div>
@@ -372,11 +372,13 @@ function layout(p, { title, description, main, jsonld, lang }) {
     <meta property="og:title" content="${esc(title)}">
     <meta property="og:description" content="${esc(description)}">
     <meta property="og:url" content="${ORIGIN}${p.url}">
-    <meta property="og:image" content="${ORIGIN}/app_logo_rounded.png">
+    <meta property="og:image" content="${ORIGIN}/speaking-coach-logo.png">
     <meta property="og:site_name" content="Speaking Coach">
     <meta name="twitter:card" content="summary">
     <meta name="apple-itunes-app" content="app-id=6767124039">
-    <link rel="icon" href="/app_logo_rounded.png">
+    <link rel="icon" href="/speaking-coach-logo.svg" type="image/svg+xml">
+    <link rel="icon" href="/speaking-coach-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="alternate" type="application/atom+xml" title="Speaking Coach: new and updated guides" href="${BASE}/feed.xml">
     ${p.mdUrl ? `<link rel="alternate" type="text/markdown" href="${p.mdUrl}">` : ''}
     <link rel="stylesheet" href="/styles.css">
@@ -501,7 +503,7 @@ function toolHtml(p, lang) {
 }
 
 const ORG = { '@type': 'Organization', '@id': `${ORIGIN}/#sodhera`, name: 'Sodhera Intelligence', legalName: 'Sodhera Intelligence Private Limited', url: 'https://www.sodhera.com' };
-const APP = { '@type': 'MobileApplication', '@id': `${ORIGIN}${BASE}/#app`, name: 'Speaking Coach', operatingSystem: 'iOS, Android', applicationCategory: 'EducationalApplication', publisher: { '@id': ORG['@id'] }, installUrl: APP_STORE, sameAs: [APP_STORE, PLAY], image: `${ORIGIN}/app_logo_rounded.png` };
+const APP = { '@type': 'MobileApplication', '@id': `${ORIGIN}${BASE}/#app`, name: 'Speaking Coach', operatingSystem: 'iOS, Android', applicationCategory: 'EducationalApplication', publisher: { '@id': ORG['@id'] }, installUrl: APP_STORE, sameAs: [APP_STORE, PLAY], image: `${ORIGIN}/speaking-coach-logo.png` };
 
 function fmtDate(d, lang) {
   try { return new Intl.DateTimeFormat(HREFLANG[lang] || lang, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(d + 'T00:00:00Z')); } catch { return d; }
@@ -569,7 +571,7 @@ ${bodyHtml}
   const graph = [ORG, APP,
     { '@type': 'BreadcrumbList', itemListElement: list.map(([n, u], i) => ({ '@type': 'ListItem', position: i + 1, name: n, item: ORIGIN + u })) },
   ];
-  if (isContent) graph.push({ '@type': 'Article', headline: p.meta.title, description: p.meta.description, image: `${ORIGIN}/app_logo_rounded.png`, inLanguage: HREFLANG[lang] || lang, dateModified: p.meta.updated, datePublished: p.meta.published || p.meta.updated, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: ORIGIN + p.url, about: { '@id': APP['@id'] } });
+  if (isContent) graph.push({ '@type': 'Article', headline: p.meta.title, description: p.meta.description, image: `${ORIGIN}/speaking-coach-logo.png`, inLanguage: HREFLANG[lang] || lang, dateModified: p.meta.updated, datePublished: p.meta.published || p.meta.updated, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: ORIGIN + p.url, about: { '@id': APP['@id'] } });
   if (faq.length) graph.push({ '@type': 'FAQPage', mainEntity: faq.map((q) => ({ '@type': 'Question', name: q.q, acceptedAnswer: { '@type': 'Answer', text: plain(q.text.join(' ')) } })) });
   if (p.section === 'glossary') graph.push({ '@type': 'DefinedTerm', '@id': `${ORIGIN}${p.url}#term`, name: p.meta.breadcrumb || p.meta.title, description: plain(p.meta.answer || ''), url: ORIGIN + p.url, inDefinedTermSet: ORIGIN + urlOf(lang, 'glossary', '') });
   if (p.meta.tool) graph.push({ '@type': 'WebApplication', name: p.meta.breadcrumb || p.meta.title, url: ORIGIN + p.url, description: p.meta.description, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', browserRequirements: 'Requires JavaScript', isAccessibleForFree: true, inLanguage: HREFLANG[lang] || lang, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, publisher: { '@id': ORG['@id'] } });
@@ -652,7 +654,7 @@ function renderStatic(sp) {
   const crumbs = app ? [['Home', '/'], ['Legal documents', '/#legal'], [app[1], `/${appDir}/`], ...(isHub ? [] : [[current ? current[1] : meta.title.split(/\s[|—-]\s/)[0], url]])] : [];
   // Pages without their own logo (VerseBlock's exported documents) use their app hub's.
   const hub = staticPages.find((q) => q.url === `/${appDir}/`);
-  const logo = meta.logo ? abs(meta.logo) : hub?.meta.logo ? new URL(hub.meta.logo, ORIGIN + hub.url).pathname : (appDir === 'speakingcoach' ? '/app_logo_rounded.png' : '');
+  const logo = meta.logo && !/app_logo_rounded/.test(meta.logo) ? abs(meta.logo) : hub?.meta.logo ? new URL(hub.meta.logo, ORIGIN + hub.url).pathname : (appDir === 'speakingcoach' ? '/speaking-coach-logo.svg' : '');
   const legalBar = app ? `      <div class="legal-bar">
         <div class="legal-bar-inner">
           ${crumbHtml(crumbs)}
@@ -683,10 +685,12 @@ function renderStatic(sp) {
     <meta property="og:title" content="${esc(meta.title)}">
     <meta property="og:description" content="${esc(meta.description)}">
     <meta property="og:url" content="${ORIGIN}${url}">
-    <meta property="og:image" content="${ORIGIN}${logo && appDir !== 'speakingcoach' ? logo : '/app_logo_rounded.png'}">
+    <meta property="og:image" content="${ORIGIN}${logo && appDir !== 'speakingcoach' && !logo.endsWith('.svg') ? logo : '/speaking-coach-logo.png'}">
     <meta property="og:site_name" content="Speaking Coach">
     <meta name="twitter:card" content="summary">
-    <link rel="icon" href="/app_logo_rounded.png">
+    <link rel="icon" href="/speaking-coach-logo.svg" type="image/svg+xml">
+    <link rel="icon" href="/speaking-coach-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="alternate" type="application/atom+xml" title="Speaking Coach: new and updated guides" href="${BASE}/feed.xml">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="${BASE}/assets/sc.css">
