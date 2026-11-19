@@ -1,6 +1,9 @@
 // Builds the Speaking Coach pages on orecci.com from _src/content.
 // Usage: node _src/build.mjs [--check]   (--check validates without writing)
-// No dependencies. Output: speaking-coach/**, sitemap.xml, robots.txt, llms.txt.
+// No dependencies. Output: speaking-coach/**, sitemap.xml, robots.txt, llms.txt, feed.xml, and every
+// other page on orecci.com (home, 404, each app's legal pages) from _src/static/<path>.html, wrapped in
+// the same header, footer and styles. Edit those sources, never the generated .html at the root. Documents
+// copied from an app repo (VerseBlock's exports) go in as the <main> content with a <!--static {…} --> header.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -319,12 +322,42 @@ function alternates(p) {
   return Object.keys(ui).map((l) => byKey.get(`${l}|${p.section}|${p.slug}`)).filter(Boolean).map((q) => [q.lang, q.url]);
 }
 
+// ---------- shared header and footer (every page on orecci.com) ----------
+// The apps whose legal documents live on orecci.com, in the order the home page lists them.
+const LEGAL_APPS = [['speakingcoach', 'Speaking Coach'], ['verseblock', 'VerseBlock'], ['sleepblock', 'SleepBlock'], ['journalblock', 'JournalBlock'], ['bhetam', 'Bhetam'], ['jyotish', 'Jyotish Baje'], ['pdf-all-in-one', 'PDF All-in-One'], ['gymblock', 'GymBlock']];
+
+function siteHeader(lang, alts = []) {
+  const langOptions = Object.keys(ui).map((l) => { const a = alts.find(([x]) => x === l); return `<option value="${a ? a[1] : urlOf(l, 'home', '')}"${l === lang ? ' selected' : ''}>${esc(ui[l].language_name)}</option>`; }).join('');
+  const nav = NAV.filter((s) => allUrls.has(urlOf(lang, s, ''))).map((s) => `<a href="${urlOf(lang, s, '')}">${esc(t(lang, `sections.${s}.nav`))}</a>`).join('');
+  return `      <header class="site-header">
+        <nav class="nav sc-nav" aria-label="${esc(t(lang, 'main_nav'))}">
+          <a class="brand" href="${lang === 'en' ? '/' : urlOf(lang, 'home', '')}">
+            <img class="brand-logo" src="/app_logo_rounded.png" alt="" width="36" height="36">
+            <span>Speaking Coach</span>
+          </a>
+          <div class="nav-links">${nav}</div>
+          <label class="lang-pick"><span class="visually-hidden">${esc(t(lang, 'language'))}</span>
+            <select onchange="location.href=this.value" aria-label="${esc(t(lang, 'language'))}">${langOptions}</select>
+          </label>
+        </nav>
+      </header>`;
+}
+
+function siteFooter(lang) {
+  const links = [['pages', 'about'], ['pages', 'how-we-review'], ['pages', 'chatgpt']].map(([s, slug]) => byKey.get(`${lang}|${s}|${slug}`) || byKey.get(`en|${s}|${slug}`)).filter(Boolean).map((q) => `<a href="${q.url}">${esc(q.meta.nav_label || q.meta.title)}</a>`).join('');
+  const apps = LEGAL_APPS.map(([dir, name]) => `<a href="/${dir}/">${esc(name)}</a>`).join('');
+  return `      <footer class="site-footer sc-footer">
+        <div class="footer-inner">
+          <div class="footer-links"><a href="${urlOf(lang, 'home', '')}">${esc(t(lang, 'home_crumb'))}</a>${links}<a href="/speakingcoach/">${esc(t(lang, 'privacy_terms'))}</a><a href="/sitemap.xml">Sitemap</a></div>
+          <div class="footer-links footer-apps"><span>Legal documents:</span>${apps}</div>
+          <p>${esc(t(lang, 'footer_line'))} © 2026 Sodhera Intelligence Private Limited.</p>
+        </div>
+      </footer>`;
+}
+
 function layout(p, { title, description, main, jsonld, lang }) {
   const alts = alternates(p);
   const altLinks = alts.length > 1 ? alts.map(([l, u]) => `<link rel="alternate" hreflang="${HREFLANG[l] || l}" href="${ORIGIN}${u}">`).join('\n    ') + (alts.find(([l]) => l === 'en') ? `\n    <link rel="alternate" hreflang="x-default" href="${ORIGIN}${alts.find(([l]) => l === 'en')[1]}">` : '') : '';
-  const langOptions = Object.keys(ui).map((l) => { const a = alts.find(([x]) => x === l); return `<option value="${a ? a[1] : urlOf(l, 'home', '')}"${l === lang ? ' selected' : ''}>${esc(ui[l].language_name)}</option>`; }).join('');
-  const nav = NAV.filter((s) => allUrls.has(urlOf(lang, s, ''))).map((s) => `<a href="${urlOf(lang, s, '')}">${esc(t(lang, `sections.${s}.nav`))}</a>`).join('');
-  const footerLinks = [['pages', 'about'], ['pages', 'how-we-review'], ['pages', 'chatgpt']].map(([s, slug]) => byKey.get(`${lang}|${s}|${slug}`) || byKey.get(`en|${s}|${slug}`)).filter(Boolean).map((q) => `<a href="${q.url}">${esc(q.meta.nav_label || q.meta.title)}</a>`).join('');
   return `<!doctype html>
 <html lang="${HREFLANG[lang] || lang}"${RTL.has(lang) ? ' dir="rtl"' : ''}>
   <head>
@@ -344,6 +377,7 @@ function layout(p, { title, description, main, jsonld, lang }) {
     <meta name="twitter:card" content="summary">
     <meta name="apple-itunes-app" content="app-id=6767124039">
     <link rel="icon" href="/app_logo_rounded.png">
+    <link rel="alternate" type="application/atom+xml" title="Speaking Coach: new and updated guides" href="${BASE}/feed.xml">
     ${p.mdUrl ? `<link rel="alternate" type="text/markdown" href="${p.mdUrl}">` : ''}
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="${BASE}/assets/sc.css">
@@ -352,27 +386,11 @@ function layout(p, { title, description, main, jsonld, lang }) {
   </head>
   <body class="sc">
     <div class="site-shell">
-      <header class="site-header">
-        <nav class="nav sc-nav" aria-label="${esc(t(lang, 'main_nav'))}">
-          <a class="brand" href="${urlOf(lang, 'home', '')}">
-            <img class="brand-logo" src="/app_logo_rounded.png" alt="" width="36" height="36">
-            <span>Speaking Coach</span>
-          </a>
-          <div class="nav-links">${nav}</div>
-          <label class="lang-pick"><span class="visually-hidden">${esc(t(lang, 'language'))}</span>
-            <select onchange="location.href=this.value" aria-label="${esc(t(lang, 'language'))}">${langOptions}</select>
-          </label>
-        </nav>
-      </header>
+${siteHeader(lang, alts)}
       <main class="sc-main">
 ${main}
       </main>
-      <footer class="site-footer sc-footer">
-        <div class="footer-inner">
-          <div class="footer-links">${footerLinks}<a href="/speakingcoach/">${esc(t(lang, 'privacy_terms'))}</a><a href="/">orecci.com</a></div>
-          <p>${esc(t(lang, 'footer_line'))} © 2026 Sodhera Intelligence Private Limited.</p>
-        </div>
-      </footer>
+${siteFooter(lang)}
     </div>
   </body>
 </html>
@@ -594,6 +612,102 @@ function markdownCopy(p) {
 }
 
 
+
+// ---------- the rest of orecci.com ----------
+// The home page, the 404 page and every app's legal pages live in _src/static/<path>.html: a JSON
+// header (title, description, app, document tabs, note) and the page's own content, kept word for
+// word. They get the same header, footer and styles as the Speaking Coach pages.
+const STATIC = path.join(SRC, 'static');
+const MONTHS = 'january february march april may june july august september october november december'.split(' ');
+let staticPages = [];
+function readStatic() {
+  const list = [];
+  const walk = (d) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith('.html')) list.push(f); } };
+  if (fs.existsSync(STATIC)) walk(STATIC);
+  return list.sort().map((f) => {
+    const raw = fs.readFileSync(f, 'utf8');
+    const m = /^<!--static\n([\s\S]*?)\n-->\n/.exec(raw);
+    if (!m) { err(f, 'missing <!--static {…} --> header'); return null; }
+    const meta = JSON.parse(m[1]);
+    const rel = path.relative(STATIC, f).replace(/\\/g, '/');
+    const url = '/' + rel.replace(/(^|\/)index\.html$/, '$1');
+    // "Last updated September 5, 2026" / "5 September 2026" in the page's note → sitemap date.
+    const d = /(\d{1,2})\s+([a-z]+)\s+(\d{4})|([a-z]+)\s+(\d{1,2}),?\s+(\d{4})/i.exec(meta.footer_note || '');
+    let lastmod = meta.updated || '';
+    if (!lastmod && d) { const [day, mon, yr] = d[1] ? [d[1], d[2], d[3]] : [d[5], d[4], d[6]]; const mi = MONTHS.indexOf(mon.toLowerCase()); if (mi >= 0) lastmod = `${yr}-${String(mi + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`; }
+    return { rel, url, meta, lastmod, body: raw.slice(m[0].length) };
+  }).filter(Boolean);
+}
+
+function renderStatic(sp) {
+  const { meta, url, rel } = sp;
+  const dir = rel.includes('/') ? rel.split('/')[0] : '';
+  // The root's own legal pages (privacy-policy.html…) belong to Speaking Coach, whose hub is /speakingcoach/.
+  const appDir = dir || (meta.app === 'root' || rel === '404.html' ? '' : 'speakingcoach');
+  const app = LEGAL_APPS.find(([d]) => d === appDir);
+  const abs = (h) => new URL(h, ORIGIN + url).pathname;
+  const isHub = app && url === `/${appDir}/`;
+  const tabs = (meta.tabs || []).map(([h, label]) => [abs(h), label]);
+  const current = tabs.find(([h]) => h === url);
+  const crumbs = app ? [['Home', '/'], ['Legal documents', '/#legal'], [app[1], `/${appDir}/`], ...(isHub ? [] : [[current ? current[1] : meta.title.split(/\s[|—-]\s/)[0], url]])] : [];
+  // Pages without their own logo (VerseBlock's exported documents) use their app hub's.
+  const hub = staticPages.find((q) => q.url === `/${appDir}/`);
+  const logo = meta.logo ? abs(meta.logo) : hub?.meta.logo ? new URL(hub.meta.logo, ORIGIN + hub.url).pathname : (appDir === 'speakingcoach' ? '/app_logo_rounded.png' : '');
+  const legalBar = app ? `      <div class="legal-bar">
+        <div class="legal-bar-inner">
+          ${crumbHtml(crumbs)}
+          <div class="legal-app">${logo ? `<img src="${esc(logo)}" alt="" width="32" height="32">` : ''}<strong>${esc(app[1])}</strong></div>
+          ${tabs.length ? `<nav class="legal-tabs" aria-label="${esc(app[1])} documents">${tabs.map(([h, label]) => `<a href="${esc(h)}"${h === url ? ' aria-current="page"' : ''}>${esc(label)}</a>`).join('')}</nav>` : ''}
+        </div>
+      </div>\n` : '';
+  const note = meta.footer_note && !/^Sodhera Intelligence Private Limited$/.test(meta.footer_note) ? `<p class="doc-note">${esc(meta.footer_note)}</p>` : '';
+  const graph = meta.jsonld && meta.jsonld.length ? null : {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'WebPage', '@id': ORIGIN + url, url: ORIGIN + url, name: meta.title, description: meta.description, inLanguage: 'en', isPartOf: { '@type': 'WebSite', '@id': `${ORIGIN}/#website`, url: `${ORIGIN}/`, name: 'Speaking Coach' }, publisher: ORG, ...(sp.lastmod ? { dateModified: sp.lastmod } : {}) },
+      ...(crumbs.length ? [{ '@type': 'BreadcrumbList', itemListElement: crumbs.map(([n, u], i) => ({ '@type': 'ListItem', position: i + 1, name: n, item: ORIGIN + u.replace('#legal', '') })) }] : []),
+    ],
+  };
+  const ld = graph ? `<script type="application/ld+json">${JSON.stringify(graph).replace(/</g, '\\u003c')}</script>` : meta.jsonld.map((j) => `<script type="application/ld+json">${j}</script>`).join('\n    ');
+  const robots = meta.noindex ? 'noindex, nofollow' : 'index, follow, max-snippet:-1, max-image-preview:large';
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${esc(meta.title)}</title>
+    <meta name="description" content="${esc(meta.description)}">
+    <meta name="robots" content="${robots}">
+    ${rel === '404.html' ? '' : `<link rel="canonical" href="${ORIGIN}${url}">`}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="${esc(meta.title)}">
+    <meta property="og:description" content="${esc(meta.description)}">
+    <meta property="og:url" content="${ORIGIN}${url}">
+    <meta property="og:image" content="${ORIGIN}${logo && appDir !== 'speakingcoach' ? logo : '/app_logo_rounded.png'}">
+    <meta property="og:site_name" content="Speaking Coach">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="/app_logo_rounded.png">
+    <link rel="alternate" type="application/atom+xml" title="Speaking Coach: new and updated guides" href="${BASE}/feed.xml">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="${BASE}/assets/sc.css">
+    ${ld}
+    ${meta.styles || ''}
+    <script src="${BASE}/assets/track.js" data-key="${POSTHOG_KEY}" data-section="${meta.app === 'root' ? 'root' : rel === '404.html' ? '404' : 'legal'}" data-slug="${esc(rel.replace(/\.html$/, ''))}" data-lang="en" defer></script>
+  </head>
+  <body class="sc${meta.body_class ? ' ' + esc(meta.body_class) : ''}${app ? ' legal' : ''}">
+    <div class="site-shell">
+${siteHeader('en')}
+${legalBar}      <main class="sc-main${meta.main_class ? ' ' + esc(meta.main_class) : ''}">
+${sp.body.trimEnd()}
+        ${note}
+      </main>
+${siteFooter('en')}
+    </div>
+  </body>
+</html>
+`;
+}
+
 // ---------- build ----------
 function main() {
   for (const p of pages) p.mdUrl = `${p.url}index.md`;
@@ -630,14 +744,13 @@ function main() {
   fs.cpSync(path.join(SRC, 'assets'), path.join(OUT, 'assets'), { recursive: true });
   for (const [l, r] of Object.entries(roles)) write(`${BASE}/assets/roles-${l}.json`, JSON.stringify(r.sort((a, b) => a.role.localeCompare(b.role, l))));
 
-  // sitemap: every Speaking Coach page plus the site's existing pages.
-  const legacy = [];
-  const walk = (d) => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { if (e.name.startsWith('.') || e.name.startsWith('_') || e.name === 'speaking-coach' || e.name === 'node_modules') continue; const p = path.join(d, e.name); if (e.isDirectory()) walk(p); else if (e.name.endsWith('.html') && !/^google[0-9a-f]+\.html$/.test(e.name)) legacy.push('/' + path.relative(ROOT, p).replace(/\\/g, '/').replace(/index\.html$/, '')); } };
-  walk(ROOT);
+  const statics = staticPages = readStatic();
+  for (const sp of statics) write(sp.rel, renderStatic(sp));
+  // sitemap: every Speaking Coach page plus the rest of the site (not noindex pages or the 404 page).
   const entries = [
     ...pages.map((p) => ({ loc: p.url, lastmod: p.meta.updated, alts: alternates(p) })),
     ...hubs.map((h) => ({ loc: h.url, lastmod: h.members.map((m) => m.meta.updated).sort().pop(), alts: alternates(h) })),
-    ...legacy.map((u) => ({ loc: u })),
+    ...statics.filter((sp) => !sp.meta.noindex && sp.rel !== '404.html').map((sp) => ({ loc: sp.url, lastmod: sp.url === '/' ? new Date().toISOString().slice(0, 10) : sp.lastmod })),
   ];
   const sm = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.map((e) => `  <url><loc>${ORIGIN}${e.loc}</loc>${e.lastmod ? `<lastmod>${e.lastmod}</lastmod>` : ''}${(e.alts || []).length > 1 ? e.alts.map(([l, u]) => `<xhtml:link rel="alternate" hreflang="${HREFLANG[l] || l}" href="${ORIGIN}${u}"/>`).join('') : ''}</url>`).join('\n')}\n</urlset>\n`;
   write('sitemap.xml', sm);
@@ -654,9 +767,21 @@ function main() {
   write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
 
   const en = pages.filter((p) => p.lang === 'en');
+  const recent = [...en].sort((a, b) => (b.meta.updated || '').localeCompare(a.meta.updated || '') || a.url.localeCompare(b.url)).slice(0, 100);
+  write(`${BASE}/feed.xml`, `<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Speaking Coach: new and updated guides</title>
+  <link href="${ORIGIN}${BASE}/feed.xml" rel="self"/>
+  <link href="${ORIGIN}${BASE}/"/>
+  <id>${ORIGIN}${BASE}/</id>
+  <updated>${recent[0].meta.updated}T00:00:00Z</updated>
+  <author><name>Speaking Coach team at Sodhera Intelligence</name></author>
+${recent.map((p) => `  <entry><title>${esc(p.meta.title)}</title><link href="${ORIGIN}${p.url}"/><id>${ORIGIN}${p.url}</id><updated>${p.meta.updated}T00:00:00Z</updated>${p.meta.published ? `<published>${p.meta.published}T00:00:00Z</published>` : ''}<summary>${esc(p.meta.description)}</summary></entry>`).join('\n')}
+</feed>
+`);
   const llmsSections = SECTIONS.map((s) => { const m = en.filter((p) => p.section === s); if (!m.length) return ''; return `\n## ${t('en', `sections.${s}.title`)}\n\n${m.map((p) => `- [${p.meta.title}](${ORIGIN}${p.url}index.md): ${p.meta.description}`).join('\n')}\n`; }).join('');
   const others = Object.keys(ui).filter((l) => l !== 'en').map((l) => `- [${ui[l].language_name}](${ORIGIN}${urlOf(l, 'home', '')}): ${pages.filter((p) => p.lang === l).length} pages`).join('\n');
-  write('llms.txt', `# Speaking Coach\n\n> ${t('en', 'one_line')}\n\nSpeaking Coach is an iPhone and Android app by Sodhera Intelligence (${APP_STORE}, ${PLAY}), with a free voice review in ChatGPT. These pages answer common questions about interviews, speeches, presentations and conversations. Each page has a Markdown copy at index.md.\n${llmsSections}\n## Other languages\n\n${others}\n`);
+  write('llms.txt', `# Speaking Coach\n\n> ${t('en', 'one_line')}\n\nSpeaking Coach is an iPhone and Android app by Sodhera Intelligence (${APP_STORE}, ${PLAY}), with a free voice review in ChatGPT and on the English pages below (answer out loud, get pace, fillers, pauses and feedback that quotes your words; no sign-up). These pages answer common questions about interviews, speeches, presentations and conversations. Each page has a Markdown copy at index.md. Recently updated pages: ${ORIGIN}${BASE}/feed.xml\n${llmsSections}\n## Other languages\n\n${others}\n\n## Legal documents\n\n${LEGAL_APPS.map(([d, n]) => `- [${n}](${ORIGIN}/${d}/): privacy policy, terms and support`).join('\n')}\n`);
   console.log(`wrote ${outputs.size} HTML pages, ${pages.length} Markdown copies, sitemap (${entries.length} URLs), robots.txt, llms.txt`);
 }
 

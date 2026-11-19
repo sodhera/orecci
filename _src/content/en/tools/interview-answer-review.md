@@ -1,9 +1,9 @@
 ---
 title: "Free mock interview practice: answer questions out loud"
-description: "A free mock interview you run yourself: answer 12 classic questions out loud and see your pace, filler words, long pauses and transcript. No sign-up."
-answer: "Pick a question, press start, answer it out loud as if the interviewer were in front of you, then press stop. You see how long you spoke, your words per minute, your filler words, your long pauses and a transcript to reread. It is free and runs in your browser; it measures delivery and does not grade the content of your answer."
+description: "Free mock interview practice: answer out loud and get AI feedback that quotes your words, plus pace, filler words and pauses. No sign-up."
+answer: "Answer 'Tell me about yourself' out loud (up to 2 minutes) and get free AI feedback that quotes your words: one thing to keep, one change and one sentence said more clearly, plus your pace, filler words and long pauses. English only, two free reviews a day, no sign-up. Below it, 12 classic questions run in a browser-only checker that shows your pace, fillers and transcript."
 breadcrumb: "Interview answer check"
-updated: 2026-11-16
+updated: 2026-11-19
 published: 2026-10-22
 order: 5
 review_mode: interview

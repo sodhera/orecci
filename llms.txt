@@ -2,14 +2,14 @@
 
 > Speaking Coach: practice interviews, speeches and small talk out loud, with an AI partner, in 20 languages.
 
-Speaking Coach is an iPhone and Android app by Sodhera Intelligence (https://apps.apple.com/app/id6767124039, https://play.google.com/store/apps/details?id=com.sodhera.speakingcoach), with a free voice review in ChatGPT. These pages answer common questions about interviews, speeches, presentations and conversations. Each page has a Markdown copy at index.md.
+Speaking Coach is an iPhone and Android app by Sodhera Intelligence (https://apps.apple.com/app/id6767124039, https://play.google.com/store/apps/details?id=com.sodhera.speakingcoach), with a free voice review in ChatGPT and on the English pages below (answer out loud, get pace, fillers, pauses and feedback that quotes your words; no sign-up). These pages answer common questions about interviews, speeches, presentations and conversations. Each page has a Markdown copy at index.md. Recently updated pages: https://www.orecci.com/speaking-coach/feed.xml
 
 ## Free speaking tools
 
 - [Conversation practice drill: keep it going out loud](https://www.orecci.com/speaking-coach/tools/conversation-drill/index.md): Practice three conversation skills out loud: asking follow-up questions, sharing something of your own and ending politely. 12 prompts, free, in your browser.
 - [Filler word counter: count your ums and uhs (free)](https://www.orecci.com/speaking-coach/tools/filler-word-counter/index.md): Speak or paste a transcript and count your filler words: um, uh, like, you know and more. Free, runs in your browser, no sign-up.
-- [Free speech review: check your pace and filler words](https://www.orecci.com/speaking-coach/tools/free-speech-review/index.md): Speak a speech, toast or talk and see your words per minute, filler words, long pauses and a transcript. Free, runs in your browser, no sign-up.
-- [Free mock interview practice: answer questions out loud](https://www.orecci.com/speaking-coach/tools/interview-answer-review/index.md): A free mock interview you run yourself: answer 12 classic questions out loud and see your pace, filler words, long pauses and transcript. No sign-up.
+- [Free speech review: check your pace and filler words](https://www.orecci.com/speaking-coach/tools/free-speech-review/index.md): Give your speech, toast or talk out loud and get free AI feedback: pace, filler words, pauses and tips that quote your words. No sign-up.
+- [Free mock interview practice: answer questions out loud](https://www.orecci.com/speaking-coach/tools/interview-answer-review/index.md): Free mock interview practice: answer out loud and get AI feedback that quotes your words, plus pace, filler words and pauses. No sign-up.
 - [Interview questions by role: find questions for your job](https://www.orecci.com/speaking-coach/tools/interview-questions-by-role/index.md): Type your job title and see the interview questions you're likely to get for that role, then open the full guide with how to answer each one.
 - [Speaking pace checker: measure your words per minute, free](https://www.orecci.com/speaking-coach/tools/pace-checker/index.md): Find your speaking rate in words per minute by talking or by entering a word count and a time. See typical ranges and how to slow down or speed up.
 - [Small talk practice drill: answer openers out loud](https://www.orecci.com/speaking-coach/tools/small-talk-drill/index.md): Practice small talk by replying out loud to 15 everyday openers a stranger might say. See your reply length, pace, fillers and transcript. Free.
@@ -617,3 +617,14 @@ Speaking Coach is an iPhone and Android app by Sodhera Intelligence (https://app
 - [Bahasa Indonesia](https://www.orecci.com/speaking-coach/id/): 9 pages
 - [Filipino](https://www.orecci.com/speaking-coach/fil/): 9 pages
 - [Tiếng Việt](https://www.orecci.com/speaking-coach/vi/): 9 pages
+
+## Legal documents
+
+- [Speaking Coach](https://www.orecci.com/speakingcoach/): privacy policy, terms and support
+- [VerseBlock](https://www.orecci.com/verseblock/): privacy policy, terms and support
+- [SleepBlock](https://www.orecci.com/sleepblock/): privacy policy, terms and support
+- [JournalBlock](https://www.orecci.com/journalblock/): privacy policy, terms and support
+- [Bhetam](https://www.orecci.com/bhetam/): privacy policy, terms and support
+- [Jyotish Baje](https://www.orecci.com/jyotish/): privacy policy, terms and support
+- [PDF All-in-One](https://www.orecci.com/pdf-all-in-one/): privacy policy, terms and support
+- [GymBlock](https://www.orecci.com/gymblock/): privacy policy, terms and support

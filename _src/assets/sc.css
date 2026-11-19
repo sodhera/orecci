@@ -213,3 +213,66 @@ body.sc {
 .review .privacy { color: var(--muted); font-size: 13px; margin: 12px 0 0; }
 .review-upsell { margin-top: 14px; border-radius: 8px; background: var(--answer-bg); border: 1px solid var(--answer-line); padding: 14px 16px; }
 .review-upsell p { margin: 0; }
+
+/* Legal and app pages: one look for every app's documents */
+.legal-bar { border-bottom: 1px solid var(--line); background: var(--card); }
+.legal-bar-inner { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 14px 0 0; }
+.legal-bar .crumbs { margin-bottom: 10px; }
+.legal-app { display: flex; align-items: center; gap: 10px; font-size: 18px; }
+.legal-app img { border-radius: 8px; }
+.legal-tabs { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+.legal-tabs a { padding: 10px 12px; color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 650; border-bottom: 2px solid transparent; }
+.legal-tabs a:hover { color: var(--ink); }
+.legal-tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+.doc-note { width: min(980px, calc(100% - 24px)); margin: 0 auto 24px; color: var(--muted); font-size: 14px; }
+.footer-apps { font-size: 13px; }
+.footer-apps span { font-weight: 650; }
+
+/* Documents, support cards and app cards are always light "paper", in light and dark mode. */
+.doc-content-wrap, .support-card, .doc-link:not([style*="color:#f"]) {
+  --ink: #17202a; --muted: #5d6978; --line: #dfe4ec; --surface: #ffffff;
+  color-scheme: light; color: var(--ink);
+}
+.doc-content-wrap { background: #fff; }
+.legal-document { --accent-light: #fff1f1; }
+.legal-document p, .legal-document ul, .legal-document ol { color: var(--muted); font-size: 15px; line-height: 1.7; }
+.legal-document ul, .legal-document ol { margin: 12px 0; padding-left: 24px; }
+.legal-document li + li { margin-top: 6px; }
+.legal-document strong { color: var(--ink); }
+.legal-document a { color: var(--accent-dark); text-decoration: underline; }
+.legal-document a:hover { color: var(--accent); }
+.legal-document hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+.legal-document table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+.legal-document th, .legal-document td { border: 1px solid var(--line); padding: 10px 14px; text-align: left; vertical-align: top; color: var(--muted); }
+.legal-document th { background: var(--accent-light); font-weight: 700; color: var(--ink); }
+.legal-document blockquote { margin: 16px 0; padding: 16px 20px; border-left: 4px solid var(--accent); background: var(--accent-light); border-radius: 0 8px 8px 0; color: var(--ink); font-size: 15px; }
+.legal-document .meta-info { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
+/* VerseBlock's exported documents */
+.legal-document .notice { margin: 20px 0; padding: 14px 18px; border: 1px solid #e8d9a8; border-radius: 8px; background: #fbf5e2; color: var(--ink); }
+.legal-document nav.contents { display: flex; flex-direction: column; gap: 6px; margin: 20px 0; padding: 16px 20px; border: 1px solid var(--line); border-radius: 8px; }
+.legal-document nav.contents h2 { margin: 0 0 6px; padding: 0; border: 0; }
+.legal-document .table-wrap { overflow-x: auto; margin: 20px 0; }
+.legal-document code { font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace; background: #f3f6f9; padding: 2px 5px; border-radius: 4px; }
+@media (max-width: 760px) { .legal-tabs a { padding: 8px 10px; } }
+
+/* Home page (and 404) */
+.sc-hero .actions .button { min-height: 52px; font-size: 16px; }
+.sc-hero .lede-note { font-size: 15px !important; margin-top: 14px !important; }
+.hero-card { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); padding: 24px; }
+.hero-card h2 { margin: 0 0 12px; font-size: 20px; letter-spacing: 0; }
+.hero-card ol { margin: 0; padding-inline-start: 20px; color: var(--muted); }
+.hero-card li { margin: 8px 0; }
+.hero-card li strong { color: var(--ink); }
+.popular { width: min(1120px, calc(100% - 32px)); margin: 0 auto 56px; }
+.popular h2, .legal-docs h2 { font-size: 26px; letter-spacing: 0; margin: 0 0 6px; }
+.popular > p, .legal-docs > p { color: var(--muted); margin: 0 0 18px; }
+.popular-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
+.popular-col { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 20px 22px; }
+.popular-col h3 { margin: 0 0 10px; font-size: 18px; }
+.popular-col ul { list-style: none; margin: 0; padding: 0; }
+.popular-col li { margin: 7px 0; }
+.popular-col a { color: var(--accent-dark); text-decoration: none; font-weight: 600; }
+.popular-col a:hover { text-decoration: underline; }
+.legal-docs { width: min(1120px, calc(100% - 32px)); margin: 0 auto 18px; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 4px; }
+

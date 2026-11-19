@@ -1,8 +1,8 @@
 # Free speech review: check your pace and filler words
 
-Press start, give your speech or talk out loud, then press stop: you see your pace in words per minute, your filler words, how many long pauses you made and a transcript of what you said. It is free, runs in your browser and needs no sign-up. It measures delivery only; it does not judge what you said.
+Tick that it's your own voice, press start and give your speech, toast or talk out loud (up to 3 minutes). You get free AI feedback that quotes your words: one thing to keep, one change and one sentence said more clearly, plus your pace in words per minute, filler words and long pauses. English only, two free reviews a day, no sign-up. Below it, a second checker runs entirely in your browser and works in 20 languages.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/tools/free-speech-review/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-19. Source: https://www.orecci.com/speaking-coach/tools/free-speech-review/
 
 ## How to use it
 

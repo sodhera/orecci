@@ -1,9 +1,10 @@
 ---
 title: "Free speech review: check your pace and filler words"
-description: "Speak a speech, toast or talk and see your words per minute, filler words, long pauses and a transcript. Free, runs in your browser, no sign-up."
-answer: "Press start, give your speech or talk out loud, then press stop: you see your pace in words per minute, your filler words, how many long pauses you made and a transcript of what you said. It is free, runs in your browser and needs no sign-up. It measures delivery only; it does not judge what you said."
+description: "Give your speech, toast or talk out loud and get free AI feedback: pace, filler words, pauses and tips that quote your words. No sign-up."
+answer: "Tick that it's your own voice, press start and give your speech, toast or talk out loud (up to 3 minutes). You get free AI feedback that quotes your words: one thing to keep, one change and one sentence said more clearly, plus your pace in words per minute, filler words and long pauses. English only, two free reviews a day, no sign-up. Below it, a second checker runs entirely in your browser and works in 20 languages."
 breadcrumb: "Free speech review"
-updated: 2026-10-22
+updated: 2026-11-19
+published: 2026-10-22
 order: 1
 review_mode: speech
 review_question: "Give your speech, toast or talk, or its first few minutes."
