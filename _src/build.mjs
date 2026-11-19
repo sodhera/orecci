@@ -416,6 +416,54 @@ function ctaCard(p, lang, place = 'top') {
         </aside>`;
 }
 
+// The free AI voice review (English pages only): the reader answers this page's question out loud
+// and gets pace, fillers, pauses and quoted feedback from the review server. `review.js` does the work.
+const REVIEW_MODE = { 'interview-questions': 'interview', 'interview-questions-by-role': 'interview', interviews: 'interview', speeches: 'speech', presentations: 'speech', 'small-talk': 'smalltalk' };
+function reviewSetup(p) {
+  const mode = p.meta.review_mode || REVIEW_MODE[p.section];
+  if (!mode || p.lang !== 'en' || p.hub) return null;
+  if (p.meta.review_question) return { mode, question: p.meta.review_question };
+  const title = p.meta.title || '';
+  // Titles are sometimes Title Case ("How Was Your Weekend?"); say the question in sentence case.
+  const sentence = (x) => x.split(' ').map((w, i) => (i === 0 || w === 'I' || /^[A-Z0-9]{2,}/.test(w) ? w : w.toLowerCase())).join(' ');
+  const asked = title.includes('?') ? sentence(title.slice(0, title.indexOf('?') + 1).trim()) : '';
+  // "tell-me-about-a-time-you-failed" -> "Tell me about a time you failed."
+  const fromSlug = (() => { const x = p.slug.replace(/-/g, ' '); return x.charAt(0).toUpperCase() + x.slice(1) + (/^(what|why|how|are|do|does|is|have|where|who|can|would|will|which|did|when)\b/.test(x) ? '?' : '.'); })();
+  const name = (p.meta.breadcrumb || title).replace(/\?$/, '');
+  const lower = name.charAt(0).toLowerCase() + name.slice(1);
+  const question = {
+    'interview-questions': asked || fromSlug,
+    'interview-questions-by-role': (p.meta.questions || [])[0] || `Tell me about yourself and why you want to work as a ${lower}.`,
+    interviews: 'Tell me about yourself.',
+    speeches: `Give the opening of your ${lower}.`,
+    presentations: `Give the first minute of your ${lower}.`,
+    'small-talk': asked && asked.length <= 60 ? `Someone asks you: “${asked}” Answer and keep the conversation going.` : `The moment: ${lower}. Start the conversation the way you would, and keep it going for a minute.`,
+  }[p.section] || 'Tell me about yourself.';
+  return { mode, question: question.slice(0, 600) };
+}
+
+function reviewHtml(p, lang) {
+  const setup = reviewSetup(p);
+  if (!setup) return '';
+  const links = storeLinks(p, lang, 'review');
+  const cfg = { ...setup, slug: p.slug };
+  const followUp = { interview: 'an AI interviewer asks the follow-up questions', speech: 'an AI audience listens and asks questions afterwards', smalltalk: 'an AI partner talks back, so you can keep a real conversation going' }[setup.mode];
+  return `<section class="review" data-review aria-labelledby="review-${esc(p.slug)}">
+          <script type="application/json" class="review-config">${JSON.stringify(cfg).replace(/</g, '\\u003c')}</script>
+          <p class="cta-kicker">Free · no account</p>
+          <h2 id="review-${esc(p.slug)}">Say your answer out loud and get feedback</h2>
+          <div class="review-body"><noscript><p>Turn on JavaScript to record your answer.</p></noscript></div>
+          <div class="review-upsell" data-cta="review" hidden>
+            <p><strong>That was one answer.</strong> In the Speaking Coach app, ${followUp}, then you retry the moment and see what changed. Practise any interview, speech or conversation, in 20 languages.</p>
+            <div class="row">
+              <a class="button" href="${esc(links.appStore)}" rel="noopener" data-store="app_store">${esc(t(lang, 'cta.app_store'))}</a>
+              <a class="button secondary" href="${esc(links.play)}" rel="noopener" data-store="google_play">${esc(t(lang, 'cta.google_play'))}</a>
+            </div>
+          </div>
+        </section>
+        <script src="${BASE}/assets/review.js" defer></script>`;
+}
+
 function toolHtml(p, lang) {
   const tool = p.meta.tool;
   const cfg = {
@@ -488,7 +536,7 @@ function renderPage(p) {
             <p class="byline">${byline}</p>
           </header>
           <div class="answer">${answerHtml.split(/\n\n/).map((x) => `<p>${x}</p>`).join('')}</div>
-          ${tool}
+          ${reviewHtml(p, lang)}${tool}
           ${ctaCard(p, lang)}
           <div class="prose">
 ${bodyHtml}

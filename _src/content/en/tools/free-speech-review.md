@@ -5,6 +5,8 @@ answer: "Press start, give your speech or talk out loud, then press stop: you se
 breadcrumb: "Free speech review"
 updated: 2026-10-22
 order: 1
+review_mode: speech
+review_question: "Give your speech, toast or talk, or its first few minutes."
 tool: speech-checker
 practice_heading: "Want feedback on what you said, not just how fast?"
 practice_prompt: "Listen to me give the opening of my best man speech and tell me one thing to change."

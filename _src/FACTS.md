@@ -37,6 +37,14 @@ Introduce yourself · Tell me about yourself · Explain your experience with an 
 - **English only** in ChatGPT. **Two reviews per network connection per day**, subject to shared capacity.
 - No accent, pronunciation, personality or medical assessment.
 
+## The free AI voice review on orecci.com (since 2026-11-19)
+
+- On English interview-question, role, interview, speech, presentation and small-talk pages, and on /speaking-coach/tools/free-speech-review/ and /speaking-coach/tools/interview-answer-review/, a box asks the page's question. The reader answers out loud (up to 2 minutes; 3 for speeches and presentations; 1 for small talk).
+- They get measured pace (words per minute), filler words (um, uh) and pauses over 2 seconds, plus feedback that quotes their own words: one thing to keep, one change with something to try, one sentence said more clearly, and whether the answer has a clear structure.
+- Free, no account, no install. **English only. Two reviews per network per day**, shared with the ChatGPT app, subject to shared capacity.
+- The recording goes to Speaking Coach's review server once (ElevenLabs transcription, OpenAI feedback) and isn't kept.
+- No accent, pronunciation or personality assessment. It's one answer; the AI partner who asks follow-ups is in the phone app.
+
 ## The free tools on orecci.com (built into these pages)
 
 They run in the visitor's browser. Speech is turned into text by the browser's own speech recognition (in Chrome and Edge this is Google's or Microsoft's service; Safari uses Apple's). Speaking Coach's servers receive nothing. Where the browser has no speech recognition, the tools accept pasted text.
@@ -47,7 +55,7 @@ They run in the visitor's browser. Speech is turned into text by the browser's o
 - **Speech length calculator:** words ↔ minutes at slow, average and fast pace.
 - **Interview questions by role:** pick a role, get its practice questions.
 
-These tools are not AI feedback. AI feedback (quoted tips, a partner who talks back) is in the ChatGPT app (English, free, limited) and the phone app (20 languages, subscription).
+These tools are not AI feedback. AI feedback with quoted tips is in the free voice review above and the ChatGPT app (English, free, limited); a partner who talks back is in the phone app (20 languages, subscription) and the ChatGPT app.
 
 ## Who writes these pages
 

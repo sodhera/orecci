@@ -1,116 +1,105 @@
 ---
-title: "Best AI Speech Coach Apps in 2026: Which One Actually Helps?"
-description: "AI speech coach apps grouped by what the AI does: analyzes your recording, plays a partner, coaches meetings or scores pronunciation. Checked October 2026."
-answer: "Pick by what you need the AI to do. To get a recording of yourself analyzed, Orai, Speeko and PowerPoint's free Speaker Coach are solid. For a partner who talks back, look at Speaking Coach, Yoodli or Huru (interviews only), and for pronunciation scores, ELSA Speak. Poised, the live meeting coach, posted that it was shutting down on 10/8/2026."
+title: "Best AI Speech Coach Apps 2026: Yoodli, Orai, Speeko Compared"
+description: "AI speech coach apps compared as of November 2026: what the AI does, the free option, platforms, and who should pick Yoodli, Orai, Speeko, Huru or ELSA."
+answer: "There is no single best AI speech coach app; pick by what you need the AI to do. Yoodli suits roleplays and Q&A on a computer, Orai and Speeko analyze a recording of you speaking alone, Huru plays a free job interviewer, ELSA Speak scores English pronunciation, and the Speaking Coach app plays the other person in any conversation, in 20 languages. Poised, the live meeting coach, posted that it was shutting down on 10/8/2026."
 breadcrumb: "Best AI speech coach apps"
-updated: 2026-10-22
+updated: 2026-11-19
+published: 2026-10-22
 order: 1
 practice_heading: "Try a partner who talks back"
 practice_prompt: "Play a skeptical manager while I explain why my project is two weeks late, then tell me what I said that sounded vague."
 related:
-  - /speaking-coach/best/best-apps-to-practice-public-speaking/
-  - /speaking-coach/best/best-mock-interview-apps/
-  - /speaking-coach/compare/poised-alternatives/
-  - /speaking-coach/how-we-review/
   - /speaking-coach/tools/free-speech-review/
+  - /speaking-coach/compare/speaking-coach-vs-yoodli/
+  - /speaking-coach/compare/yoodli-alternatives/
+  - /speaking-coach/compare/poised-alternatives/
+  - /speaking-coach/best/best-apps-to-practice-public-speaking/
 sources:
+  - Yoodli home page | https://yoodli.ai/
+  - Yoodli pricing | https://yoodli.ai/pricing
+  - Yoodli for public speaking | https://yoodli.ai/use-cases/public-speaking
   - Orai on the App Store | https://apps.apple.com/us/app/orai-public-speaking-coach/id1203178170
   - Speeko home page | https://www.speeko.co/
   - Speeko subscriptions | https://www.speeko.co/subscriptions
+  - Speeko on the App Store | https://apps.apple.com/us/app/speeko-ai-for-public-speaking/id1071468459
   - Rehearse your slide show with Speaker Coach (Microsoft Support) | https://support.microsoft.com/en-us/office/rehearse-your-slide-show-with-speaker-coach-cd7fc941-5c3b-498c-a225-83ef3f64f07b
-  - Yoodli home page | https://yoodli.ai/
-  - Yoodli pricing | https://yoodli.ai/pricing
   - Huru AI interview practice | https://huru.ai/
+  - Huru on the App Store | https://apps.apple.com/us/app/huru-ai-mock-interview-prep/id1549599609
+  - ELSA Speak on the App Store | https://apps.apple.com/us/app/elsa-speak-english-learning/id1083804886
   - Vocal Image on the App Store | https://apps.apple.com/us/app/vocal-image-voice-coach/id1535324205
   - VirtualSpeech home page | https://virtualspeech.com/
   - VirtualSpeech pricing | https://virtualspeech.com/pricing
+  - Ovation home page | https://www.ovationvr.com/
   - Ovation pricing | https://www.ovationvr.com/pricing
   - Poised home page | https://www.poised.com/
-  - ELSA Speak on the App Store | https://apps.apple.com/us/app/elsa-speak-english-learning/id1083804886
 ---
-## Four kinds of "AI speech coach"
+## The AI speech coach apps compared
 
-The label covers tools that do very different jobs. Before comparing features, decide which of these you actually want:
+"AI speech coach" covers tools that do very different jobs: some analyze a recording of you talking alone, some play the other person and talk back, one scores pronunciation. We make Speaking Coach. We opened every other tool's own site or App Store page in November 2026 and state only what we saw there. Prices change, so treat them as a snapshot as of November 2026.
 
-1. **It analyzes a recording.** You talk alone; the AI measures pace, filler words and similar things, then gives you a report.
-2. **It plays the other person.** The AI is your interviewer, audience or coworker, listens, and replies to what you said.
-3. **It coaches you during real meetings.** It runs on your computer while you are on calls.
-4. **It scores your pronunciation.** It compares how you say words with a target accent.
-
-We make Speaking Coach, which belongs in the second group. We checked every other tool's own site or App Store page in October 2026 and state only what we saw there. Prices change, so treat them as a snapshot.
-
-## The short list
-
-| App | What the AI does | Platforms we saw listed | Languages | Cost, as of October 2026 |
+| App | Best for | Free option | Platforms | What the AI does |
 | --- | --- | --- | --- | --- |
-| Orai | Analyzes your recording | iPhone | English | $12.99 a month, $49.99 a year or $99.99 lifetime |
-| Speeko | Analyzes your speech, with real-time alerts | iOS, Android, Mac, web | Not listed | $29.99 a month, or $8.33 a month billed yearly with a 7-day trial |
-| PowerPoint Speaker Coach | Analyzes a slide rehearsal | Web, Windows, Mac, iOS, Android | English | Free preview |
-| Yoodli | Plays a roleplay partner; reviews uploads | Web | Not listed | Free for 5 lifetime sessions; Pro $8 a month billed yearly |
-| Huru | Plays an interviewer | Web, iPhone | 5 | Free for job seekers |
-| Speaking Coach (ours) | Plays the other person in any situation | iPhone, Android | 20 | Subscription; free voice review in ChatGPT |
-| Vocal Image | Voice drills and AI roleplay | iPhone | 10 interface languages | Subscription |
-| ELSA Speak | Pronunciation feedback | iPhone, iPad | Teaches English | $19.99 a month; yearly plans listed |
-| Poised | Coached you during calls | Mac, Windows | — | Shutting down, per its site |
+| Yoodli | Roleplays and Q&A practice on a computer; company training | Starter: 5 sessions for life | Web | Scores roleplays against criteria; speaking report on pacing and fillers |
+| Orai | Rehearsing a set speech alone | Free download; paid plans | iPhone | Scores fillers, pace, clarity, energy, confidence, conciseness |
+| Speeko | A daily speaking habit | Free tier with basic insights | iOS, Android, Mac, web | Tracks pace, fillers, intonation and word choice in real time; AI roleplays |
+| PowerPoint Speaker Coach | A deck already in PowerPoint | Free preview | Windows, Mac, web, iOS, Android | Live guidance and a report on pace, fillers, monotone, reading slides |
+| Huru | Job interviews on no budget | Free for job seekers | Web, iPhone, Chrome extension | Plays an interviewer who follows up; scores each answer out of 100 |
+| Speaking Coach app (ours) | Rehearsing a real conversation: interview, Q&A, small talk | No free tier in the app; a free AI voice review on this site | iPhone, Android | Plays the other person and follows up; quotes your words in its tips |
+| ELSA Speak | English pronunciation | 7-day Premium trial | iPhone, iPad | Scores how you say words against a chosen accent |
+| Vocal Image | Voice, diction and accent courses | Free trial | iPhone, iPad | Voice analysis, diction scores, AI roleplay |
+| Ovation, VirtualSpeech | A virtual room or audience | Ovation: 7-day trial | Browser and VR | AI audiences who ask about what you said |
 
-## 1. AI that analyzes your recording
+## Short verdicts
 
-This is the oldest and simplest kind. You speak, it counts.
+**Yoodli.** Its home page now speaks mainly to companies: roleplays scored against criteria, custom personas, and integrations with Zoom, Google Meet, Teams and sales tools. Individuals still get a free Starter plan with 5 lifetime sessions. Pro is $8 a month billed yearly, with up to 10 roleplays a week, live AI roleplays and feedback on uploaded recordings; Advanced is $20 a month billed yearly, with unlimited roleplays. Its public speaking page describes practicing on your own decks and optional AI follow-up questions for Q&A. **Pick it if** you practice at a desk, want Q&A on your own slides, or your employer already uses it. **Skip it if** you want to practice on your phone; the pages we read mention no mobile app.
 
-**Orai.** Its App Store listing describes AI feedback on filler words, pace, clarity, energy, confidence and conciseness after each session, scripted or freestyle practice, transcripts and short lessons. English only. Best for five quiet minutes a day with a script.
+**Orai.** Record a scripted or freestyle talk and get a scorecard on filler words, pace, clarity, energy, confidence and conciseness, with a transcript and short lessons. The App Store lists $12.99 a month, $49.99 a year or $99.99 lifetime, English only. **Pick it if** you have a fixed speech and want simple numbers. **Skip it if** your trouble is answering questions; nobody talks back.
 
-**Speeko.** Its site says it tracks your voice in real time and reviews pace, filler words, intonation, sentiment, talk time and word choice, with 2-minute daily exercises, notecards and interview prompts. Best if you want a guided daily habit.
+**Speeko.** Its site says it tracks your voice in real time and reviews pace, fillers, intonation, sentiment, talk time and word choice. New since October: its subscriptions page says the main features are "free forever", with basic insights and no account needed, and its App Store listing now describes AI roleplays called Convos for interviews, difficult conversations and small talk. Full access is $29.99 a month on its site ($24.99 in the App Store) or $99.99 a year, with a 7-day trial. **Pick it if** you want a short daily habit across your devices. **Skip it if** you need a language other than English; the listing shows English.
 
-**PowerPoint Speaker Coach.** Microsoft's support page says it is in free preview for anyone with a Microsoft account. It gives on-screen guidance as you rehearse and a report afterwards: pace, filler words, reading your slides aloud and more, depending on the platform. It works only in English. Best when your talk is already in PowerPoint.
+**PowerPoint Speaker Coach.** Microsoft's support page says it is free in preview, even without an Office subscription. It gives on-screen guidance while you rehearse and a report afterwards. English only for now, with Spanish, French and Japanese planned. **Pick it if** your talk is in PowerPoint. **Skip it if** you want to keep your reports: they vanish when closed.
 
-The limit of this group: nobody interrupts you. You can sound fluent alone and still stall when someone asks "Why?" The free [speech review](/speaking-coach/tools/free-speech-review/) on this site does the counting part in your browser, without AI.
+**Huru.** A spoken AI interviewer with Supportive, Standard or Demanding pressure, 5 to 20-minute sessions, 242+ roles, and questions built from a job post you paste. Its iPhone listing says "100% free", with no subscription, paywall or trial, in five languages. **Pick it if** you have an interview coming and no budget; it is the most free AI practice we found. **Skip it if** your next talk isn't an interview.
 
-## 2. AI that plays the other person
+**The Speaking Coach app (ours).** An AI voice partner plays the other side: an interviewer who reads your CV and the job post, an audience that asks about the slides you uploaded, or a stranger who says hi. It follows up on what you said, then shows your pace, filler words and long pauses, with tips that quote your own words, and lets you retry that moment. It works in 20 languages and never rates your accent or personality. It's a subscription on iPhone and Android; see the App Store or Google Play for the price in your country. **Skip it if** you only need to measure a solo speech: the free options below do that.
 
-Here the AI listens and replies, so you practice thinking while talking.
+**ELSA Speak.** Pronunciation feedback with American, British, Australian and other accent targets, roleplays, and IELTS, TOEFL and TOEIC prep with Premium. $19.99 a month or yearly plans from $71, with a 7-day trial. **Pick it if** people often ask you to repeat words. **Skip it if** your English is clear and the problem is nerves. Our [ELSA comparison](/speaking-coach/compare/speaking-coach-vs-elsa-speak/) goes deeper.
 
-**Speaking Coach (ours).** An AI voice partner plays an interviewer who reads your CV and the job post, an audience that asks about the slides you uploaded, or a stranger who says hi. It follows up on what you said, and afterwards shows your pace, filler words, long pauses and tips that quote your own words, then lets you retry that moment. It has 23 built-in scenes, works in 20 languages and never rates your accent or personality. It is a subscription on iPhone and Android; see the App Store or Google Play for the price in your country.
+**Vocal Image** mixes voice analysis, diction drills, accent courses and an AI roleplay, with in-app prices from $7.99 a week. **Ovation** puts you in a virtual boardroom or lecture hall in the browser, on desktop or in VR, at $15 a month billed yearly with a 7-day trial. **VirtualSpeech** is aimed mainly at organizations; its pricing page lists $45 a month or $399 a year for individuals.
 
-**Yoodli.** Its site now speaks mainly to companies: roleplays scored against criteria, personas and integrations with Zoom, Teams and sales tools. Individuals still get a free Starter plan with 5 lifetime sessions, and Pro adds live AI roleplays and feedback on uploaded recordings. Best for teams, or for one person who wants a web tool.
+**Poised**, which coached you during real video calls, still showed a banner in November 2026 saying it "is shutting down on 10/8/2026". We found no like-for-like live meeting coach for individuals among the tools above; see our [Poised alternatives](/speaking-coach/compare/poised-alternatives/).
 
-**Huru.** A spoken AI interviewer that asks follow-ups, with three pressure levels and session lengths from 5 to 20 minutes. Its site says it is free for job seekers. Best for interviews on a zero budget; it does not cover speeches or small talk.
+## Free ways to get AI feedback
 
-**Vocal Image** adds AI roleplay to voice training, and **VirtualSpeech** and **Ovation** put you in front of virtual audiences, in the browser or in VR. VirtualSpeech lists $45 a month for individuals; Ovation lists $15 a month billed yearly, with a 7-day trial.
-
-## 3. AI that coaches you during real meetings
-
-This group shrank this month. Poised ran on Mac and Windows and gave feedback during calls on filler words, hedging and how much you talked. In October 2026 a banner on its site read that it "is shutting down on 10/8/2026". We did not find a like-for-like replacement for individuals among the tools above: Yoodli's site lists Zoom, Meet and Teams integrations but doesn't describe live coaching on calls for individuals. If meeting feedback is what you need, our [Poised alternatives](/speaking-coach/compare/poised-alternatives/) page covers the options in more depth.
-
-## 4. AI that scores pronunciation
-
-**ELSA Speak** is the main one. Its App Store listing describes instant feedback on what you said, American, British and Australian accent choices, roleplays, and IELTS and TOEFL prep. It teaches English only. If you are a non-native speaker and want accent work, see our [list for non-native speakers](/speaking-coach/best/best-speaking-practice-apps-for-non-native-speakers/). Speaking Coach does not score pronunciation at all, by design.
+- **The free AI voice review on this site.** Answer out loud for up to 2 minutes (3 for a speech) and get your measured pace, filler words and long pauses, plus feedback that quotes your own words: one thing to keep, one change, and one sentence rewritten more clearly. It's in the [free speech review](/speaking-coach/tools/free-speech-review/) and built into the English interview, speech, presentation and small-talk pages. English only, two reviews per network per day, no account, no install. Your audio goes to Speaking Coach's server to be transcribed and is not kept.
+- **Huru**, free for interview practice. **Speeko's free tier** and **PowerPoint Speaker Coach** for solo delivery. **Yoodli Starter** for 5 sessions.
 
 ## How to choose in two minutes
 
 1. Write down the next real situation you will speak in: an interview on Thursday, a toast in June, Monday's stand-up.
-2. If someone will ask you questions, pick a tool from group 2. If you will speak uninterrupted, group 1 is enough.
-3. If you only need English and have no budget, start with PowerPoint Speaker Coach or Huru.
-4. If you need another language, check the language list first; most tools here are English only.
+2. If someone will ask you questions, pick a tool that talks back (Yoodli, Huru, the Speaking Coach app). If you'll speak uninterrupted, an analyzer like Orai, Speeko or Speaker Coach is enough.
+3. Decide where you'll practice. A phone on your commute rules out Yoodli; a desk with slides suits it.
+4. Check the language. Most tools here work only in English.
 5. Use whatever you pick at least three times before judging it. The first session mostly shows you your habits.
 
 ## Questions people ask
 
-### What is the best free AI speech coach?
+### What is the best AI speech coach app?
 
-It depends on the job. As of October 2026, PowerPoint Speaker Coach is free for slide rehearsals in English, Huru is free for interview practice, and Yoodli's free plan gives 5 lifetime sessions. Speaking Coach's voice review inside ChatGPT is free, in English, with two reviews a day.
+It depends on the job. As of November 2026, Yoodli is strong for roleplays on a computer, Orai and Speeko for solo speeches, Huru for free interview practice, ELSA Speak for pronunciation, and the Speaking Coach app for practicing a conversation on your phone in 20 languages.
+
+### Is there a free AI speech coach?
+
+Yes. Huru is free for job seekers, Speeko has a free tier, PowerPoint Speaker Coach is free in preview, and Yoodli gives 5 lifetime sessions. The AI voice review on this site gives two free reviews a day in English.
+
+### Is Yoodli free?
+
+Partly. As of November 2026 its Starter plan is free for 5 lifetime sessions; Pro is $8 a month and Advanced $20 a month, both billed yearly.
 
 ### Is Poised still available?
 
-In October 2026 its site showed a banner saying it was shutting down on 10/8/2026. If you used it for filler-word feedback, the apps in group 1 do that for practice sessions, though not during live calls.
-
-### Can an AI speech coach replace a human coach?
-
-Not fully. AI tools are good for repetitions and for measuring things like pace and fillers. A human coach is better at judging whether your story lands and what to cut. Many people use an app between sessions with a person.
+Its site still showed a banner in November 2026 saying it was shutting down on 10/8/2026. The apps above measure fillers in practice sessions, not during live calls.
 
 ### Do these apps judge my accent?
 
-Pronunciation apps like ELSA Speak do, on purpose. Delivery tools like Orai and Speeko measure pace and fillers. Speaking Coach never rates your accent or personality.
-
-### Which ones work in languages other than English?
-
-Of the tools we checked, Speaking Coach works in 20 languages and Huru in 5. Orai and PowerPoint Speaker Coach are English only, and Speeko and Yoodli don't list languages on the pages we read.
+ELSA Speak does, on purpose, and Vocal Image has accent tests and courses. Orai and Speeko measure delivery. The Speaking Coach app never rates your accent or personality.

@@ -1,69 +1,62 @@
-# Best Apps to Stop Saying Um and Reduce Filler Words in 2026
+# Best Apps to Reduce Filler Words in 2026 (Stop Saying Um)
 
-To be warned the moment you say "um", use an app that flags fillers live, such as Speeko, PowerPoint Speaker Coach or LikeSo 2.0. To see the full picture afterwards, Orai and Yoodli report fillers after a solo session, and Speaking Coach counts them after a real back-and-forth conversation, in 20 languages. The free filler word counter on this site works in your browser.
+To be warned the moment you say "um", use an app that flags fillers live: Speeko (which now has a free tier), PowerPoint Speaker Coach, or The Um Detector, which vibrates your phone. To see patterns afterwards, Orai and Yoodli report fillers after a solo talk, Huru after a free mock interview, and the Speaking Coach app after a real back-and-forth conversation, in 20 languages. The free AI voice review on this site counts fillers in English, two reviews a day.
 
-By the Speaking Coach team at Sodhera Intelligence. Updated 2026-10-22. Source: https://www.orecci.com/speaking-coach/best/best-apps-to-reduce-filler-words/
+By the Speaking Coach team at Sodhera Intelligence. Updated 2026-11-19. Source: https://www.orecci.com/speaking-coach/best/best-apps-to-reduce-filler-words/
 
-## Live or afterwards: the choice that matters most
+## Filler word apps compared
 
-Filler-word apps work in one of two ways, and they suit different people.
+Filler-word apps work in one of two ways. **Live counters** buzz or flash while you talk, so you notice each "um" as it happens; the risk is getting so self-conscious you lose your thread. **After-the-fact reports** let you speak normally, then show how many fillers you used and where, which is better for spotting patterns.
 
-- **Live counters** buzz, flash or show a warning while you talk. They break the habit fast, because you notice each "um" as it happens. The downside: they can make you so self-conscious that you lose your thread.
-- **After-the-fact reports** let you speak normally, then show how many fillers you used and where. They're better for seeing patterns, such as "most of my 'likes' come in the first ten seconds of an answer".
+The second question is whether you practice **alone or in conversation**. Most people use far fewer fillers in a prepared speech than when answering a question they didn't expect.
 
-The second question is whether you practice **alone or in conversation**. Most people use far fewer fillers in a prepared speech than when answering a question they didn't expect. If your "ums" show up in meetings and interviews, practice in a conversation.
+We make Speaking Coach, one of the apps below. We checked every other app's own App Store page or site in November 2026; prices are as of November 2026.
 
-We make Speaking Coach, one of the apps below. We checked every other app's own App Store page or site in October 2026 and state only what we saw.
-
-## Compared
-
-| App | Live or after | Solo or conversation | Languages | Cost, as of October 2026 |
+| App | Best for | Free option | Platforms | What the AI does |
 | --- | --- | --- | --- | --- |
-| Speeko | Live alerts, then a report | Solo | Not listed | Subscription, 7-day trial on the annual plan |
-| PowerPoint Speaker Coach | Live guidance, then a report | Solo, with slides | English | Free preview |
-| LikeSo 2.0 | Live | Solo | English | Free, no in-app purchases listed |
-| The Um Detector | Live: flashes red and vibrates | Solo | English | Free 5 minutes a day; $0.99 removes the limit |
-| Orai | After | Solo | English | $12.99 a month, $49.99 a year or $99.99 lifetime |
-| Yoodli | After | Solo talks and roleplays | Not listed | Free for 5 lifetime sessions; Pro $8 a month billed yearly |
-| Huru | After, in the debrief | Interview conversation | 5 | Free for job seekers |
-| Speaking Coach (ours) | After each session | Conversation | 20 | Subscription |
-| Speaking Coach in ChatGPT (ours) | After | Solo recording | English | Free, two reviews a day |
-| [Filler word counter](/speaking-coach/tools/filler-word-counter/) (ours) | After you press stop | Solo, or a pasted transcript | This site's languages | Free, in your browser |
+| Speeko | Live alerts during solo practice | Free tier with basic insights | iOS, Android, Mac, web | Real-time tracking, then a review of fillers, pace, intonation |
+| PowerPoint Speaker Coach | Fillers during a slide rehearsal | Free preview | Windows, Mac, web, iOS, Android | Live on-screen guidance, then a report; English only |
+| The Um Detector | A buzz every time you say "um" | 5 minutes a day; $0.99 unlocks | iPhone | Flashes each filler red and vibrates; English |
+| LikeSo 2.0 | Filler-free pitch drills | None: $9.99 to download | iPhone | Real-time speech analysis, three practice modes; English |
+| Orai | A report after a solo speech | Free download; paid plans | iPhone | Scores fillers with pace, clarity, energy; transcript |
+| Yoodli | Reports after talks and roleplays | 5 sessions for life | Web | Speaking report with pacing and fillers |
+| Huru | Fillers in interview answers | Free for job seekers | Web, iPhone | Filler and hedging words per 100 words in the debrief |
+| Speaking Coach app (ours) | Fillers in real conversations, in 20 languages | No free tier; a free AI voice review on this site | iPhone, Android | Counts fillers after a back-and-forth; quotes where they piled up |
+| [Filler word counter](/speaking-coach/tools/filler-word-counter/) (ours) | A quick count, or a pasted transcript | Free | Your browser | No AI: counts fillers for the page's language |
 
 ## The live counters
 
-**Speeko** tracks your voice in real time with short alerts, then reviews pace, filler words, intonation and word choice. It runs on iOS, Android, Mac and the web.
+**Speeko** tracks your voice in real time with alerts, then reviews filler words alongside pace, intonation and word choice. Its site now says the main features are "free forever"; real-time guidance and personalized feedback are in the paid plan ($29.99 a month on its site, $99.99 a year). **Pick it if** you want live alerts and a daily habit. **Skip it if** live guidance must be free.
 
-**PowerPoint Speaker Coach** shows on-screen guidance as you rehearse a deck, then a report that includes filler words. It's free in preview with a Microsoft account, but works only in English.
+**PowerPoint Speaker Coach** shows on-screen guidance as you rehearse a deck, then a report that includes filler words. Free in preview with a Microsoft account, English only. **Pick it if** your fillers show up when presenting slides.
 
-**LikeSo 2.0** is a new listing from Say It Media, the publisher of the original LikeSo. Version 2.0 appeared on the US App Store on September 28, 2026. It describes real-time speech analysis, goals, and three practice modes (MyPitch, FreeStyle and TalkAbout). It's free and English only.
+**The Um Detector** listens for "um", "like", "right" and "you know", plus custom words, and flashes each one red while your phone vibrates. Free for 5 minutes a day; $0.99 removes the limit. Its last update was in November 2023, and recent reviewers say it misses some "ums". **Pick it if** you want the bluntest live signal for under a dollar.
 
-**The Um Detector** listens for "um", "like", "right" and "you know", plus custom words, and makes each one flash red while your phone vibrates. The free version allows 5 minutes a day. Its last update on the App Store was in November 2023.
+**LikeSo 2.0**, from the publisher of the original LikeSo, describes real-time speech analysis, goals and three practice modes (MyPitch, FreeStyle and TalkAbout). **Changed since October:** it's now a $9.99 paid app, with no in-app purchases listed. English only. **Pick it if** you prefer a one-time price to a subscription.
 
 ## The after-the-fact reports
 
-**Orai** scores filler words along with pace, clarity, energy, confidence and conciseness after each recording, with a transcript to see where they happened. English only.
+**Orai** scores filler words along with pace, clarity, energy, confidence and conciseness, with a transcript showing where they happened. $12.99 a month, $49.99 a year or $99.99 lifetime; English only.
 
-**Yoodli** produces a speaking report with pacing and filler words after each session, for talks and for roleplays on the web.
+**Yoodli** gives a speaking report with pacing and filler words after each talk or roleplay, on the web; free for 5 lifetime sessions, Pro $8 a month billed yearly.
 
-**Huru** shows filler words and hedging phrases in the debrief after an AI mock interview. Free, but only for interviews.
+**Huru** shows filler and hedging words per 100 words in the debrief after a free AI mock interview. **Pick it if** your fillers pile up in interviews.
 
-**Speaking Coach (ours)** counts your filler words after a real conversation: an interview that follows up, a stranger at a party, a manager asking for an update. The report shows fillers alongside your pace, long pauses and tips that quote what you actually said, then lets you retry the moment where the fillers piled up. It works in 20 languages, which matters because fillers differ by language: Spanish speakers say "este" and "o sea", French speakers "euh" and "du coup". The free voice review inside ChatGPT counts fillers in English recordings.
+**The Speaking Coach app (ours)** counts your fillers after a real conversation: an interviewer who follows up, a stranger at a party, a manager asking for an update. You see fillers next to your pace, long pauses and tips that quote what you said, then retry the moment where they piled up. It works in 20 languages, which matters because fillers differ: Spanish speakers say "este" and "o sea", French speakers "euh" and "du coup". It's a subscription. **Skip it if** you only want a free count of a prepared speech.
+
+**Free on this site:** the [free speech review](/speaking-coach/tools/free-speech-review/) gives an AI voice review of up to 2 minutes (3 for a speech): filler words, pace and long pauses, plus feedback that quotes your words, with one thing to keep, one change and one sentence rewritten more clearly. English only, two reviews per network per day, no account. Your audio goes to Speaking Coach's server for transcription and is not kept.
 
 ## Older filler apps you may have read about
 
-Two apps often recommended in older articles have changed:
-
-- **Ummo**, an older iPhone filler-word app, did not appear in our search of the US App Store in October 2026.
-- **LikeSo**'s original App Store listing no longer returns a result in the US store. Its publisher has released **LikeSo 2.0** instead, covered above.
-
-**Poised**, which counted fillers during video calls on Mac and Windows, showed a banner in October 2026 saying it was shutting down on 10/8/2026.
+- **Ummo**, an older iPhone filler-word app, still didn't appear in our search of the US App Store in November 2026.
+- **LikeSo**'s original listing still returns no result in the US store; LikeSo 2.0 replaces it.
+- **Poised**, which counted fillers during video calls, still showed a banner in November 2026 saying it was shutting down on 10/8/2026.
 
 ## How to use any of these well
 
-1. **Measure first.** Speak for two minutes on an easy topic, like your job or your weekend, and count. Don't try to change anything yet.
+1. **Measure first.** Speak for two minutes on an easy topic and count. Don't try to change anything yet.
 2. **Find your one main filler.** Most people have one or two that make up most of the count.
-3. **Replace it with a pause.** A one-second silence sounds calm to the listener. It feels much longer to you.
+3. **Replace it with a pause.** A one-second silence sounds calm to the listener, even if it feels long to you.
 4. **Practice the first sentence.** Fillers cluster at the start of answers, while you search for a way in.
 5. **Move from solo to conversation.** Once your prepared speech is clean, practice answering questions you didn't expect.
 
@@ -71,21 +64,21 @@ Speech recognition often leaves "um" and "uh" out of transcripts, so most counte
 
 ## Questions people ask
 
+### What is the best app to reduce filler words?
+
+As of November 2026: Speeko or The Um Detector for live alerts, Orai for a report after a solo speech, Huru for interview answers, and the Speaking Coach app for fillers in real conversations in 20 languages.
+
 ### Is there a free app that counts filler words?
 
-Yes. LikeSo 2.0 is free on the App Store, The Um Detector is free for 5 minutes a day, and PowerPoint Speaker Coach is free in preview. The filler word counter on this site is free in your browser with no sign-up.
+Yes. Speeko has a free tier, The Um Detector is free for 5 minutes a day, and PowerPoint Speaker Coach is free in preview. On this site, the filler word counter is free in your browser and the AI voice review gives two free English reviews a day. LikeSo 2.0 is no longer free.
 
 ### Which app buzzes when I say um?
 
-The Um Detector vibrates your phone and flashes each filler red as you speak. Speeko gives live alerts, and PowerPoint Speaker Coach shows on-screen guidance during a rehearsal.
+The Um Detector vibrates your phone and flashes each filler red. Speeko gives live alerts, and PowerPoint Speaker Coach shows on-screen guidance during a rehearsal.
 
 ### Can an app count my filler words during Zoom calls?
 
-Poised did this, but it posted that it was shutting down on 10/8/2026. The apps here work in practice sessions rather than during real calls.
-
-### Does any app count filler words in other languages?
-
-Speaking Coach counts fillers in all 20 of its languages, and the filler word counter on this site looks for each page language's common fillers. Most other apps we checked are English only.
+Poised did this, but its site says it was shutting down on 10/8/2026. The apps here work in practice sessions rather than during real calls.
 
 ### How many filler words per minute is normal?
 

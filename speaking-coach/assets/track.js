@@ -41,6 +41,8 @@
   }
 
   send('$pageview');
+  // The free voice review reports its steps (site_review_record / _done / _error) through this.
+  window.scTrack = send;
 
   // Taps on the App Store, Google Play and ChatGPT buttons, with where on the page they were.
   document.addEventListener('click', function (e) {

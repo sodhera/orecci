@@ -6,6 +6,8 @@ breadcrumb: "Interview answer check"
 updated: 2026-11-16
 published: 2026-10-22
 order: 5
+review_mode: interview
+review_question: "Tell me about yourself."
 tool: speech-checker
 tool_prompts:
   - Tell me about yourself.
